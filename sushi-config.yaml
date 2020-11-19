@@ -1,0 +1,42 @@
+# ╭───────────────────────────ImplementationGuide-ibm.fhir.fda.icsr.json───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see:                                                                    │
+# │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.us.icsr-ae-reporting
+canonical: http://hl7.org/fhir/us/icsr-ae-reporting
+version: 0.1.0
+name: TransfusionVaccinationAdverseEventDetectionReporting
+title: "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and
+  Reporting"
+status: draft
+publisher: IBM FDA BEST Project - Data Standards Team
+contact:
+  - name: Jean Duteau
+    telecom:
+      - system: email
+        value: mailto:jean.duteau@ibm.com
+description: A set of profiles that define the data elements needed to detect conditions
+  and observations arising from transfusions or vaccinations that are candidates for Adverse Events as well as profiles
+  that allow the reporting of Adverse Events
+license: CC0-1.0
+fhirVersion: 4.0.1
+dependencies:
+  hl7.fhir.us.core: 3.1.0
+parameters:
+  show-inherited-invariants: false
+copyrightYear: 2020+
+releaseLabel: CI Build
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
+
+menu:
+  Home: index.html
+  Profile Descriptions: profile_listing.html
+  Relationship to US-Core: relationship_to_us-core.html
+  Artifacts:
+    Profiles: artifacts.html#1
+    Extensions: artifacts.html#2
+    Value Sets: artifacts.html#3
+    Code Systems: artifacts.html#4
+    Examples: artifacts.html#5
+  Downloads: downloads.html
