@@ -1,6 +1,7 @@
 ValueSet: TransfusionProcedureCodeVS
 Title: "Codes that represent a transfusion procedure Value Set"
 Description: "Codes that represent a transfusion procedure Value Set"
+* ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved."
 * CPT4#86999 "Unlisted transfusion medicine procedure"
 * CPT4#36430 "Transfusion, blood or blood components"
 * CPT4#36440 "Push transfusion, blood"

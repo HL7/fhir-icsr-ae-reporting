@@ -35,11 +35,11 @@ InstanceOf: VAERSMessageHeader
 Title: "Sample MessageHeader for VAERS"
 Description: "A sample MessageHeader for VAERS ICSR submissions."
 * id = "US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a"
-* destination.endpoint = "CBERVAERS"
-* source.endpoint = "SENDER-IDENTIFIER"
+* destination.endpoint = "http://example.org/CBERVAERS"
+* source.endpoint = "http://example.org/SENDER-IDENTIFIER"
 * sender = Reference(SenderOrganization)
 * eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
-* focus = Reference(SampleVAERSReport)
+* focus = Reference(SampleFAERSReport)
 
 //MessageHeader example
 Instance: SampleFAERSMessageHeader
@@ -47,9 +47,9 @@ InstanceOf: FAERSMessageHeader
 Title: "Sample MessageHeader for FAERS"
 Description: "A sample MessageHeader for FAERS ICSR submissions."
 * id = "US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a"
-* destination.endpoint = "CBERVAERS"
+* destination.endpoint = "http://example.org/CBERVAERS"
 * destination.receiver = Reference(ReceiverOrganization)
-* source.endpoint = "SENDER-IDENTIFIER"
+* source.endpoint = "http://example.org/SENDER-IDENTIFIER"
 * sender = Reference(SenderOrganization)
 * eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
 * focus = Reference(SampleVAERSReport)

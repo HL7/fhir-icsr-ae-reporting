@@ -4,6 +4,7 @@ Description: "Product Codes for Vaccines, from CVX, NDC, and CPT code systems"
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div id='cld'><p>This value set has a large enumerated (extensional) definition.  See 'Definition' in the table above for the definition description.  The full definition is available in the resource instance (see links in 'Source Resource' in the table above).</p></div></div>"
 * ^description = "CVX, NDC, and CPT codes for Vaccines"
+* ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved."
 * CVX#02 "OPV"
 * CVX#03 "MMR"
 * CVX#05 "measles"

@@ -28,6 +28,7 @@ Description: "Vaccination-related Adverse Events from MedDRA"
 ValueSet: AnaphylaxisAdverseEventVS
 Title: "Anaphylaxis Adverse Event Value Set"
 Description: "Codes that represent an Anaphylaxis Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#T78.2  "Anaphylactic shock, unspecified"
 * ICD-10-CM#T80.52  "Anaphylactic reaction due to vaccination"
 * ICD-10-CM#T88.6  "Anaphylactic reaction due to adverse effect of correct drug or medicament properly administered"
@@ -56,6 +57,7 @@ Description: "Codes that represent an Anaphylaxis Adverse Event"
 ValueSet: AnaphylaxisSymptomVS
 Title: "Anaphylaxis Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to an Anaphylaxis adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#H10.2  "Other acute conjunctivitis"
 * ICD-10-CM#H10.3  "Acute conjunctivitis, unspecified"
 * ICD-10-CM#I73.9  "Peripheral vascular disease, unspecified"
@@ -443,6 +445,7 @@ Description: "Codes that represent various symptoms that can lead to an Anaphyla
 ValueSet: BellsPalsyAdverseEventVS
 Title: "Bell's Palsy Adverse Event Value Set"
 Description: "Codes that represent a Bell's Palsy Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#G51.0  "Bell's palsy (Facial palsy)"
 * SNOMED-US#155070005 "Bell's palsy &/or facial palsy"
 * SNOMED-US#193093009 "Bell's palsy"
@@ -460,6 +463,7 @@ Description: "Codes that represent a Bell's Palsy Adverse Event"
 ValueSet: BellsPalsySymptomVS
 Title: "Bell's Palsy Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Bell's Palsy adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#G51.0  "Bell's palsy (Facial palsy)"
 * ICD-10-CM#G60  "Hereditary and idiopathic neuropathy"
 * ICD-10-CM#G60.9  "Hereditary and idiopathic neuropathy, unspecified"
@@ -490,6 +494,7 @@ Description: "Codes that represent various symptoms that can lead to a Bell's Pa
 ValueSet: FebrileSeizureAdverseEventVS
 Title: "Febrile Seizure Adverse Event Value Set"
 Description: "Codes that represent a Febrile Seizure Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#R56.0  "Febrile convulsions"
 * ICD-10-CM#R56.00  "Simple febrile convulsions"
 * ICD-10-CM#R56.01 "Complex febrile convulsions"
@@ -511,6 +516,7 @@ Description: "Codes that represent a Febrile Seizure Adverse Event"
 ValueSet: FebrileSeizureSymptomVS
 Title: "Febrile Seizure Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Febrile Seizure adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#G40.89  "Other seizures"
 * ICD-10-CM#P90  "Convulsions of newborn"
 * ICD-10-CM#R50  "Fever of other and unknown origin"
@@ -649,6 +655,7 @@ Description: "Codes that represent various symptoms that can lead to a Febrile S
 ValueSet: FeverAdverseEventVS
 Title: "Fever Adverse Event Value Set"
 Description: "Codes that represent a Fever Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#R50  "Fever of other and unknown origin"
 * ICD-10-CM#R50.8  "Other specified fever"
 * ICD-10-CM#R50.81  "Fever presenting with conditions classified elsewhere"
@@ -740,6 +747,7 @@ Description: "Codes that represent a Fever Adverse Event"
 ValueSet: FeverSymptomVS
 Title: "Fever Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Fever adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#R50  "Fever of other and unknown origin"
 * ICD-10-CM#R50.8  "Other specified fever"
 * ICD-10-CM#R50.81  "Fever presenting with conditions classified elsewhere"
@@ -836,6 +844,7 @@ Description: "Codes that represent various symptoms that can lead to a Fever adv
 ValueSet: GuillainBarreAdverseEventVS
 Title: "Guillain-Barre Syndrome Adverse Event Value Set"
 Description: "Codes that represent a Guillain-Barre Syndrome Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#G61.0  "Guillain-Barre syndrome"
 * ICD-10-CM#G65.0  "Sequelae of Guillain-Barre syndrome"
 * SNOMED-US#40956001 "Guillain-Barre syndrome"
@@ -850,6 +859,7 @@ Description: "Codes that represent a Guillain-Barre Syndrome Adverse Event"
 ValueSet: GuillainBarreSymptomVS
 Title: "Guillain-Barre Syndrome Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Guillain-Barre Syndrome adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#R29.2  "Abnormal reflex"
 * ICD-10-CM#R53.1  "Weakness"
 * LOINC#2858-9  "Protein in CSF/Protein in serum"
@@ -884,6 +894,7 @@ Description: "Codes that represent various symptoms that can lead to a Guillain-
 ValueSet: IntussusceptionAdverseEventVS
 Title: "Intussusception Adverse Event Value Set"
 Description: "Codes that represent an Intussusception Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#K56.1  "Intussusception"
 * ICD-10-CM#K56.6  "Other and unspecified intestinal obstruction"
 * SNOMED-US#17186003 "Ileocolic intussusception"
@@ -908,6 +919,7 @@ Description: "Codes that represent an Intussusception Adverse Event"
 ValueSet: IntussusceptionSymptomVS
 Title: "Intussusception Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to an Intussusception adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#K56.1  "Intussusception"
 * ICD-10-CM#K56.6  "Other and unspecified intestinal obstruction"
 * ICD-10-CM#K56.60  "Unspecified intestinal obstruction"
@@ -1157,6 +1169,7 @@ Description: "Codes that represent various symptoms that can lead to an Intussus
 ValueSet: ThrombocytopeniaAdverseEventVS
 Title: "Thrombocytopenia Adverse Event Value Set"
 Description: "Codes that represent a Thrombocytopenia Adverse Event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#D69.3  "Idiopathic thrombocytopenic purpura"
 * ICD-10-CM#D69.4  "Other primary thrombocytopenia"
 * ICD-10-CM#D69.49  "Other primary thrombocytopenia"
@@ -1192,6 +1205,7 @@ Description: "Codes that represent a Thrombocytopenia Adverse Event"
 ValueSet: ThrombocytopeniaSymptomVS
 Title: "Thrombocytopenia Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Thrombocytopenia adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#D69  "Purpura and other hemorrhagic conditions"
 * ICD-10-CM#D69.3  "Immune thrombocytopenic purpura"
 * ICD-10-CM#D69.51  "Posttransfusion purpura"
@@ -1519,6 +1533,7 @@ Description: "Codes that represent various symptoms that can lead to a Thrombocy
 ValueSet: VaccineReactionAdverseEventVS
 Title: "Reactions to Vaccines Adverse Event Value Set"
 Description: "Codes that represent a reaction to a vaccine adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.."
 * ICD-10-CM#T50.Z95A  "Adverse effect of other vaccines and biological substances, initial encounter"
 * ICD-10-CM#T50B95A  "Adverse effect of other viral vaccines, initial encounter"
 * ICD-10-CM#T80.89XA  "Other complications following infusion, transfusion and therapeutic injection, initial encounter"
@@ -1532,6 +1547,7 @@ Description: "Codes that represent a reaction to a vaccine adverse event"
 ValueSet: VaccineReactionSymptomVS
 Title: "Reactions to Vaccines Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a reactions to vaccines adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#G89.18  "Other acute postprocedural pain"
 * ICD-10-CM#L02.91  "Cutaneous abscess, unspecified"
 * ICD-10-CM#L03  "Cellulitis and acute lymphangitis"
@@ -1560,6 +1576,7 @@ Description: "Codes that represent various symptoms that can lead to a reactions
 ValueSet: TADAdverseEventVS
 Title: "Transfusion Associated Dyspnea Adverse Event Value Set"
 Description: "Codes that represent a Transfusion Associated Dyspnea adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#R06  "Abnormalities of breathing"
 * ICD-10-CM#R06.0  "Dyspnea"
 * ICD-10-CM#R06.00  "Dyspnea, unspecified"
@@ -1573,6 +1590,7 @@ Description: "Codes that represent a Transfusion Associated Dyspnea adverse even
 ValueSet: TADSymptomVS
 Title: "Transfusion Associated Dyspnea Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Transfusion Associated Dyspnea adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#J80  "Acute respiratory distress syndrome"
 * ICD-10-CM#R06.03  "Acute respiratory distress"
 * SNOMED-US#67782005 "Acute respiratory distress syndrome"
@@ -1581,12 +1599,14 @@ Description: "Codes that represent various symptoms that can lead to a Transfusi
 ValueSet: TACOAdverseEventVS
 Title: "Transfusion-Associated Circulatory Overload Adverse Event Value Set"
 Description: "Codes that represent a Transfusion-Associated Circulatory Overload adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#E87.71  "Transfusion associated circulatory overload"
 * SNOMED-US#35633007 "Transfusion reaction due to excess volume"
 
 ValueSet: TACOSymptomVS
 Title: "Transfusion-Associated Circulatory Overload Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Transfusion-Associated Circulatory Overload adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#E87.8  "Other disorders of electrolyte and fluid balance, not elsewhere classified"
 * ICD-10-CM#I50.1  "Left ventricular failure"
 * ICD-10-CM#I50.814  "Right heart failure due to left heart failure"
@@ -1641,12 +1661,14 @@ Description: "Codes that represent various symptoms that can lead to a Transfusi
 ValueSet: TRALIAdverseEventVS
 Title: "Transfusion-Related Acute Lung Injury Adverse Event Value Set"
 Description: "Codes that represent a Transfusion-Related Acute Lung Injury adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement."
 * ICD-10-CM#J95.84  "Transfusion-related acute lung injury (TRALI)"
 * SNOMED-US#733054008 "Acute lung injury during and following administration of blood product"
 
 ValueSet: TRALISymptomVS
 Title: "Transfusion-Related Acute Lung Injury Symptoms Value Set"
 Description: "Codes that represent various symptoms that can lead to a Transfusion-Related Acute Lung Injury adverse event"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.  This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc."
 * ICD-10-CM#J80  "Acute respiratory distress syndrome"
 * ICD-10-CM#R06.0  "Dyspnea"
 * ICD-10-CM#R06.03  "Acute respiratory distress"

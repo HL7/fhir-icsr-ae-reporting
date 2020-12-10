@@ -136,6 +136,38 @@ Description: "A sample Composition that represents VAERS ICSR header information
 * section[CaseNarrative].text.status = #generated
 * section[CaseNarrative].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div>No adverse event happened.  Not sure why I'm sending this report.</div><div lang='fr'>il n'y a eu aucun événement indésirable</div></div>"
 
+// Sample FAERS Report
+Instance: SampleFAERSReport
+InstanceOf: ICSRComposition
+Title: "Sample ICSR FAERS Report"
+Description: "A sample Composition that represents FAERS ICSR header information."
+* date = 2020-02-10T17:18:00-05:00
+* author = Reference(SampleAuthorRole)
+* author.extension[primarySource].valueBoolean = true
+* category = ReportType#1 "Spontaneous report"
+* identifier.value = "US-IBM-94209fd1-9b0e-1adc-007a-4f5cecb8ce6a"
+* subject = Reference(SampleICSRPatient)
+* extension[firstReceiveDate].valueDateTime = 2020-02-10T17:18:00-05:00
+* extension[mostRecentInfoDate].valueDateTime = 2020-02-10T17:18:00-05:00
+* extension[additionalDocuments].extension[availableFlag].valueBoolean = false
+* extension[expeditedReport].extension[localCriteriaFlag].valueBoolean = false
+* extension[expeditedReport].extension[localCriteriaReportType].valueCodeableConcept = LocalCriteriaReportType#C53578 "Non-Expedited AE"
+* extension[otherCaseIdentifier].valueIdentifier.system = "urn:oid:2.16.840.1.113883.3.989.2.1.3.2"
+* extension[otherCaseIdentifier].valueIdentifier.value = "US-IBM-aed059ac-ef25-6ded-cce2-a8912d6b76ee"
+* extension[firstSenderType].valueCodeableConcept = SenderType#2 "Other"
+* extension[previousCaseIdentifier].valueIdentifier.value = "Other-case-identifier"
+* extension[previousCaseIdentifier].valueIdentifier.assigner.display = "Case identifier source name"
+* extension[reportAmendment].extension[amendmentType].valueCodeableConcept = urn:oid:2.16.840.1.113883.3.989.2.1.1.5#2
+* extension[reportAmendment].extension[amendmentReason].valueString = "Fixed some identifiers"
+* extension[combinationProductReport].valueBoolean = false
+
+* section[ReactionEvent].text.status = #generated
+* section[ReactionEvent].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No events</div>"
+* section[DrugInformation].text.status = #generated
+* section[DrugInformation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No drugs taken</div>"
+* section[CaseNarrative].text.status = #generated
+* section[CaseNarrative].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div>No adverse event happened.  Not sure why I'm sending this report.</div><div lang='fr'>il n'y a eu aucun événement indésirable</div></div>"
+
 
 /* 
 	EXTENSION DEFINITIONS 

@@ -35,7 +35,7 @@
 </ul>
 
 <h4>Additional Notes</h4>
-<p>The FHIR profiles conform to the <a href="http://hl7.org/fhir/us/core/">HL7 FHIR US Core Implementation Guide</a> where applicable and is subject to change with subsequent releases.  See <a href="relationship_to_us-core.html">Relationship to US-Core</a> for more information.</p>
+<p>The FHIR profiles conform to the <a href="{{site.data.fhir.hl7_fhir_us_core}}">HL7 FHIR US Core Implementation Guide</a> where applicable and is subject to change with subsequent releases.  See <a href="relationship_to_us-core.html">Relationship to US-Core</a> for more information.</p>
 
 <h3><a name="AdverseEventValueSetProfiles"></a>Adverse Event Value Sets and Profiles</h3>
 <p>In order to support the detection adverse event cases for reporting, this IG includes a curated list of value sets. These value sets are comprised of ICD-10-CM and SNOMED codes related to adverse event conditions and symptoms.  We have also created profiles on Condition and AdverseEvent that bind these value sets to the appropriate element.</p>
