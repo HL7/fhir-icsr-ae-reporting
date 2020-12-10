@@ -1,0 +1,339 @@
+{
+  "resourceType": "Bundle",
+  "id": "HaleySampleDiaryBundle",
+  "type": "collection",
+  "entry": [
+    {
+		 "resource": {
+	      "resourceType": "Questionnaire",
+	      "meta": {
+	        "profile": [
+	          "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-shape-survey"
+	        ]
+	      },
+	      "extension": [
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-lockedQuestionnaire",
+	          "valueBoolean": true
+	        },
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-archivedQuestionnaire",
+	          "valueBoolean": false
+	        },
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-informedConsentText",
+	          "valueMarkdown": "Informed consent..."
+	        }
+	      ],
+	      "identifier": [
+	        {
+	          "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	          "value": "tJdWNcZRW9JFYW6LhMsj"
+	        }
+	      ],
+	      "title": "For testing purposes.",
+	      "date": "2020-08-24T19:24:25.217Z",
+	      "description": "Only to be modified by Haley.",
+	      "name": "Haley's Demo Survey",
+	      "status": "active"
+	    }
+	},
+    {
+		"resource" : {
+	      "resourceType": "QuestionnaireResponse",
+	      "meta": {
+	        "profile": [
+	          "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ClinicalVisitDiaryEntry"
+	        ]
+	      },
+	      "status": "completed",
+	      "extension": [
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-parentSurvey",
+	          "valueIdentifier": {
+	            "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	            "value": "tJdWNcZRW9JFYW6LhMsj"
+	          }
+	        },
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-parentQuestionnaire",
+	          "valueIdentifier": {
+	            "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	            "value": "ClinicalVisit"
+	          }
+	        }
+	      ],
+	      "item": [
+	        {
+	          "linkId": "visitReason",
+	          "answer": [
+	            {
+	              "valueString": "visit reason"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "eventDate",
+	          "answer": [
+	            {
+	              "valueDate": "2020-11-16"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "prescription",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "1",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/ClinicalVisitPrescriptionAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "GMFCType",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "2",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/ClinicalVisitGMFCTypeAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "GMFCScore",
+	          "answer": [
+	            {
+	              "valueString": "100"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "device",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "1",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/ClinicalVisitDeviceAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "assessers",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "3",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/ClinicalVisitAssessersAnswer"
+	              }
+	            },
+	            {
+	              "valueCoding": {
+	                "code": "5",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/ClinicalVisitAssessersAnswer"
+	              }
+	            }
+	          ]
+	        }
+	      ],
+	      "identifier": {
+	        "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	        "value": "KnH6Yz9G5Tnu2u8whugL"
+	      },
+	      "source": {
+	        "identifier": {
+	          "system": "http://ibm.com/fhir/fda/SHAPE/participantId",
+	          "value": "7777777"
+	        }
+	      },
+	      "authored": "2020-11-16T14:07:06-05:00"
+	  }
+    },
+    {
+		"resource": {
+	      "resourceType": "QuestionnaireResponse",
+	      "meta": {
+	        "profile": [
+	          "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/HealthEventDiaryEntry"
+	        ]
+	      },
+	      "status": "completed",
+	      "extension": [
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-parentSurvey",
+	          "valueIdentifier": {
+	            "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	            "value": "tJdWNcZRW9JFYW6LhMsj"
+	          }
+	        },
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-parentQuestionnaire",
+	          "valueIdentifier": {
+	            "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	            "value": "HealthEvent"
+	          }
+	        }
+	      ],
+	      "item": [
+	        {
+	          "linkId": "healthEvent",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "10",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/HealthEventTypeAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "onsetDate",
+	          "answer": [
+	            {
+	              "valueDate": "2020-11-16"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "outcome",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "7",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/HealthEventOutcomeAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "ongoingStatus",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "1",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/HealthEventOngoingStatusAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "eventTreament",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "2",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/HealthEventTreatmentAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "postEventTreatment",
+	          "answer": [
+	            {
+	              "valueCoding": {
+	                "code": "1",
+	                "system": "http://hl7.org/fhir/us/icsr-ae-reporting/CodeSystem/HealthEventPostEventTreatmentAnswer"
+	              }
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "descriptionData",
+	          "answer": [
+	            {
+	              "valueString": "event description"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "endDate",
+	          "answer": [
+	            {
+	              "valueDate": "2020-11-16"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "healthEventSpecification",
+	          "answer": [
+	            {
+	              "valueString": "other health event"
+	            }
+	          ]
+	        }
+	      ],
+	      "identifier": {
+	        "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	        "value": "PmxQ7DMuZWEtlKgGrcz3"
+	      },
+	      "source": {
+	        "identifier": {
+	          "system": "http://ibm.com/fhir/fda/SHAPE/participantId",
+	          "value": "7777777"
+	        }
+	      },
+	      "authored": "2020-11-16T14:06:10-05:00"
+	  }
+    },
+    {
+		"resource": {
+	      "resourceType": "QuestionnaireResponse",
+	      "meta": {
+	        "profile": [
+	          "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/WithdrawalDiaryEntry"
+	        ]
+	      },
+	      "status": "completed",
+	      "extension": [
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-parentSurvey",
+	          "valueIdentifier": {
+	            "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	            "value": "tJdWNcZRW9JFYW6LhMsj"
+	          }
+	        },
+	        {
+	          "url": "http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/extension-parentQuestionnaire",
+	          "valueIdentifier": {
+	            "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	            "value": "Withdrawal"
+	          }
+	        }
+	      ],
+	      "item": [
+	        {
+	          "linkId": "withdrawalReason",
+	          "answer": [
+	            {
+	              "valueString": "reason for withdrawal"
+	            }
+	          ]
+	        },
+	        {
+	          "linkId": "withdrawalDate",
+	          "answer": [
+	            {
+	              "valueDateTime": "2020-11-19T14:32:05.889-05:00"
+	            }
+	          ]
+	        }
+	      ],
+	      "identifier": {
+	        "system": "http://ibm.com/fhir/fda/SHAPE/identifier",
+	        "value": "eWPNnkW7zCWeNHVV3yF6"
+	      },
+	      "source": {
+	        "identifier": {
+	          "system": "http://ibm.com/fhir/fda/SHAPE/participantId",
+	          "value": "7777777"
+	        }
+	      },
+	      "authored": "2020-11-19T14:32:12-05:00"
+	  }
+    }
+  ]
+}
