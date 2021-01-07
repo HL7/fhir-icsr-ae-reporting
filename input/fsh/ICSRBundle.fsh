@@ -1,3 +1,16 @@
+Profile: FAERSBundle
+Parent: Bundle
+Id: ibm-fda-icsr-faers-bundle
+Title: "FAERS Bundle"
+Description: "The fields needed to create a Bundle for a FAERS ICSR Report."
+* type = #collection
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.rules = #open
+* entry ^slicing.description = "Slice different resources included in the bundle"
+* entry contains Message 1..1 MS
+* entry[Message].resource only FAERSMessageHeader
+
 Profile: VAERSBundle
 Parent: Bundle
 Id: ibm-fda-icsr-vaers-bundle
@@ -11,7 +24,6 @@ Description: "The fields needed to create a Bundle for a VAERS ICSR Report."
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry ^slicing.description = "Slice different resources included in the bundle"
-
 * entry contains Message 1..1 MS
 * entry[Message].resource only VAERSMessageHeader
 
@@ -23,3 +35,10 @@ Description: "The VAERS Bundle with the minimum set of values."
 * timestamp = 2020-02-10T17:18:00.000-05:00
 * entry[Message].fullUrl = "Bundle/SampleVAERSMessageHeader"
 * entry[Message].resource = SampleVAERSMessageHeader
+
+Instance: MinimumFAERSBundle
+InstanceOf: FAERSBundle
+Title: "Minimum FAERS Bundle"
+Description: "The FAERS Bundle with the minimum set of values."
+* entry[Message].fullUrl = "Bundle/SampleFAERSMessageHeader"
+* entry[Message].resource = SampleFAERSMessageHeader

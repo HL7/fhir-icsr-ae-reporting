@@ -8,7 +8,7 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * identifier MS
 * actuality MS
 * actuality = #actual (exactly)
-* category 1..* MS
+* category 0..* MS
 * encounter MS
 * encounter only Reference(USCoreEncounter)
 * event 1..1 MS // Restrict the system to MedDRA
@@ -20,14 +20,14 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * date.extension contains EventEndDate named endDate 0..1
 * recorder MS
 * recorder only Reference(AuthorPractitioner)
-* seriousness 1..1 MS
+* seriousness MS
 * seriousness from ICSRSeriousness (required)
-* outcome 1..1 MS
+* outcome MS
 * location MS
 * location only Reference(USCoreLocation)
 * suspectEntity 1..* MS
 * suspectEntity.instance MS
-* suspectEntity.instance only Reference(ICSRImmunization or ICSRMedicationAdministration)
+* suspectEntity.instance only Reference(ICSRImmunization or ICSRMedicationAdministration or ICSRTransfusion)
 * suspectEntity.instance.extension contains DeviceUse named deviceUse 0..1 MS
 * suspectEntity.causality 1..1 MS
 * suspectEntity.causality.productRelatedness 1..1 MS

@@ -9,8 +9,6 @@ Description: "The common fields needed to represent a transfusion."
 * code from TransfusionProcedureCodeVS (extensible)
 * subject MS 
 * subject only Reference(ICSRPatient)
-* performed[x] MS
-* performed[x] only Period
 * reasonCode MS
 * extension contains UsedProductAmount named usedProductAmount 0..1
 * usedReference.extension contains UsedProduct named usedProduct 0..1

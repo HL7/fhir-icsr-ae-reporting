@@ -4,8 +4,8 @@ Id: ibm-fda-icsr-messageorganization
 Title: "MessageHeader Organization"
 Description: "The fields needed to specify the sender or receiver of an ICSR Report."
 
-* extension contains DepartmentName named departmentName 1..1
-* type 1..1 MS
+* extension contains DepartmentName named departmentName 0..1
+* type 0..1 MS
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
 * telecom ^slicing.discriminator.type = #value
@@ -16,13 +16,13 @@ Description: "The fields needed to specify the sender or receiver of an ICSR Rep
 * telecom[Phone].system = #phone (exactly)
 * telecom[Fax].system = #fax (exactly)
 * telecom[Email].system = #email (exactly)
-* address 1..*
+* address 0..*
 * address.line 1..4
 * address.city 1..1
 * address.state 1..1
 * address.postalCode 1..1
 * address.country 1..1
-* contact 1..* MS
+* contact 0..* MS
 * contact.name 1..1 MS
 
 //Definition of DepartmentName extension

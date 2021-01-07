@@ -64,14 +64,13 @@ Description: "Patient's Date of Last Menstrual Period"
 * value[x] only dateTime
 
 Profile: PatientAgeGroup
-Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns
+Parent: Observation
 Id: ibm-fda-icsr-patientagegroup
 Title: "Descriptive Age Group for the Patient"
 Description: "A descriptive Age Group for the Patient"
-* code = LOINC#8665-2 "Last Menstrual Period Start Date"
+* code = LOINC#46251-5 "Age group"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PatientAgeGroupVS
-
 
 ValueSet: PatientAgeGroupVS
 Title: "Patient Age Group"
