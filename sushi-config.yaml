@@ -34,6 +34,7 @@ menu:
   Home: index.html
   Profile Descriptions: profile_listing.html
   Relationship to US-Core: relationship_to_us-core.html
+  ICSR Mappings: icsr_mappings.html
   Artifacts:
     Profiles: artifacts.html#1
     Extensions: artifacts.html#2

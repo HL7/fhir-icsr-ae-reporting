@@ -19,6 +19,7 @@ Alias: LocalCriteriaReportType = urn:oid:2.16.840.1.113883.3.989.2.1.1.1003
 Alias: AgeGroup = urn:oid:2.16.840.1.113883.3.989.2.1.1.9
 Alias: Seriousness = urn:oid:2.16.840.1.113883.3.989.2.1.1.19
 Alias: HL7ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: RxNorm = http://www.nlm.nih.gov/research/umls/rxnorm
 
 //Identifier Systems
 Alias: NPI = http://hl7.org/fhir/sid/us-npi

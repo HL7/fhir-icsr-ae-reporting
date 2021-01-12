@@ -9,7 +9,6 @@ Description: "The common fields needed for either a FAERS or VAERS drug administ
 * subject only Reference(ICSRPatient)
 * reasonCode MS
 * effective[x] MS
-* effective[x] only Period
 * reasonCode MS
 * medication[x] MS
 * dosage MS
