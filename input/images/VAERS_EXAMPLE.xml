@@ -226,7 +226,7 @@ Notes:
                                                             <kindOfProduct classCode="MMAT" determinerCode="KIND">
                                                                 <!-- MEDICINAL PRODUCT NUMBER AND VERSION-->
                                                                 <!-- MEDICINAL PRODUCT NAME -->
-                                                                <code code="70461-019-03" codeSystem="2.16.840.1.113883.6.69" codeSystemVersion="20210105142444"/>
+                                                                <code code="197782" codeSystem="2.16.840.1.113883.6.88"/>
                                                                 <name>hydrocortisone</name>
                                                             </kindOfProduct>
                                                         </instanceOfKind>
@@ -332,7 +332,7 @@ Notes:
                                     <subject2 typeCode="SUBJ">
                                         <productUseReference classCode="ACT" moodCode="EVN">
                                             <!-- LINKS TO THE DRUG ADMINISTRATION REFERENCE ABOVE -->
-                                            <id root="f8878144-3dc7-d90e-633e-82652c451a8b"/>
+                                            <id root="8d36c8a1-1ad3-a6b4-6ef9-d52bd3c33749"/>
                                         </productUseReference>
                                     </subject2>
                                 </causalityAssessment>
@@ -342,11 +342,11 @@ Notes:
                                     <code code="20" codeSystem="2.16.840.1.113883.3.989.2.1.1.19"/>
                                     <!-- CHARACTERIZATION OF DRUG ROLE - Uses the internal id of the drug administration -->
                                     <!-- B.4.k.1: Characterisation of Drug Role [1]Suspect [2]Concomitant [3]Interacting [4]Drug Not Administered -->
-                                    <value xsi:type="CE" code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.13"/>
+                                    <value xsi:type="CE" code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.13"/>
                                     <subject2 typeCode="SUBJ">
                                         <productUseReference classCode="ACT" moodCode="EVN">
                                             <!-- LINKS TO THE DRUG ADMINISTRATION REFERENCE ABOVE -->
-                                            <id root="f8878144-3dc7-d90e-633e-82652c451a8b"/>
+                                            <id root="e69f88fa-1ae1-78fe-49f3-59ea57a85175"/>
                                         </productUseReference>
                                     </subject2>
                                 </causalityAssessment>
@@ -458,8 +458,7 @@ Notes:
                                         <!-- A.3.4c: Sender's State or Province -->
                                         <!-- A.3.4d: Sender's Postcode -->
                                         <city>city</city>
-                                        <state>state</state>
-                                        <county>county</county>
+                                        <state>CA</state>
                                         <postalCode>postcode</postalCode>
                                     </addr>
                                     <telecom value="tel:+01 123 456 78"/>

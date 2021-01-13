@@ -241,7 +241,7 @@ Description: "Connecathon VAERS Sender"
 * telecom[Email].value = "email@city.us"
 * address.line = "street"
 * address.city = "city"
-* address.state = "state"
+* address.state = "CA"
 * address.postalCode = "postcode"
 * address.country = "US"
 * contact.name.given = "sender gname"
@@ -344,7 +344,7 @@ Title: "VAERS Hydrocortisone Administration"
 Description: "Hydrocortisone Administration for Connectathon VAERS report."
 * subject = Reference(VAERSPatient)
 * status = #completed
-* medicationCodeableConcept = RxNorm#197782 "hydrocortisone 10 MG Oral Tablet"
+* medicationCodeableConcept = RxNorm#197782
 * effectiveDateTime = 2017-04-23
 
 Instance: VAERSExampleImmunization
