@@ -37,16 +37,26 @@ Parent: ICSRAdverseEvent
 Id: ibm-fda-vaers-adverseevent
 Title: "VAERS Adverse Event"
 Description: "ICSR Adverse Event with a value set of vaccination-related events"
-
 * event from MedDRAVaccinationAdverseEventVS (extensible)
+* suspectEntity ^slicing.discriminator.type = #type
+* suspectEntity ^slicing.discriminator.path = "instance.resolve()"
+* suspectEntity ^slicing.rules = #open
+* suspectEntity ^slicing.description = "Slice based on the allowed suspect entity."
+* suspectEntity contains Immunization 1..1 MS
+* suspectEntity[Immunization].instance only Reference(ICSRImmunization)
 
 Profile: FAERSAdverseEvent
 Parent: ICSRAdverseEvent
 Id: ibm-fda-faers-adverseevent
 Title: "FAERS Adverse Event"
 Description: "ICSR Adverse Event with a value set of transfusion-related events"
-
 * event from MedDRATransfusionAdverseEventVS (extensible)
+* suspectEntity ^slicing.discriminator.type = #type
+* suspectEntity ^slicing.discriminator.path = "instance.resolve()"
+* suspectEntity ^slicing.rules = #open
+* suspectEntity ^slicing.description = "Slice based on the allowed suspect entity."
+* suspectEntity contains Transfusion 1..1 MS
+* suspectEntity[Transfusion].instance only Reference(ICSRTransfusion)
 
 // Extension: duration of event
 Extension: EventDuration

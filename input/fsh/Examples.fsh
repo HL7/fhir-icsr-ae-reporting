@@ -147,8 +147,8 @@ Description: "Sample FAERS Event created for Connectathon."
 * date = 2000-01-01
 * date.extension[endDate].valueDateTime = 2019-01-20
 * date.extension[eventDuration].valueDuration = 19.05 'a'
-* suspectEntity[0].instance = Reference(FAERSExampleTransfusion)
-* suspectEntity[0].causality.productRelatedness = "Suspect"
+* suspectEntity[Transfusion].instance = Reference(FAERSExampleTransfusion)
+* suspectEntity[Transfusion].causality.productRelatedness = "Suspect"
 * suspectEntity[1].instance = Reference(FAERSEpinephrine)
 * suspectEntity[1].causality.productRelatedness = "Concomitant"
 * suspectEntity[2].instance = Reference(FAERSDiphenhydramine)
@@ -333,8 +333,8 @@ Description: "Sample VAERS Event created for Connectathon."
 * date = 2017-04-23
 * seriousness = Seriousness#26
 * outcome = http://terminology.hl7.org/CodeSystem/adverse-event-outcome#recovering
-* suspectEntity[0].instance = Reference(VAERSExampleImmunization)
-* suspectEntity[0].causality.productRelatedness = "Suspect"
+* suspectEntity[Immunization].instance = Reference(VAERSExampleImmunization)
+* suspectEntity[Immunization].causality.productRelatedness = "Suspect"
 * suspectEntity[1].instance = Reference(VAERSHydrocortisoneAdministration)
 * suspectEntity[1].causality.productRelatedness = "Concomitant"
 
