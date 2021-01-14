@@ -209,12 +209,12 @@ Description: "The FAERS Bundle for the Connecathon sample."
 * entry[8].resource = FAERSExampleEvent
 * entry[9].fullUrl = "Procedure/FAERSExampleTransfusion"
 * entry[9].resource = FAERSExampleTransfusion
-* entry[9].fullUrl = "BiologicallyDerivedProduct/FAERSBloodProduct"
-* entry[9].resource = FAERSBloodProduct
-* entry[9].fullUrl = "MedicationAdministration/FAERSEpinephrine"
-* entry[9].resource = FAERSEpinephrine
-* entry[9].fullUrl = "MedicationAdministration/FAERSDiphenhydramine"
-* entry[9].resource = FAERSDiphenhydramine
+* entry[10].fullUrl = "BiologicallyDerivedProduct/FAERSBloodProduct"
+* entry[10].resource = FAERSBloodProduct
+* entry[11].fullUrl = "MedicationAdministration/FAERSEpinephrine"
+* entry[11].resource = FAERSEpinephrine
+* entry[12].fullUrl = "MedicationAdministration/FAERSDiphenhydramine"
+* entry[12].resource = FAERSDiphenhydramine
 
 Instance: ConnectathonVAERSMessageHeader
 InstanceOf: VAERSMessageHeader
