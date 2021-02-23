@@ -31,7 +31,8 @@ releaseLabel: CI Build
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 
 menu:
-  Home: index.html
+  Overview: index.html
+  AE Algorithms: algorithms.html
   Profile Descriptions: profile_listing.html
   Relationship to US-Core: relationship_to_us-core.html
   ICSR Mappings: icsr_mappings.html
@@ -41,4 +42,15 @@ menu:
     Value Sets: artifacts.html#3
     Code Systems: artifacts.html#4
     Examples: artifacts.html#5
-  Downloads: downloads.html
+
+pages:
+  index.md:
+    title: Overview
+  algorithms.md:
+    title: Adverse Event Algorithms
+  profile_listing.md:
+    title: Profile Descriptions
+  relationship_to_us-core.md:
+    title: Relationship to US-Core
+  icsr_mappings.md:
+    title: ICSR Mappings
