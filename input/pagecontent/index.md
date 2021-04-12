@@ -31,4 +31,4 @@ The development of this Implementation Guide was funded by FDA Center for Biolog
 * FDA CBER BEST IBM Project Team
 * Jean Duteau (mailto: jean@duteaudesign.com)
 * Shayan Hobbi (mailto: shayan.hobbi@ibm.com)
-* Will Rosenfeld (mailto: will.rosenfeld@ibm.com)
+* Will Rosenfeld (mailto: wtrosenf@us.ibm.com)
