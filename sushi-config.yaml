@@ -36,12 +36,7 @@ menu:
   Profile Descriptions: profile_listing.html
   Relationship to US-Core: relationship_to_us-core.html
   ICSR Mappings: icsr_mappings.html
-  Artifacts:
-    Profiles: artifacts.html#1
-    Extensions: artifacts.html#2
-    Value Sets: artifacts.html#3
-    Code Systems: artifacts.html#4
-    Examples: artifacts.html#5
+  Artifacts: artifacts.html
 
 pages:
   index.md:
@@ -54,3 +49,5 @@ pages:
     title: Relationship to US-Core
   icsr_mappings.md:
     title: ICSR Mappings
+
+groups: 

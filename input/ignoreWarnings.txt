@@ -12,30 +12,67 @@ Error from server: Unable to provide support for code system urn:oid:2.16.840.1.
 Error from server: Unable to provide support for code system http://meddra.org
 Unknown System specified, so Concepts and Filters can''t be checked
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.9
-
-# We don't have examples for every profile and extension
-The Implementation Guide contains no examples for this profile
-The Implementation Guide contains no examples for this extension
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/VaccineCodeVS because the value set or code system is not known to the validator]
 
 # US Core Variances (approval still to be sought)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+
+# Bundle slicing that won't match due to only specific slices being specified
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-faers-adverseevent
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-vaers-adverseevent
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-bundle
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-bundle
 
 # Validation information messages
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-bundle
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-bundle
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-messageheader
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-messageheader - listed in meta
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-messageheader
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-messageheader - listed in meta
 Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-composition
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-composition - listed in meta
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-messageorganization
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-messageorganization - listed in meta
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patient
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patient - listed in meta
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patientagegroup
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patientagegroup - listed in meta
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitioner
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitioner - listed in meta
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitionerrole
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitionerrole - listed in meta
 Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorrelatedperson
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/AdverseEvent
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-faers-adverseevent
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-faers-adverseevent - listed in meta
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-vaers-adverseevent
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-vaers-adverseevent - listed in meta
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-bloodproduct
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-bloodproduct - listed in meta
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-aecountobservation
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-exposurecountobservation
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Procedure
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-transfusion
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-transfusion - listed in meta
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationAdministration
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-medicationadministration
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-medicationadministration - listed in meta
+Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-immunization
+Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-immunization - listed in meta
 
 # Codes from ICD-10 that aren't in the terminology server
 The code R11.3 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
@@ -45,7 +82,14 @@ The code T81.1XXA is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 The code T81.1XXS is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 The code T50B95A is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 
+# Codes from ICCBBA are not in the terminology server
+Code System URI 'https://iccbba.org/standardterminology' is unknown so the code cannot be validated
+
 # Codes from ICSR-specific value set
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/ICSRSeriousness because the value set or code system is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/PatientAgeGroupVS because the value set or code system is not known to the validator]
+Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated
 The code 34 is not valid in the system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
 The code 21 is not valid in the system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
 The code 33 is not valid in the system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
@@ -61,6 +105,9 @@ The code C50414 is not valid in the system http://ncimeta.nci.nih.gov
 The code C102450 is not valid in the system http://ncimeta.nci.nih.gov
 
 # Codes from MedDRA that aren't in the terminology server
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/MedDRAVaccinationAdverseEventVS because the value set or code system is not known to the validator]
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/MedDRATransfusionAdverseEventVS because the value set or code system is not known to the validator]
+Code System URI 'http://meddra.org' is unknown so the code cannot be validated
 The code 10052235 is not valid in the system http://meddra.org
 The code 10066173 is not valid in the system http://meddra.org
 The code 10066174 is not valid in the system http://meddra.org
@@ -82,6 +129,8 @@ The code 10063979 is not valid in the system http://meddra.org
 The code 10022863 is not valid in the system http://meddra.org
 
 # Codes from CPT that aren't in the terminology server
+[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/TransfusionProcedureCodeVS because the value set or code system is not known to the validator]
+Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 The code 86999 is not valid in the system http://www.ama-assn.org/go/cpt
 The code 36430 is not valid in the system http://www.ama-assn.org/go/cpt
 The code 36440 is not valid in the system http://www.ama-assn.org/go/cpt

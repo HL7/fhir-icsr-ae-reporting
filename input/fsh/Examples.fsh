@@ -115,6 +115,8 @@ Description: "The role of the reporter in an ICSR report"
 
 Instance: BESTAuthor
 InstanceOf: AuthorPractitioner
+Title: "BEST Author of ICSR Reports"
+Description: "The author information for an ICSR report"
 * name.family = "NI"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "NI"
@@ -165,6 +167,8 @@ Description: "Sample FAERS Transfusion for Connectathon."
 
 Instance: FAERSBloodProduct
 InstanceOf: ICSRBloodProduct
+Title: "Sample Blood Product"
+Description: "Sample FAERS Blood Product"
 * productCode = ISBT#E7003 "Apheresis PLATELETS|ACD-A>PAS-C/XX/20-24C|ResLeu:<5E6|2nd container"
 
 Instance: FAERSEpinephrine
@@ -307,6 +311,8 @@ Description: "The role of the reporter in an ICSR report"
 
 Instance: VAERSAuthor
 InstanceOf: AuthorPractitioner
+Title: "VAERS Author of ICSR Reports"
+Description: "The author information for a VAERS ICSR report"
 * name.given = "asdhj"
 * name.family = "Admin"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
@@ -350,6 +356,7 @@ Description: "Hydrocortisone Administration for Connectathon VAERS report."
 Instance: VAERSExampleImmunization
 InstanceOf: ICSRImmunization
 Title: "VAERS Sample Immunization for Connectathon Sample"
+Description: "Sample Immunization information for VAERS Sample"
 * patient = Reference(VAERSPatient)
 * status = #completed
 * vaccineCode = NDC#7046101903

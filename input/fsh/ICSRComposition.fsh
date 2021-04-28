@@ -54,9 +54,11 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section ^slicing.description = "Slice based on the different sections that are needed in an ICSR document."
-* section contains PatientInformation 0..1 and RelevantMedicalHistory 0..1 and RelevantPastDrugHistory 0..1 and InCaseOfDeath 0..1 and ParentInformation 0..1 and
-	ReactionEvent 1..1 and RelevantLabTestResults 0..1 and DrugInformation 1..1 and VAERSVaccines 0..1 and CaseNarrative 1..1 and
-	CaseReporterComments 0..1 and CaseSenderDiagnosis 0..1 and CaseSenderComments 0..1
+* section contains PatientInformation 0..1 and RelevantMedicalHistory 0..1 and RelevantPastDrugHistory 0..1 and 
+	InCaseOfDeath 0..1 and ParentInformation 0..1 and ReactionEvent 1..1 and RelevantLabTestResults 0..1 and 
+	DrugInformation 1..1 and VAERSVaccines 0..1 and CaseNarrative 1..1 and
+	CaseReporterComments 0..1 and CaseSenderDiagnosis 0..1 and CaseSenderComments 0..1 and
+	DataSourceInformation 0..1
 * section[PatientInformation].code = ICSRSectionCodeCS#PatientInformation
 * section[PatientInformation].title = "Patient Information"
 * section[PatientInformation].entry only Reference(Observation)
@@ -99,7 +101,9 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * section[CaseSenderDiagnosis].code = ICSRSectionCodeCS#CaseSenderDiagnosis
 * section[CaseSenderDiagnosis].title = "Case Sender's Diagnosis"
 * section[CaseSenderDiagnosis].entry only Reference(Condition)
-
+* section[DataSourceInformation].code = ICSRSectionCodeCS#DataSourceInformation
+* section[DataSourceInformation].title = "Information about the Data Source of the AE information"
+* section[DataSourceInformation].entry only Reference(AECountObservation or ExposureCountObservation)
 
 /* 
 	SAMPLES 
@@ -167,6 +171,20 @@ Description: "A sample Composition that represents FAERS ICSR header information
 * section[DrugInformation].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>No drugs taken</div>"
 * section[CaseNarrative].text.status = #generated
 * section[CaseNarrative].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div>No adverse event happened.  Not sure why I'm sending this report.</div><div lang='fr'>il n'y a eu aucun événement indésirable</div></div>"
+* section[DataSourceInformation].entry[0] = Reference(SampleAECountObservation)
+* section[DataSourceInformation].entry[1] = Reference(SampleExposureCountObservation)
+
+Instance: SampleAECountObservation
+InstanceOf: AECountObservation
+Title: "Sample Adverse Event Count Observation"
+Description: "An example of an Adverse Event Count Observation"
+* valueInteger = 20
+
+Instance: SampleExposureCountObservation
+InstanceOf: ExposureCountObservation
+Title: "Sample Exposure Count Observation"
+Description: "An example of an Exposure Count Observation"
+* valueInteger = 25432
 
 
 /* 
@@ -235,11 +253,32 @@ Description: "Information about report amendments that have been made"
 * extension[amendmentType].value[x] only CodeableConcept
 * extension[amendmentReason].value[x] only string
 
+/*
+	COMPOSITION-SPECIFIC OBSERVATIONS
+*/
+Profile: AECountObservation
+Parent: Observation
+Id: ibm-fda-icsr-aecountobservation
+Description: "Recording the number of Adverse Events that were detected by the algorithm"
+* status = #final
+* code = DataSourceObservationCodeCS#AdverseEventCount
+* value[x] 1..1 MS
+* value[x] only integer
+
+Profile: ExposureCountObservation
+Parent: Observation
+Id: ibm-fda-icsr-exposurecountobservation
+Description: "Recording the number of Exposures that were detected by the algorithm"
+* status = #final
+* code = DataSourceObservationCodeCS#ExposureCount
+* value[x] 1..1 MS
+* value[x] only integer
+
 /* 
 	TERMINOLOGY ARTIFACTS 
 */
 CodeSystem: ICSRSectionCodeCS
-Title: "ICSR Section Codes"
+Title: "ICSR Section Codes Code System"
 Description: "Codes for each of the sections in an ICSR report"
 * #PatientInformation
 * #RelevantMedicalHistory
@@ -254,8 +293,15 @@ Description: "Codes for each of the sections in an ICSR report"
 * #CaseReporterComments
 * #CaseSenderDiagnosis
 * #CaseSenderComments
+* #DataSourceInformation
 
 ValueSet: ICSRSectionCodeVS
-Title: "ICSR Section Codes"
+Title: "ICSR Section Codes Value Set"
 Description: "Codes for each of the sections in an ICSR report"
 * codes from system ICSRSectionCodeCS
+
+CodeSystem: DataSourceObservationCodeCS
+Title: "ICSR Data Source Observation Codes Code System"
+Description: "Codes to describe information about the ICSR data source"
+* #AdverseEventCount "Adverse Event Count (Algorithm Numerator)"
+* #ExposureCount "Exposure Count (Algorithm Denominator)"

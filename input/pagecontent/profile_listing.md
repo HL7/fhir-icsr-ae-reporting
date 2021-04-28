@@ -21,6 +21,13 @@
 <h4>Common Profiles</h4>
 <ul>
 	<li><a href="StructureDefinition-ibm-fda-icsr-composition.html">Composition</a> - the header of an ICSR report</li>
+	<li>ICSR Report Author
+		<ul>
+			<li><a href="StructureDefinition-ibm-fda-icsr-authorpractitioner.html">Practitioner</a></li>
+			<li><a href="StructureDefinition-ibm-fda-icsr-authorpractitionerrole.html">PractitionerRole</a></li>
+			<li><a href="StructureDefinition-ibm-fda-icsr-authorrelatedperson.html">RelatedPerson</a></li>
+		</ul>
+	</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-patient.html">Patient</a>
 		<ul>
 			<li><a href="StructureDefinition-ibm-fda-icsr-patientagegroup.html">Patient Age Group Observation</a></li>
@@ -32,6 +39,12 @@
 	<li><a href="StructureDefinition-ibm-fda-icsr-messageorganization.html">Report Submission Organization</a> - represents organizations that are senders/receivers of an ICSR report</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-adverseevent.html">Adverse Event</a> - the common fields needed to represent an Adverse Event</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-medicationadministration.html">Drug Administration</a> - the specific fields needed to represent a drug administration</li>
+	<li>Algorithm Count Observations
+		<ul>
+			<li><a href="StructureDefinition-ibm-fda-icsr-aecountobservation.html">Adverse Event Count Observation</a> - conveys the number of adverse events detected by the algorithm</li>
+			<li><a href="StructureDefinition-ibm-fda-icsr-exposurecountobservation.html">Exposure Count Observation</a> - conveys the number of exposures detected by the algorithm</li>
+		</ul>
+	</li>
 </ul>
 
 <h4>Additional Notes</h4>
