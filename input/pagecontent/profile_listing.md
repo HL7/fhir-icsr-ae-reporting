@@ -1,4 +1,4 @@
-<h3><a name="Profiles"></a>FHIR ICSR Profiles</h3>
+<h3><a name="Profiles"></a>AE Reporting Profiles</h3>
 <p>This IG specifies two overlapping sets of profiles for formatting an ICSR submission using FHIR resources.  The first set is for a VAERS report that represents an ICSR R3 report as a Bundle of MessageHeaders pointing to a Composition.  The other set is for a FAERS report that represents an ICSR R2 report as just a MessageHeader pointing to a Composition.  Lastly, there is a set of common profiles applicable to both domains.</p>
 
 <h4>VAERS Profiles</h4>
@@ -6,11 +6,12 @@
 	<li><a href="StructureDefinition-ibm-fda-icsr-vaers-bundle.html">VAERS Bundle</a> - representing a set of ICSR report submissions</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-vaers-messageheader.html">VAERS MessageHeader</a> - the specific constraints on a VAERS report submission</li>
 	<li><a href="StructureDefinition-ibm-fda-vaers-adverseevent.html">VAERS Adverse Event</a> - the Adverse Event profile with a binding to Vaccination-related event codes</li>
-	<li><a href="StructureDefinition-ibm-fda-icsr-immunization.html">Immunization</a></li>
+	<li><a href="StructureDefinition-ibm-fda-icsr-immunization.html">Immunization</a> - the profile which provides specific fields to support a VAERS submission </li>
 </ul>
 
 <h4>FAERS Profiles</h4>
 <ul>
+	<li><a href="StructureDefinition-ibm-fda-icsr-faers-bundle.html">FAERS Bundle</a> - representing a set of ICSR report submissions</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-faers-messageheader.html">FAERS MessageHeader</a> - the specific constraints on a VAERS report submission</li>
 	<li><a href="StructureDefinition-ibm-fda-faers-adverseevent.html">FAERS Adverse Event</a> - the Adverse Event profile with a binding to Transfusion-related event codes</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-transfusion.html">Transfusion</a> - the specific fields needed to represent a transfusion procedure</li>
@@ -50,11 +51,9 @@
 <h4>Additional Notes</h4>
 <p>The FHIR profiles conform to the <a href="{{site.data.fhir.hl7_fhir_us_core}}">HL7 FHIR US Core Implementation Guide</a> where applicable and is subject to change with subsequent releases.  See <a href="relationship_to_us-core.html">Relationship to US-Core</a> for more information.</p>
 
-<h3><a name="AdverseEventValueSetProfiles"></a>Adverse Event Value Sets and Profiles</h3>
-<p>In order to support the detection adverse event cases for reporting, this IG includes a curated list of value sets. These value sets are comprised of ICD-10-CM and SNOMED codes related to adverse event conditions and symptoms.  We have also created profiles on Condition and AdverseEvent that bind these value sets to the appropriate element.</p>
-<p>Note that the FDA CBER BEST initiative is developing and validating portable computational phenotype algorithms to ensure robust detection of adverse events. Updated references to the value sets (and term sets) used by these algorithms will be added to this IG in the future.</p>
-
-<p>Note that the FDA CBER BEST initiative is developing and validating portable computational phenotype algorithms to ensure robust detection of adverse events. Updated references to the value sets (and term sets) used by these algorithms will be added to this IG in the future.</p>
+<h3><a name="AdverseEventValueSetProfiles"></a>AE Detection Profiles & Value Sets</h3>
+<p>This IG includes a curated list of value sets to support AE detection. These value sets are comprised of ICD-10-CM and SNOMED codes related to AE conditions and symptoms.  The IG also contains profiles on Condition and AdverseEvent that bind these value sets to the appropriate element.</p>
+<p>Note that the FDA CBER BEST initiative is developing and validating portable and computable algorithms to ensure robust detection of adverse events. Updated references to the value sets (and term sets) used by these algorithms will be added to this IG in the future.</p>
 
 <h4><a name="Vaccine AE Valuesets"></a>Vaccine AEFI Value Sets</h4>
 <ul>
