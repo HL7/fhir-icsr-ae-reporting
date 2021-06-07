@@ -1,6 +1,6 @@
 ### Overview
 
-This FHIR Implementation Guide details a process where EHR FHIR data is analyzed to detect Adverse Events due to biologic products, such as vaccines and blood products.  There are a set of profiles that allow the creation of a FHIR-based ICSR report.  This FHIR-based ICSR report has been mapped to the ICH ICSR specifications, specifically FDA's FAERS and VAERS implementation of those specifications.  To facilitate the detection of Adverse Events, a number of algorithms developed for FDA's Center for Biologic Evaluation and Research (CBER) Biologics Effectiveness and Safety (BEST) initiatve.  A subset of those algorithms are presented in this guide.
+This FHIR Implementation Guide details a process where adverse event (AE) individual case safety reports (ICSR) are generated from EHR data. There are two main components to this process: detection and reporting.  To support AE detection, this IG includes a set of Clinical Quality Language (CQL) algorithms which can be run on FHIR data.  To support AE reporting, this IG includes a set of profiles that enables the creation of a FHIR-based ICSR report and mappings to ICH ICSR specification (FAERS and VAERS implementation of those specifications).  This work was developed as part of the FDA's Center for Biologic Evaluation and Research (CBER) Biologics Effectiveness and Safety (BEST) initiatve. This IG currently focuses on post-vaccination and post-tranfusion AE reporting.
 
 ### Adverse Event Detection and Submission Process
 
@@ -13,20 +13,20 @@ This FHIR Implementation Guide details a process where EHR FHIR data is analyzed
 
 
 #### Detect Adverse Event Case
-Using EHR FHIR Data, a practitioner can manually detect or can use the algorithms defined in this guide to detect specific Adverse Event cases.
+A system can detect AE cases automatically using the FHIR-based CQL <li><a href="Algorithms.html">algorithms</a></li> referenced in this IG or a practitioner can manually detect AE cases.
 
 #### Generate FHIR AdverseEvent Resource
-A practitioner can look at the detected Adverse Event case and confirm an actual Adverse Event and then create an instance of the AdverseEvent resource.
+A system can generate an instance of the FHIR AdverseEvent resource - this action may be preceeded by a practitioner performing a clinical review of the AE case.
 
 #### Generate FHIR-based ICSR Document
-Using the profiles in this Implementation Guide, the a FHIR-based ICSR document can be generated.
+A system can generate a FHIR-based ICSR document using the <li><a href="profile_listing.html#common-profiles">Common Profiles</a></li> referenced in this IG.
 
-#### Transform to applicable VAERS/FAERS ICSR XML format
-A mapping document and sample XSL transforms are provided in this Implementation Guide that allows the FHIR-based ICSR document to be transformed into the appropriate XML format to allow for submission to FDA's VAERS or FAERS systems.
+#### Transform to Applicable VAERS/FAERS ICSR XML Format
+A system can further transform the ICSR document to the appropriate XML formal for submission to the FDA FAERS and VAERS systems. This IG provides sample <li><a href="icsr_mappings.html">ICSR Mapping</a></li> XSL transformations.
 
 ### Authors
 
-The development of this Implementation Guide was funded by FDA Center for Biologic Evaluation and Research (CBER) as part of the Biologic Effectiveness and Safety (BEST) initiative.
+The development of this Implementation Guide was funded by FDA CBER BEST initiative.
 
 * FDA CBER BEST IBM Project Team
 * Jean Duteau (mailto: jean@duteaudesign.com)
