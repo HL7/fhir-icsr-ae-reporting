@@ -18,7 +18,6 @@ Parent: BiologicallyDerivedProduct
 Id: ibm-fda-icsr-bloodproduct
 Title: "ICSR Blood Product"
 Description: "The common fields needed to represent a blood product used in a transfusion."
-
 * productCategory = #cells (exactly)
 * productCode from ISBTBloodProductCodeVS (extensible)
 * collection.extension contains DonorIdentifier named donorIdentifier 0..1
@@ -30,8 +29,7 @@ Parent: BiologicallyDerivedProduct
 Id: ibm-fda-icsr-convalescentplasma
 Title: "ICSR Convalescent Plasma"
 Description: "The common fields needed to represent convalescent plasma used in a transfusion."
-
-* productCategory = #cells (exactly)
+* productCategory = #fluid (exactly)
 * productCode from ISBTConvalescentPlasmaCodeVS (extensible)
 * collection.extension contains DonorIdentifier named donorIdentifier 0..1
 * processing MS

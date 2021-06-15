@@ -11,7 +11,7 @@
 
 <h4>FAERS Profiles</h4>
 <ul>
-	<li><a href="StructureDefinition-ibm-fda-icsr-faers-messageheader.html">FAERS MessageHeader</a> - the specific constraints on a VAERS report submission</li>
+	<li><a href="StructureDefinition-ibm-fda-icsr-faers-messageheader.html">FAERS MessageHeader</a> - the specific constraints on a FAERS report submission</li>
 	<li><a href="StructureDefinition-ibm-fda-faers-adverseevent.html">FAERS Adverse Event</a> - the Adverse Event profile with a binding to Transfusion-related event codes</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-transfusion.html">Transfusion</a> - the specific fields needed to represent a transfusion procedure</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-bloodproduct.html">Blood Product</a> - information about the blood product that was used in a transfusion</li>
@@ -38,7 +38,7 @@
     </li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-messageorganization.html">Report Submission Organization</a> - represents organizations that are senders/receivers of an ICSR report</li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-adverseevent.html">Adverse Event</a> - the common fields needed to represent an Adverse Event</li>
-	<li><a href="StructureDefinition-ibm-fda-icsr-medicationadministration.html">Drug Administration</a> - the specific fields needed to represent a drug administration</li>
+	<li><a href="StructureDefinition-ibm-fda-icsr-medicationadministration.html">Medication Administration</a> - the specific fields needed to provide the required detail to report a medication administration</li>
 	<li>Algorithm Count Observations
 		<ul>
 			<li><a href="StructureDefinition-ibm-fda-icsr-aecountobservation.html">Adverse Event Count Observation</a> - conveys the number of adverse events detected by the algorithm</li>
@@ -52,8 +52,6 @@
 
 <h3><a name="AdverseEventValueSetProfiles"></a>Adverse Event Value Sets and Profiles</h3>
 <p>In order to support the detection adverse event cases for reporting, this IG includes a curated list of value sets. These value sets are comprised of ICD-10-CM and SNOMED codes related to adverse event conditions and symptoms.  We have also created profiles on Condition and AdverseEvent that bind these value sets to the appropriate element.</p>
-<p>Note that the FDA CBER BEST initiative is developing and validating portable computational phenotype algorithms to ensure robust detection of adverse events. Updated references to the value sets (and term sets) used by these algorithms will be added to this IG in the future.</p>
-
 <p>Note that the FDA CBER BEST initiative is developing and validating portable computational phenotype algorithms to ensure robust detection of adverse events. Updated references to the value sets (and term sets) used by these algorithms will be added to this IG in the future.</p>
 
 <h4><a name="Vaccine AE Valuesets"></a>Vaccine AEFI Value Sets</h4>

@@ -13,6 +13,9 @@ Alias:   USCoreProcedure = http://hl7.org/fhir/us/core/StructureDefinition/us-co
 Alias:   USCoreObservationLab = http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab
 Alias:   USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 
+Alias:   USPublicHealthReportingBundle = http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-reporting-bundle
+Alias:   USPublicHealthMessageHeader = http://hl7.org/fhir/us/medmorph/StructureDefinition/us-ph-messageheader
+
 // Extensions
 Alias:   USCoreBirthSex = http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 Alias:   USCoreRace = http://hl7.org/fhir/us/core/StructureDefinition/us-core-race

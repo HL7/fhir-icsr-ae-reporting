@@ -1,6 +1,6 @@
-<p>We have tried to have the FHIR profiles conform to the HL7 FHIR US Core Implementation Guide where applicable.  Below is a summary of the differences between the three sets of profiles and US-Core:</p>
+<p>We have tried to have the FHIR profiles conform to the HL7 FHIR US Core Implementation Guide where applicable.  Below is a summary of the differences between the profiles defined in this guide and the US-Core profiles:</p>
 
-<h3><a name="ICSRSubmissionProfiles"></a>ICSR Submission Profiles</h3>
+<h3>Differences from IG-defined Profiles to US-Core</h3>
 <ul>
 <li>Patient: Added militaryStatus extension</li>
 <li>Practitioner: Added mustSupport to: telecom, address</li>
@@ -31,10 +31,4 @@
 <li>BiologicallyDerivedProduct: Not in US-Core</li>
 <li>Vital Signs: Used without change for Weight, Height, LastMenstrualPeriod, AgeGroup</li>
 <li>AdverseEvent: Not in US-Core</li>
-</ul>
-
-<h3><a name="CaseDetectionProfiles"></a>Case Detection Profiles</h3>
-<ul>
-	<li>AdverseEvent: Not in US-Core</li>
-	<li>Condition: Used without changes</li>
 </ul>

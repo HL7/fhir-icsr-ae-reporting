@@ -1,15 +1,58 @@
+Instance: SampleVAERSMessageHeader
+InstanceOf: VAERSMessageHeader
+Title: "Sample MessageHeader for VAERS"
+Description: "A sample MessageHeader for VAERS ICSR submissions."
+* id = "US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a"
+* extension[messageProcessingCategory].valueCode = http://hl7.org/fhir/message-significance-category#notification
+* destination.endpoint = "http://example.org/CBERVAERS"
+* source.endpoint = "http://example.org/SENDER-IDENTIFIER"
+* sender = Reference(SenderOrganization)
+* eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
+* reason = http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents#received-public-health-report
+* focus = Reference(SampleVAERSReport)
+
+Instance: SampleFAERSMessageHeader
+InstanceOf: FAERSMessageHeader
+Title: "Sample MessageHeader for FAERS"
+Description: "A sample MessageHeader for FAERS ICSR submissions."
+* id = "US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a"
+* extension[messageProcessingCategory].valueCode = http://hl7.org/fhir/message-significance-category#notification
+* destination.endpoint = "http://example.org/CBERFAERS"
+* destination.receiver = Reference(ReceiverOrganization)
+* source.endpoint = "http://example.org/SENDER-IDENTIFIER"
+* sender = Reference(SenderOrganization)
+* eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
+* reason = http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents#received-public-health-report
+* focus = Reference(SampleFAERSReport)
+
 Instance: ConnectathonFAERSMessageHeader
 InstanceOf: FAERSMessageHeader
 Title: "Sample MessageHeader for FAERS report for Connecathon"
 Description: "MessageHeader for Connectathon FAERS ICSR submission."
 * id = "beafb541-3eab-eb9e-1bf1-5fa477d56e77"
 * meta.lastUpdated = 2021-01-05T14:14:39+06:00
+* extension[messageProcessingCategory].valueCode = http://hl7.org/fhir/message-significance-category#notification
 * destination.endpoint = "http://example.org/ZZFDA"
 * destination.receiver = Reference(FDA)
 * source.endpoint = "http://example.org/BEST-Pilot"
 * sender = Reference(BESTPrototype)
 * eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
+* reason = http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents#received-public-health-report
 * focus = Reference(FAERSExample)
+
+Instance: ConnectathonVAERSMessageHeader
+InstanceOf: VAERSMessageHeader
+Title: "Sample MessageHeader for VAERS report for Connecathon"
+Description: "MessageHeader for Connectathon VAERS ICSR submission."
+* id = "US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495"
+* meta.lastUpdated = 2021-01-05T14:24:44+05:00
+* extension[messageProcessingCategory].valueCode = http://hl7.org/fhir/message-significance-category#notification
+* destination.endpoint = "http://example.org/CBERVAERS"
+* source.endpoint = "http://example.org/BEST-Pilot"
+* sender = Reference(VAERSSender)
+* eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
+* reason = http://hl7.org/fhir/us/medmorph/CodeSystem/us-ph-triggerdefinition-namedevents#received-public-health-report
+* focus = Reference(VAERSExample)
 
 Instance: FDA
 InstanceOf: MessageOrganization
@@ -164,11 +207,14 @@ Description: "Sample FAERS Transfusion for Connectathon."
 * subject = Reference(BESTPatient)
 * status = #completed
 * code = CPT4#36430
+* usedReference.extension[usedProduct].valueReference = Reference(FAERSBloodProduct)
+* usedReference.display = "Apheresis PLATELETS|ACD-A>PAS-C/XX/20-24C|ResLeu:<5E6|2nd container"
 
 Instance: FAERSBloodProduct
 InstanceOf: ICSRBloodProduct
 Title: "Sample Blood Product"
 Description: "Sample FAERS Blood Product"
+* productCategory = #cells
 * productCode = ISBT#E7003 "Apheresis PLATELETS|ACD-A>PAS-C/XX/20-24C|ResLeu:<5E6|2nd container"
 
 Instance: FAERSEpinephrine
@@ -219,18 +265,6 @@ Description: "The FAERS Bundle for the Connecathon sample."
 * entry[11].resource = FAERSEpinephrine
 * entry[12].fullUrl = "MedicationAdministration/FAERSDiphenhydramine"
 * entry[12].resource = FAERSDiphenhydramine
-
-Instance: ConnectathonVAERSMessageHeader
-InstanceOf: VAERSMessageHeader
-Title: "Sample MessageHeader for VAERS report for Connecathon"
-Description: "MessageHeader for Connectathon VAERS ICSR submission."
-* id = "US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495"
-* meta.lastUpdated = 2021-01-05T14:24:44+05:00
-* destination.endpoint = "http://example.org/CBERVAERS"
-* source.endpoint = "http://example.org/BEST-Pilot"
-* sender = Reference(VAERSSender)
-* eventCoding = HL7ActCode#PAT_ADV_EVNT "Patient Adverse Event"
-* focus = Reference(VAERSExample)
 
 Instance: VAERSSender
 InstanceOf: MessageOrganization
