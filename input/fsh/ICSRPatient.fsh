@@ -45,7 +45,6 @@ Id: ibm-fda-icsr-patientheight
 Title: "Patient Body Height in cm"
 Description: "Patient Body Height in cm"
 * valueQuantity.code = #cm
-* valueQuantity.unit = "cm"
 
 Profile: PatientWeight
 Parent: http://hl7.org/fhir/StructureDefinition/bodyweight
@@ -53,7 +52,6 @@ Id: ibm-fda-icsr-patientweight
 Title: "Patient Body Weight in kg"
 Description: "Patient Body Weight in kg"
 * valueQuantity.code = #kg
-* valueQuantity.unit = "kg"
 
 Profile: PatientLastMenstrualPeriod
 Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns
