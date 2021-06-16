@@ -33,7 +33,7 @@
 			<li><a href="StructureDefinition-ibm-fda-icsr-patientagegroup.html">Patient Age Group Observation</a></li>
 			<li><a href="StructureDefinition-ibm-fda-icsr-patientheight.html">Patient Height (in cm) Observation</a></li>
 			<li><a href="StructureDefinition-ibm-fda-icsr-patientweight.html">Patient Weight (in kg) Observation</a></li>
-			<li><a herf="StructureDefinition-ibm-fda-icsr-patientlastmenstrualperiod.html">Patient Last Menstrual Period Start Date Observation</a></li>
+			<li><a href="StructureDefinition-ibm-fda-icsr-patientlastmenstrualperiod.html">Patient Last Menstrual Period Start Date Observation</a></li>
 		</ul>
     </li>
 	<li><a href="StructureDefinition-ibm-fda-icsr-messageorganization.html">Report Submission Organization</a> - represents organizations that are senders/receivers of an ICSR report</li>
