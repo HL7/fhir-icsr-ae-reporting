@@ -3,7 +3,6 @@ Parent: USCoreProcedure
 Id: ibm-fda-icsr-transfusion
 Title: "ICSR Transfusion"
 Description: "The common fields needed to represent a transfusion."
-
 * status MS
 * code 1..1 MS
 * code from TransfusionProcedureCodeVS (extensible)
@@ -20,7 +19,7 @@ Title: "ICSR Blood Product"
 Description: "The common fields needed to represent a blood product used in a transfusion."
 * productCategory = #cells (exactly)
 * productCode from ISBTBloodProductCodeVS (extensible)
-* collection.extension contains DonorIdentifier named donorIdentifier 0..1
+* collection.extension contains DonationIdentificationNumber named donationIdentificationNumber 0..1
 * processing MS
 * processing.procedure MS
 
@@ -31,7 +30,7 @@ Title: "ICSR Convalescent Plasma"
 Description: "The common fields needed to represent convalescent plasma used in a transfusion."
 * productCategory = #fluid (exactly)
 * productCode from ISBTConvalescentPlasmaCodeVS (extensible)
-* collection.extension contains DonorIdentifier named donorIdentifier 0..1
+* collection.extension contains DonationIdentificationNumber named donationIdentificationNumber 0..1
 * processing MS
 * processing.procedure MS
 
@@ -45,7 +44,7 @@ Id: ibm-fda-icsr-ext-usedproductamount
 Description: "Indicates the amount of product (listed in usedReference or usedCode) that was used in the procedure"
 * value[x] only Quantity
 
-Extension: DonorIdentifier
-Id: ibm-fda-icsr-ext-donoridentifier
-Description: "Indicates the identifier for a donor"
+Extension: DonationIdentificationNumber
+Id: ibm-fda-icsr-ext-donationIdentificationNumber
+Description: "Indicates the identifier for a donation"
 * value[x] only Identifier
