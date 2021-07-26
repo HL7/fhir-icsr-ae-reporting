@@ -37,7 +37,7 @@ Description: "The role of the reporter in an ICSR report"
 
 Instance: SampleAuthorPractitioner
 InstanceOf: AuthorPractitioner
-Title: "Sample Author of ICSR Report (Practitioner)"
+Title: "Sample Practitioner Author of ICSR Report"
 Description: "The practitioner who is a reporter in an ICSR report"
 * identifier.system = "http://hl7.org/fhir/sid/us-npi"
 * identifier.value = "123456789"
@@ -55,7 +55,7 @@ Description: "The practitioner who is a reporter in an ICSR report"
 
 Instance: SampleAuthorRelatedPerson
 InstanceOf: AuthorRelatedPerson
-Title: "Sample Author of ICSR Report (Related Person)"
+Title: "Sample Related Person Author of ICSR Report"
 Description: "The related person who is a reporter in an ICSR report"
 * name.given = "Joe"
 * name.family = "Smith"

@@ -10,7 +10,9 @@ name: TransfusionVaccinationAdverseEventDetectionReporting
 title: "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and
   Reporting"
 status: draft
-publisher: IBM FDA BEST Project - Data Standards Team
+publisher: 
+    name: IBM FDA BEST Project - Data Standards Team
+    url: http://hl7.org/Special/committees/rcrim/index.cfm
 contact:
   - name: Jean Duteau
     telecom:
