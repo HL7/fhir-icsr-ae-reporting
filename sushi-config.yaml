@@ -22,7 +22,7 @@ description: A set of profiles that define the data elements needed to detect co
 license: CC0-1.0
 fhirVersion: 4.0.1
 dependencies:
-  hl7.fhir.us.core: 3.1.0
+  hl7.fhir.us.core: 4.0.0
   hl7.fhir.us.medmorph: 0.1.0
 parameters:
   show-inherited-invariants: false

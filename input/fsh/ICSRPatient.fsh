@@ -40,21 +40,21 @@ Description: "Information on the military status of the ICSR Patient"
 	PATIENT OBSERVATION PROFILES
 */
 Profile: PatientHeight
-Parent: http://hl7.org/fhir/StructureDefinition/bodyheight
+Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height
 Id: ibm-fda-icsr-patientheight
 Title: "Patient Body Height in cm"
 Description: "Patient Body Height in cm"
 * valueQuantity.code = #cm
 
 Profile: PatientWeight
-Parent: http://hl7.org/fhir/StructureDefinition/bodyweight
+Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight
 Id: ibm-fda-icsr-patientweight
 Title: "Patient Body Weight in kg"
 Description: "Patient Body Weight in kg"
 * valueQuantity.code = #kg
 
 Profile: PatientLastMenstrualPeriod
-Parent: http://hl7.org/fhir/StructureDefinition/vitalsigns
+Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
 Id: ibm-fda-icsr-patientlastmenstrualperiod
 Title: "Patient's Date of Last Menstrual Period"
 Description: "Patient's Date of Last Menstrual Period"

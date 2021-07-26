@@ -207,6 +207,7 @@ Description: "Sample FAERS Transfusion for Connectathon."
 * subject = Reference(BESTPatient)
 * status = #completed
 * code = CPT4#36430
+* extension[usedProductAmount].valueQuantity = 1 '{unit}' "unit"
 * usedReference.extension[usedProduct].valueReference = Reference(FAERSBloodProduct)
 * usedReference.display = "Apheresis PLATELETS|ACD-A>PAS-C/XX/20-24C|ResLeu:<5E6|2nd container"
 
@@ -216,6 +217,17 @@ Title: "Sample Blood Product"
 Description: "Sample FAERS Blood Product"
 * productCategory = #cells
 * productCode = ISBT#E7003 "Apheresis PLATELETS|ACD-A>PAS-C/XX/20-24C|ResLeu:<5E6|2nd container"
+* collection.extension[donationIdentificationNumber].valueIdentifier.value = "G101610840386"
+* collection.extension[donationIdentificationNumber].valueIdentifier.system = "http://example.org/bloodDonationNumber"
+
+Instance: SampleConvalescentPlasma
+InstanceOf: ICSRConvalescentPlasma
+Title: "Sample Convalescent Plasma"
+Description: "An example of COVID-19 Convalescent Plasma as a blood product"
+* productCode = https://iccbba.org/standardterminology#E9754 "COVID-19 Convalescent Plasma"
+* collection.extension[donationIdentificationNumber].valueIdentifier.value = "G101610840386"
+* collection.extension[donationIdentificationNumber].valueIdentifier.system = "http://example.org/bloodDonationNumber"
+
 
 Instance: FAERSEpinephrine
 InstanceOf: ICSRMedicationAdministration
@@ -396,6 +408,7 @@ Description: "Sample Immunization information for VAERS Sample"
 * vaccineCode = NDC#7046101903
 * occurrenceDateTime = 2017-04-23
 * primarySource = false
+* extension[ageAtVaccination].valueAge = 12 'y' "years"
 
 Instance: ConnectathonVAERSBundle
 InstanceOf: VAERSBundle

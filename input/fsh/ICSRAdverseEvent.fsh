@@ -3,7 +3,7 @@ Parent: AdverseEvent
 Id: ibm-fda-icsr-adverseevent
 Title: "ICSR Adverse Event"
 Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
-
+* ^abstract = true
 * extension contains AgeAtTimeOfOnset named ageAtTimeOfOnset 0..1
 * identifier MS
 * actuality MS
@@ -28,7 +28,6 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * suspectEntity 1..* MS
 * suspectEntity.instance MS
 * suspectEntity.instance only Reference(ICSRImmunization or ICSRMedicationAdministration or ICSRTransfusion)
-* suspectEntity.instance.extension contains DeviceUse named deviceUse 0..1 MS
 * suspectEntity.causality 1..1 MS
 * suspectEntity.causality.productRelatedness 1..1 MS
 
@@ -74,11 +73,6 @@ Extension: AgeAtTimeOfOnset
 Id: ibm-fda-icsr-ext-ageattimeofonset
 Description: "The age of the patient when the event occurred."
 * value[x] only Age
-
-Extension: DeviceUse
-Id: ibm-fda-icsr-ext-deviceuse
-Description: "The use of a device that was suspected to cause the adverse event."
-* value[x] only Reference(DeviceUseStatement)
 
 // ValueSet: seriousness
 ValueSet: ICSRSeriousness

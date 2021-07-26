@@ -186,6 +186,32 @@ Title: "Sample Exposure Count Observation"
 Description: "An example of an Exposure Count Observation"
 * valueInteger = 25432
 
+Instance: SamplePatientHeight
+InstanceOf: PatientHeight
+Title: "Sample Patient Height Observation"
+Description: "An example of a Patient's Height in cm"
+* status = #final
+* effectiveDateTime = "2020-02-10"
+* valueQuantity = 150 'cm' "cm"
+* subject = Reference(SampleICSRPatient)
+
+Instance: SamplePatientWeight
+InstanceOf: PatientWeight
+Title: "Sample Patient Weight Observation"
+Description: "An example of a Patient's Weight in kg"
+* status = #final
+* effectiveDateTime = "2020-02-10"
+* valueQuantity = 120 'kg' "kg"
+* subject = Reference(SampleICSRPatient)
+
+Instance: SamplePatientLastMenstrualPeriod
+InstanceOf: PatientLastMenstrualPeriod
+Title: "Sample Patient Menstrual Period Date Observation"
+Description: "An example of a Patient's Last Menstrual Period Date"
+* status = #final
+* effectiveDateTime = "2020-02-10"
+* valueDateTime = "2020-01-25"
+* subject = Reference(SampleICSRPatient)
 
 /* 
 	EXTENSION DEFINITIONS 

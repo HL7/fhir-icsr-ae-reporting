@@ -13,9 +13,8 @@ Error from server: Unable to provide support for code system http://meddra.org
 Unknown System specified, so Concepts and Filters can''t be checked
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.9
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/VaccineCodeVS because the value set or code system is not known to the validator]
-
-# US Core Variances (approval still to be sought)
-US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
+Code System URI 'https://iccbba.org/standardterminology' is unknown so the code cannot be validated
+Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/ndc
 
 # Bundle slicing that won't match due to only specific slices being specified
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-faers-adverseevent
@@ -23,67 +22,13 @@ This element does not match any known slice defined in the profile http://hl7.or
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-bundle
 This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-bundle
 
-# Validation information messages
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-bundle
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-bundle
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-messageheader
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-vaers-messageheader - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-messageheader
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-faers-messageheader - listed in meta
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/MessageHeader
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-composition
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-composition - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-messageorganization
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-messageorganization - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patient
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patient - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patientagegroup
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-patientagegroup - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitioner
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitioner - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitionerrole
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorpractitionerrole - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-authorrelatedperson
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/AdverseEvent
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-faers-adverseevent
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-faers-adverseevent - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-vaers-adverseevent
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-vaers-adverseevent - listed in meta
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-bloodproduct
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-bloodproduct - listed in meta
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Observation
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-aecountobservation
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-exposurecountobservation
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Procedure
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-transfusion
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-transfusion - listed in meta
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/BiologicallyDerivedProduct
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/MedicationAdministration
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-medicationadministration
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-medicationadministration - listed in meta
-Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-immunization
-Validate resource against profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/ibm-fda-icsr-immunization - listed in meta
+
+# Variance request for AECountObservation, ExposureCountObservation, PatientAgeGroup observations (August 12, 2021 CGP meeting)
+US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
 # Codes from ICD-10 that aren't in the terminology server
-The code R11.3 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
-The code T80.5XXA is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
-The code T80.5XXS is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
-The code T81.1XXA is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
-The code T81.1XXS is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
-The code T50B95A is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
-
-# Codes from ICCBBA are not in the terminology server
-Code System URI 'https://iccbba.org/standardterminology' is unknown so the code cannot be validated
+The code M35.81 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
+The code M35.89 is not valid in the system http://hl7.org/fhir/sid/icd-10-cm
 
 # Codes from ICSR-specific value set
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/ICSRSeriousness because the value set or code system is not known to the validator]
@@ -222,6 +167,28 @@ The code 30263L1 is not valid in the system http://www.cms.gov/Medicare/Coding/I
 The code 30260L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 30233H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 30230H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30277K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30273K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30233K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30230K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30253K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30250K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30243K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30240K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30263K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30260K1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30277L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30273L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30233L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30230L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30253L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30250L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30243L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30240L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30263L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30260L1 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30233H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+The code 30230H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 30253H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 30250H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 30243H0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
@@ -285,3 +252,245 @@ The code 30240L0 is not valid in the system http://www.cms.gov/Medicare/Coding/I
 The code 30263L0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 30260L0 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
 The code 302 is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+
+# Codes from RxNorm that aren't on the terminology server
+The code 1441662 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1441661 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1363042 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1303851 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1303852 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1537511 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1537514 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1537501 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1537504 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304308 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304299 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304255 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1442166 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304180 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1303850 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304205 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304191 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1442203 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1442195 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477271 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477270 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477269 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477272 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 5806 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 358771 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 349192 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 452730 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 545244 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 452729 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 545246 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 358766 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 348706 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 353481 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 567781 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 583189 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 583187 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 583191 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 562312 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 206984 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 358773 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 349315 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805520 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805521 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359592 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360246 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805534 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805531 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805529 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805527 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805530 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805532 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805526 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805535 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156913 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805522 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805523 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805549 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805550 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805556 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805558 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359591 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805566 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805560 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359548 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805568 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359522 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156914 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805555 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805559 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805567 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805561 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805563 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805569 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857917 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857918 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857942 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360034 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360083 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360091 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360241 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 883714 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360310 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857930 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359652 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857952 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857934 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857938 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857926 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857950 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857948 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857944 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857946 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 890945 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 890949 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360165 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1150887 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359975 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156915 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857941 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857943 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857951 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857949 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857947 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857923 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857927 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 883715 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857931 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857935 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 890950 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857939 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005929 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005930 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006237 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006250 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006270 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1116738 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1116739 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805467 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805468 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359888 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805512 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805508 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360415 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805474 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156919 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805473 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805511 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805479 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805509 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805469 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805470 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805551 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805552 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857919 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857920 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 890946 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805524 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805525 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805553 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805554 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805471 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805472 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 378254 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 545245 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 583190 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 562311 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005909 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005910 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805537 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805538 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805546 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805544 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805548 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857958 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 895711 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 895712 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005947 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006272 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805536 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805533 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805562 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805564 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805570 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857940 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857936 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857932 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 883716 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857928 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857924 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 890951 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 890948 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1150888 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805510 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805480 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805528 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1169803 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857945 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1170475 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805545 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1170478 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1170479 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857957 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1170480 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1170481 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1171872 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1171873 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304121 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005934 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006284 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1359770 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1360513 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005933 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1005943 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156917 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006283 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006271 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156918 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1427020 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1427021 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1598358 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1304124 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1427049 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1157441 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857959 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1156922 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857955 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805547 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1157443 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1157442 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805543 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1431478 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805539 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805540 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1426847 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857953 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805541 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805542 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1431479 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1426848 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477266 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477265 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477264 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 477267 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 235579 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 393536 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 392650 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 393537 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805572 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 805571 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857966 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857965 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 864814 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1114125 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006345 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 1006344 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857956 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 857960 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 2470234 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 2468235 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
+The code 2479835 is not valid in the system http://www.nlm.nih.gov/research/umls/rxnorm
