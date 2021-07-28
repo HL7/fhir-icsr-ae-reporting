@@ -8,10 +8,10 @@ Adverse events due to biological products are underreported to regulatory author
 ### Dependencies
 This IG depends on:
 * <a href="{{site.data.fhir.hl7_fhir_us_core}}">US Core</a>
-* <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}">Making EHR Data More available for Research and Public Health (MedMorph)</a>
+* <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}/2021Jan/index.html">Making EHR Data More available for Research and Public Health (MedMorph)</a>
 
 ### Adverse Event Detection and Submission Workflow
-We consider the AE Detection and Submission workflow to be a type of <a href="http://hl7.org/fhir/us/medmorph/2021Jan/usecases.html#data-submission-workflow">MedMorph's Data Submission Workflow</a>.
+We consider the AE Detection and Submission workflow to be a type of <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}/2021Jan/usecases.html#data-submission-workflow">MedMorph's Data Submission Workflow</a>.
 
 NOTE: The diagram below is a UML activity diagram.  The <<use>> stereotypes indicate data that is used by the associated activity.  If the arrow is pointing to the activity, then the activity is reading that data.  If the arrow is pointing away from the activity, then the activity is generating that data.
 {::options parse_block_html="false" /}

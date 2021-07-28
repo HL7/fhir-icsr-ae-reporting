@@ -12,7 +12,7 @@ title: "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccina
 status: draft
 publisher: 
     name: IBM FDA BEST Project - Data Standards Team
-    url: http://hl7.org/Special/committees/rcrim/index.cfm
+    url: http://hl7.org/Special/committees/rcrim
 contact:
   - name: Jean Duteau
     telecom:
