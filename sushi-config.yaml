@@ -11,7 +11,7 @@ title: "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccina
   Reporting"
 status: draft
 publisher: 
-    name: IBM FDA BEST Project - Data Standards Team
+    name: Biomedical Research & Regulation WG
     url: http://hl7.org/Special/committees/rcrim
 contact:
   - name: Jean Duteau
@@ -30,7 +30,7 @@ parameters:
   show-inherited-invariants: false
   path-expansion-params: '../../exp-params.json'
 copyrightYear: 2020+
-releaseLabel: CI Build
+releaseLabel: STU 1 Ballot
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 
 menu:
