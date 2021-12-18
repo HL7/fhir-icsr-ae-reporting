@@ -1,6 +1,6 @@
 Profile: ICSRTransfusion
 Parent: USCoreProcedure
-Id: ibm-fda-icsr-transfusion
+Id: icsr-transfusion
 Title: "ICSR Transfusion"
 Description: "The common fields needed to represent a transfusion."
 * status MS
@@ -9,42 +9,51 @@ Description: "The common fields needed to represent a transfusion."
 * subject MS 
 * subject only Reference(ICSRPatient)
 * reasonCode MS
-* extension contains UsedProductAmount named usedProductAmount 0..1
-* usedReference.extension contains UsedProduct named usedProduct 0..1
+* extension contains UsedProductAmount named usedProductAmount 0..1 MS
+* usedReference.extension contains UsedProduct named usedProduct 0..1 MS
 
 Profile: ICSRBloodProduct
 Parent: BiologicallyDerivedProduct
-Id: ibm-fda-icsr-bloodproduct
+Id: icsr-bloodproduct
 Title: "ICSR Blood Product"
 Description: "The common fields needed to represent a blood product used in a transfusion."
+* productCategory 1..1 MS
 * productCategory = #cells (exactly)
+* productCode 1..1 MS
 * productCode from ISBTBloodProductCodeVS (extensible)
-* collection.extension contains DonationIdentificationNumber named donationIdentificationNumber 0..1
+* collection MS
+* collection.extension contains DonationIdentificationNumber named donationIdentificationNumber 0..1 MS
 * processing MS
 * processing.procedure MS
 
 Profile: ICSRConvalescentPlasma
 Parent: BiologicallyDerivedProduct
-Id: ibm-fda-icsr-convalescentplasma
+Id: icsr-convalescentplasma
 Title: "ICSR Convalescent Plasma"
 Description: "The common fields needed to represent convalescent plasma used in a transfusion."
+* productCategory 1..1 MS
 * productCategory = #fluid (exactly)
+* productCode 1..1 MS
 * productCode from ISBTConvalescentPlasmaCodeVS (extensible)
-* collection.extension contains DonationIdentificationNumber named donationIdentificationNumber 0..1
+* collection MS
+* collection.extension contains DonationIdentificationNumber named donationIdentificationNumber 0..1 MS
 * processing MS
 * processing.procedure MS
 
 Extension: UsedProduct
-Id: ibm-fda-icsr-ext-usedproduct
+Id: icsr-ext-usedproduct
 Description: "Include Biologically Derived Product as something that is used in the procedure"
+* value[x] 1..1 MS
 * value[x] only Reference(ICSRBloodProduct or ICSRConvalescentPlasma)
 
 Extension: UsedProductAmount
-Id: ibm-fda-icsr-ext-usedproductamount
+Id: icsr-ext-usedproductamount
 Description: "Indicates the amount of product (listed in usedReference or usedCode) that was used in the procedure"
+* value[x] 1..1 MS
 * value[x] only Quantity
 
 Extension: DonationIdentificationNumber
-Id: ibm-fda-icsr-ext-donationIdentificationNumber
+Id: icsr-ext-donationIdentificationNumber
 Description: "Indicates the identifier for a donation"
+* value[x] 1..1 MS
 * value[x] only Identifier

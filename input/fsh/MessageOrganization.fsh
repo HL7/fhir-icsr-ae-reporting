@@ -1,6 +1,6 @@
 Profile: MessageOrganization
 Parent: USCoreOrganization
-Id: ibm-fda-icsr-messageorganization
+Id: icsr-messageorganization
 Title: "MessageHeader Organization"
 Description: "The fields needed to specify the sender or receiver of an ICSR Report."
 
@@ -27,7 +27,7 @@ Description: "The fields needed to specify the sender or receiver of an ICSR Rep
 
 //Definition of DepartmentName extension
 Extension: DepartmentName
-Id: ibm-fda-icsr-ext-departmentname
+Id: icsr-ext-departmentname
 Description: "An organization's department name"
 * value[x] only string
 

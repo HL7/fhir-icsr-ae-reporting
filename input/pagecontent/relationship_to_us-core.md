@@ -2,9 +2,9 @@
 
 <h3>Differences from IG-defined Profiles to US-Core</h3>
 <ul>
-<li>Patient: Added militaryStatus extension</li>
+<li>Patient: Added militaryStatus extension and made telecom Must Support</li>
 <li>Practitioner: Added mustSupport to: telecom, address</li>
-<li>PractitionerRole: Map from NUCC Provider Role Codes to ICSR codes</li>
+<li>PractitionerRole: Map from the US Core Provider Role (NUCC) value set to ICSR codes</li>
 <li>Organization:
 	<ul>
 		<li>Added DepartmentName extension</li>

@@ -1,19 +1,11 @@
-Profile: FAERSMessageHeader
+Profile: ICSRMessageHeader
 Parent: USPublicHealthMessageHeader
-Id: ibm-fda-icsr-faers-messageheader
-Title: "FAERS MessageHeader"
-Description: "The fields needed to create a MessageHeader for a FAERS ICSR Report."
-* destination.receiver 1..1 MS
+Id: icsr-messageheader
+Title: "ICSR MessageHeader"
+Description: "The fields needed to create a MessageHeader for an ICSR Report."
+* destination.receiver 0..1 MS
 * destination.receiver only Reference(MessageOrganization)
-* sender only Reference(MessageOrganization)
-* focus 1..1 MS
-* focus only Reference(ICSRComposition)
-
-Profile: VAERSMessageHeader
-Parent: USPublicHealthMessageHeader
-Id: ibm-fda-icsr-vaers-messageheader
-Title: "VAERS MessageHeader"
-Description: "The fields needed to create a MessageHeader for a VAERS ICSR Report."
+* sender MS
 * sender only Reference(MessageOrganization)
 * focus 1..1 MS
 * focus only Reference(ICSRComposition)

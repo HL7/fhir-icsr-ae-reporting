@@ -1,6 +1,6 @@
 Profile: ICSRAdverseEvent
 Parent: AdverseEvent
-Id: ibm-fda-icsr-adverseevent
+Id: icsr-adverseevent
 Title: "ICSR Adverse Event"
 Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * ^abstract = true
@@ -16,8 +16,8 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * subject MS
 * subject only Reference(ICSRPatient)
 * date 0..1 MS
-* date.extension contains EventDuration named eventDuration 0..1
-* date.extension contains EventEndDate named endDate 0..1
+* date.extension contains EventDuration named eventDuration 0..1 MS
+* date.extension contains EventEndDate named endDate 0..1 MS
 * recorder MS
 * recorder only Reference(AuthorPractitioner)
 * seriousness MS
@@ -33,7 +33,7 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 
 Profile: VAERSAdverseEvent
 Parent: ICSRAdverseEvent
-Id: ibm-fda-vaers-adverseevent
+Id: vaers-adverseevent
 Title: "VAERS Adverse Event"
 Description: "ICSR Adverse Event with a value set of vaccination-related events"
 * event from MedDRAVaccinationAdverseEventVS (extensible)
@@ -46,7 +46,7 @@ Description: "ICSR Adverse Event with a value set of vaccination-related events"
 
 Profile: FAERSAdverseEvent
 Parent: ICSRAdverseEvent
-Id: ibm-fda-faers-adverseevent
+Id: faers-adverseevent
 Title: "FAERS Adverse Event"
 Description: "ICSR Adverse Event with a value set of transfusion-related events"
 * event from MedDRATransfusionAdverseEventVS (extensible)
@@ -59,19 +59,22 @@ Description: "ICSR Adverse Event with a value set of transfusion-related events"
 
 // Extension: duration of event
 Extension: EventDuration
-Id: ibm-fda-icsr-ext-eventduration
+Id: icsr-ext-eventduration
 Description: "The duration of the adverse event."
+* value[x] 1..1 MS
 * value[x] only Duration
 
 // Extension: end of event
 Extension: EventEndDate
-Id: ibm-fda-icsr-ext-eventenddate
+Id: icsr-ext-eventenddate
 Description: "When the event ended."
+* value[x] 1..1 MS
 * value[x] only dateTime
 
 Extension: AgeAtTimeOfOnset
-Id: ibm-fda-icsr-ext-ageattimeofonset
+Id: icsr-ext-ageattimeofonset
 Description: "The age of the patient when the event occurred."
+* value[x] 1..1 MS
 * value[x] only Age
 
 // ValueSet: seriousness

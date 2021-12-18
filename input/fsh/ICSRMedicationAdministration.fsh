@@ -1,6 +1,6 @@
 Profile: ICSRMedicationAdministration
 Parent: MedicationAdministration
-Id: ibm-fda-icsr-medicationadministration
+Id: icsr-medicationadministration
 Title: "ICSR MedicationAdministration"
 Description: "The common fields needed for either a FAERS or VAERS drug administration."
 

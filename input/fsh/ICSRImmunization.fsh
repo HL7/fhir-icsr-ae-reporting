@@ -1,11 +1,13 @@
 Profile: ICSRImmunization
 Parent: USCoreImmunization
-Id: ibm-fda-icsr-immunization
+Id: icsr-immunization
 Title: "ICSR Immunization"
 Description: "The fields needed to submit an Immunization for a ICSR Report."
 
-* extension contains AgeAtVaccination named ageAtVaccination 0..1
+* extension contains AgeAtVaccination named ageAtVaccination 0..1 MS
+* status MS
 * status = #completed (exactly)
+* patient MS
 * patient only Reference(ICSRPatient)
 * manufacturer MS
 * location MS
@@ -15,10 +17,12 @@ Description: "The fields needed to submit an Immunization for a ICSR Report."
 * site MS
 * route MS
 * doseQuantity MS
+* vaccineCode MS
 * vaccineCode from VaccineCodeVS (extensible)
 
 
 Extension: AgeAtVaccination
-Id: ibm-fda-icsr-ext-ageatvaccination
+Id: icsr-ext-ageatvaccination
 Description: "The patient's age when the vaccination was given."
+* value[x] 1..1 MS
 * value[x] only Age

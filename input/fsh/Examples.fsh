@@ -1,7 +1,7 @@
 Instance: SampleVAERSMessageHeader
-InstanceOf: VAERSMessageHeader
+InstanceOf: ICSRMessageHeader
 Title: "Sample MessageHeader for VAERS"
-Description: "A sample MessageHeader for VAERS ICSR submissions."
+Description: "A sample MessageHeader for ICSR VAERS submissions."
 * id = "US-IBM-VAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a"
 * extension[messageProcessingCategory].valueCode = http://hl7.org/fhir/message-significance-category#notification
 * destination.endpoint = "http://example.org/CBERVAERS"
@@ -12,7 +12,7 @@ Description: "A sample MessageHeader for VAERS ICSR submissions."
 * focus = Reference(SampleVAERSReport)
 
 Instance: SampleFAERSMessageHeader
-InstanceOf: FAERSMessageHeader
+InstanceOf: ICSRMessageHeader
 Title: "Sample MessageHeader for FAERS"
 Description: "A sample MessageHeader for FAERS ICSR submissions."
 * id = "US-IBM-FAERS-fad94c04-29e7-5b37-e535-a8aad123cf9a"
@@ -26,7 +26,7 @@ Description: "A sample MessageHeader for FAERS ICSR submissions."
 * focus = Reference(SampleFAERSReport)
 
 Instance: ConnectathonFAERSMessageHeader
-InstanceOf: FAERSMessageHeader
+InstanceOf: ICSRMessageHeader
 Title: "Sample MessageHeader for FAERS report for Connecathon"
 Description: "MessageHeader for Connectathon FAERS ICSR submission."
 * id = "beafb541-3eab-eb9e-1bf1-5fa477d56e77"
@@ -41,7 +41,7 @@ Description: "MessageHeader for Connectathon FAERS ICSR submission."
 * focus = Reference(FAERSExample)
 
 Instance: ConnectathonVAERSMessageHeader
-InstanceOf: VAERSMessageHeader
+InstanceOf: ICSRMessageHeader
 Title: "Sample MessageHeader for VAERS report for Connecathon"
 Description: "MessageHeader for Connectathon VAERS ICSR submission."
 * id = "US-IBM-e380bc14-2a03-7b64-c3f5-22daea2aa495"
@@ -248,7 +248,7 @@ Description: "Diphenhydramine Administration for Connectathon FAERS report."
 * effectiveDateTime = 2002-01-09
 
 Instance: ConnectathonFAERSBundle
-InstanceOf: FAERSBundle
+InstanceOf: ICSRBundle
 Title: "FAERS Bundle for Connectathon Sample"
 Description: "The FAERS Bundle for the Connecathon sample."
 * entry[Message].fullUrl = "MessageHeader/beafb541-3eab-eb9e-1bf1-5fa477d56e77"
@@ -411,7 +411,7 @@ Description: "Sample Immunization information for VAERS Sample"
 * extension[ageAtVaccination].valueAge = 12 'y' "years"
 
 Instance: ConnectathonVAERSBundle
-InstanceOf: VAERSBundle
+InstanceOf: ICSRBundle
 Title: "VAERS Bundle for Connectathon Sample"
 Description: "The VAERS Bundle for the Connecathon sample."
 * identifier.system = "urn:oid:2.16.840.1.113883.3.989.2.1.3.22"

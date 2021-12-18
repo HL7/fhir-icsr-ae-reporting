@@ -1,6 +1,6 @@
 Profile: AuthorPractitionerRole
 Parent: USCorePractitionerRole
-Id: ibm-fda-icsr-authorpractitionerrole
+Id: icsr-authorpractitionerrole
 Title: "PractitionerRole Author"
 Description: "The fields needed to specify the reporter of an ICSR Report."
 * practitioner only Reference(AuthorPractitioner)
@@ -8,7 +8,7 @@ Description: "The fields needed to specify the reporter of an ICSR Report."
 
 Profile: AuthorPractitioner
 Parent: USCorePractitioner
-Id: ibm-fda-icsr-authorpractitioner
+Id: icsr-authorpractitioner
 Title: "Practitioner Author"
 Description: "Extra constraints on US Core Practitioner for the reporter of an ICSR Report."
 * telecom MS
@@ -16,7 +16,7 @@ Description: "Extra constraints on US Core Practitioner for the reporter of an I
 
 Profile: AuthorRelatedPerson
 Parent: RelatedPerson
-Id: ibm-fda-icsr-authorrelatedperson
+Id: icsr-authorrelatedperson
 Title: "RelatedPerson Author"
 Description: "The fields needed to specify the reporter of an ICSR report who is a related person to the patient."
 * name MS

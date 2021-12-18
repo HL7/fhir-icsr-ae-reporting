@@ -26,6 +26,9 @@ fhirVersion: 4.0.1
 dependencies:
   hl7.fhir.us.core: 4.0.0
   hl7.fhir.us.medmorph: 0.1.0
+  us.nlm.vsac:
+    uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
+    version: 0.4.0
 parameters:
   show-inherited-invariants: false
   path-expansion-params: '../../exp-params.json'
@@ -34,6 +37,7 @@ releaseLabel: STU 1 Ballot
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 
 menu:
+  Table of Contents: toc.html
   Overview: index.html
   AE Algorithms: algorithms.html
   Profile Descriptions: profile_listing.html

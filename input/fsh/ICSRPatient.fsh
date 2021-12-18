@@ -1,6 +1,6 @@
 Profile: ICSRPatient
 Parent: USCorePatient
-Id: ibm-fda-icsr-patient
+Id: icsr-patient
 Title: "ICSR Patient"
 Description: "The fields required to identify a patient for an ICSR Report."
 * identifier MS
@@ -32,8 +32,9 @@ Description: "A sample Patient for an ICSR Report."
 * extension[militaryStatus].valueCodeableConcept = NCIMeta#C114854
 
 Extension: MilitaryStatus
-Id: ibm-fda-icsr-ext-militarystatus
+Id: icsr-ext-militarystatus
 Description: "Information on the military status of the ICSR Patient"
+* value[x] 1..1 MS
 * value[x] only CodeableConcept
 
 /*
@@ -41,21 +42,21 @@ Description: "Information on the military status of the ICSR Patient"
 */
 Profile: PatientHeight
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-height
-Id: ibm-fda-icsr-patientheight
+Id: icsr-patientheight
 Title: "Patient Body Height in cm"
 Description: "Patient Body Height in cm"
 * valueQuantity.code = #cm
 
 Profile: PatientWeight
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight
-Id: ibm-fda-icsr-patientweight
+Id: icsr-patientweight
 Title: "Patient Body Weight in kg"
 Description: "Patient Body Weight in kg"
 * valueQuantity.code = #kg
 
 Profile: PatientLastMenstrualPeriod
 Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs
-Id: ibm-fda-icsr-patientlastmenstrualperiod
+Id: icsr-patientlastmenstrualperiod
 Title: "Patient's Date of Last Menstrual Period"
 Description: "Patient's Date of Last Menstrual Period"
 * code = LOINC#8665-2 "Last Menstrual Period Start Date"
@@ -63,10 +64,12 @@ Description: "Patient's Date of Last Menstrual Period"
 
 Profile: PatientAgeGroup
 Parent: Observation
-Id: ibm-fda-icsr-patientagegroup
+Id: icsr-patientagegroup
 Title: "Descriptive Age Group for the Patient"
 Description: "A descriptive Age Group for the Patient"
+* code 1..1 MS
 * code = LOINC#46251-5 "Age group"
+* value[x] 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from PatientAgeGroupVS
 

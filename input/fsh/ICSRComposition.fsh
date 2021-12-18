@@ -3,7 +3,7 @@
 */
 Profile: ICSRComposition
 Parent: Composition
-Id: ibm-fda-icsr-composition
+Id: icsr-composition
 Title: "ICSR Composition"
 Description: "The fields needed to represent the document metadata of a ICSR Report."
 
@@ -26,21 +26,21 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * subject 1..1 MS
 * subject only Reference(ICSRPatient)
 * author 1..1 MS
-* author only Reference(PractitionerRole or ICSRPatient or RelatedPerson)
-* author.extension contains AuthorPrimarySource named primarySource 1..1
+* author only Reference(AuthorPractitionerRole or ICSRPatient or AuthorRelatedPerson)
+* author.extension contains AuthorPrimarySource named primarySource 1..1 MS
 
 /* 
 	EXTENSIONS - SEE BELOW FOR DEFINITIONS 
 */
-* extension contains FirstReceiveDate named firstReceiveDate 0..1
-* extension contains MostRecentDate named mostRecentInfoDate 0..1
-* extension contains AdditionalDocumentInformation named additionalDocuments 1..1
-* extension contains ExpeditedReport named expeditedReport 1..1
-* extension contains CaseIdentifier named otherCaseIdentifier 0..*
-* extension contains FirstSenderType named firstSenderType 1..1
-* extension contains PreviousCaseIdentifier named previousCaseIdentifier 0..*
-* extension contains ReportAmendment named reportAmendment 0..1
-* extension contains CombinationProductReport named combinationProductReport 1..1
+* extension contains FirstReceiveDate named firstReceiveDate 0..1 MS
+* extension contains MostRecentDate named mostRecentInfoDate 0..1 MS
+* extension contains AdditionalDocumentInformation named additionalDocuments 1..1 MS
+* extension contains ExpeditedReport named expeditedReport 1..1 MS
+* extension contains CaseIdentifier named otherCaseIdentifier 0..* MS
+* extension contains FirstSenderType named firstSenderType 1..1 MS
+* extension contains PreviousCaseIdentifier named previousCaseIdentifier 0..* MS
+* extension contains ReportAmendment named reportAmendment 0..1 MS
+* extension contains CombinationProductReport named combinationProductReport 1..1 MS
 
 /* 
 	SECTION SLICES 
@@ -54,11 +54,11 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section ^slicing.description = "Slice based on the different sections that are needed in an ICSR document."
-* section contains PatientInformation 0..1 and RelevantMedicalHistory 0..1 and RelevantPastDrugHistory 0..1 and 
-	InCaseOfDeath 0..1 and ParentInformation 0..1 and ReactionEvent 1..1 and RelevantLabTestResults 0..1 and 
-	DrugInformation 1..1 and VAERSVaccines 0..1 and CaseNarrative 1..1 and
-	CaseReporterComments 0..1 and CaseSenderDiagnosis 0..1 and CaseSenderComments 0..1 and
-	DataSourceInformation 0..1
+* section contains PatientInformation 0..1 MS and RelevantMedicalHistory 0..1 MS and RelevantPastDrugHistory 0..1 MS and 
+	InCaseOfDeath 0..1 MS and ParentInformation 0..1 MS and ReactionEvent 1..1 MS and RelevantLabTestResults 0..1 MS and 
+	DrugInformation 1..1 MS and VAERSVaccines 0..1 MS and CaseNarrative 1..1 MS and
+	CaseReporterComments 0..1 MS and CaseSenderDiagnosis 0..1 MS and CaseSenderComments 0..1 MS and
+	DataSourceInformation 0..1 MS
 * section[PatientInformation].code = ICSRSectionCodeCS#PatientInformation
 * section[PatientInformation].title = "Patient Information"
 * section[PatientInformation].entry only Reference(Observation)
@@ -217,55 +217,66 @@ Description: "An example of a Patient's Last Menstrual Period Date"
 	EXTENSION DEFINITIONS 
 */
 Extension: AuthorPrimarySource
-Id: ibm-fda-icsr-ext-authorprimarysource
+Id: icsr-ext-authorprimarysource
 Description: "Whether an author is the primary source of a composition"
+* value[x] 1..1 MS
 * value[x] only boolean
 
 Extension: FirstReceiveDate
-Id: ibm-fda-icsr-ext-firstreceivedate
+Id: icsr-ext-firstreceivedate
 Description: "The date when the report was first received from the source"
+* value[x] 1..1 MS
 * value[x] only dateTime
 
 Extension: MostRecentDate
-Id: ibm-fda-icsr-ext-mostrecentdate
+Id: icsr-ext-mostrecentdate
 Description: "The date of the most recent information for this report"
+* value[x] 1..1 MS
 * value[x] only dateTime
 
 Extension: CaseIdentifier
-Id: ibm-fda-icsr-ext-caseidentifier
+Id: icsr-ext-caseidentifier
 Description: "Other identifiers used to identify the ICSR report"
+* value[x] 1..1 MS
 * value[x] only Identifier
 
 Extension: CombinationProductReport
-Id: ibm-fda-icsr-ext-combinationproductreport
+Id: icsr-ext-combinationproductreport
 Description: "A flag to indicate whether the ICSR report is for a combination product"
+* value[x] 1..1 MS
 * value[x] only boolean
 
 Extension: AdditionalDocumentInformation
-Id: ibm-fda-icsr-ext-additionaldocumentinformation
+Id: icsr-ext-additionaldocumentinformation
 Description: "A set of information to indicate what additional documentation exists."
 * extension contains availableFlag 1..1 MS and document 0..* MS
+* extension[availableFlag].value[x] 1..1 MS
 * extension[availableFlag].value[x] only boolean
+* extension[document].value[x] 1..1 MS
 * extension[document].value[x] only Attachment
 * extension[document].valueAttachment.contentType MS
 * extension[document].valueAttachment.url 1..1 MS
 * extension[document].valueAttachment.title 1..1 MS
 
 Extension: ExpeditedReport
-Id: ibm-fda-icsr-ext-expeditedreport
+Id: icsr-ext-expeditedreport
 Description: "Information on whether the ICSR report meets criteria of an expedited report"
 * extension contains localCriteriaFlag 1..1 MS and localCriteriaReportType 1..1 MS
+* extension[localCriteriaFlag].value[x] 1..1 MS
 * extension[localCriteriaFlag].value[x] only boolean
+* extension[localCriteriaReportType].value[x] 1..1 MS
 * extension[localCriteriaReportType].value[x] only CodeableConcept
 
 Extension: FirstSenderType
-Id: ibm-fda-icsr-ext-firstsendertype
+Id: icsr-ext-firstsendertype
 Description: "Identifies the type of the first sender of the ICSR report"
+* value[x] 1..1 MS
 * value[x] only CodeableConcept
 
 Extension: PreviousCaseIdentifier
-Id: ibm-fda-icsr-ext-previouscaseidentifier
+Id: icsr-ext-previouscaseidentifier
 Description: "Previous identifiers used to reference this case"
+* value[x] 1..1 MS
 * value[x] only Identifier
 * valueIdentifier.system 1..1
 * valueIdentifier.system = "urn:oid:2.16.840.1.113883.3.989.2.1.3.3"
@@ -273,10 +284,12 @@ Description: "Previous identifiers used to reference this case"
 * valueIdentifier.assigner 1..1 MS
 
 Extension: ReportAmendment
-Id: ibm-fda-icsr-ext-reportamendment
+Id: icsr-ext-reportamendment
 Description: "Information about report amendments that have been made"
 * extension contains amendmentType 1..1 MS and amendmentReason 1..1 MS
+* extension[amendmentType].value[x] 1..1 MS
 * extension[amendmentType].value[x] only CodeableConcept
+* extension[amendmentReason].value[x] 1..1 MS
 * extension[amendmentReason].value[x] only string
 
 /*
@@ -284,18 +297,22 @@ Description: "Information about report amendments that have been made"
 */
 Profile: AECountObservation
 Parent: Observation
-Id: ibm-fda-icsr-aecountobservation
+Id: icsr-aecountobservation
 Description: "Recording the number of Adverse Events that were detected by the algorithm"
+* status 1..1 MS
 * status = #final
+* code 1..1 MS
 * code = DataSourceObservationCodeCS#AdverseEventCount
 * value[x] 1..1 MS
 * value[x] only integer
 
 Profile: ExposureCountObservation
 Parent: Observation
-Id: ibm-fda-icsr-exposurecountobservation
+Id: icsr-exposurecountobservation
 Description: "Recording the number of Exposures that were detected by the algorithm"
+* status 1..1 MS
 * status = #final
+* code 1..1 MS
 * code = DataSourceObservationCodeCS#ExposureCount
 * value[x] 1..1 MS
 * value[x] only integer
@@ -306,6 +323,7 @@ Description: "Recording the number of Exposures that were detected by the algori
 CodeSystem: ICSRSectionCodeCS
 Title: "ICSR Section Codes Code System"
 Description: "Codes for each of the sections in an ICSR report"
+* ^caseSensitive = true
 * #PatientInformation
 * #RelevantMedicalHistory
 * #RelevantPastDrugHistory
@@ -329,5 +347,6 @@ Description: "Codes for each of the sections in an ICSR report"
 CodeSystem: DataSourceObservationCodeCS
 Title: "ICSR Data Source Observation Codes Code System"
 Description: "Codes to describe information about the ICSR data source"
+* ^caseSensitive = true
 * #AdverseEventCount "Adverse Event Count (Algorithm Numerator)"
 * #ExposureCount "Exposure Count (Algorithm Denominator)"
