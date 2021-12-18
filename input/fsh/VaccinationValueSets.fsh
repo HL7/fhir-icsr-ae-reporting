@@ -16,14 +16,25 @@ Description: "Product Codes for COVID-19 Vaccines, from CPT, CVX, NDC, and RxNor
 * ^description = "CPT, CVX, NDC, and RxNorm codes for COVID-19 Vaccines"
 * ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved."
 * codes from valueset https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.50/definition
-* NDC#59267100001 "Pfizer-BioNTech"
-* NDC#59267100002 "Pfizer-BioNTech"
-* NDC#59267100003 "Pfizer-BioNTech"
-* NDC#80777027310 "Moderna"
-* NDC#80777027399 "Moderna"
-* NDC#00310122210 "AstraZeneca"
-* NDC#59676058005 "Janssen"
-* NDC#59676058015 "Janssen"
+* NDC#59267100001
+* NDC#59267100002
+* NDC#59267100003
+* NDC#0069100003
+* NDC#0069100002
+* NDC#59267007801
+* NDC#59267007802
+* NDC#59267007804
+* NDC#59267102501
+* NDC#59267102503
+* NDC#59267102504
+* NDC#59267105504
+* NDC#59267105501
+* NDC#80777027315
+* NDC#80777027398
+* NDC#80777027310
+* NDC#80777027399
+* NDC#59676058005
+* NDC#59676058015
 
 ValueSet: InfluenzaVaccineCodeVS
 Title: "Influenza Vaccine Codes"
@@ -32,230 +43,230 @@ Description: "Product Codes for Influenza Vaccines, from CVX, NDC, and RxNorm co
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div id='cld'><p>This value set has a large enumerated (extensional) definition.  See 'Definition' in the table above for the definition description.  The full definition is available in the resource instance (see links in 'Source Resource' in the table above).</p></div></div>"
 * ^description = "CVX, NDC, and RxNorm codes for Influenza Vaccines"
 * codes from valueset https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.49/definition
-* NDC#49281071910 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML Pre..."
-* NDC#49281040565 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2019-2020]"
-* NDC#70461020001 "0.5 ML influenza A virus A/Brisbane/10/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Hong Kong/259/2010 antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/ML Pref"
-* NDC#70461020011 "0.5 ML influenza A virus A/Brisbane/10/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Hong Kong/259/2010 antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/ML Pref"
-* NDC#62577061401 "0.5 ML influenza A virus A/Brisbane/10/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/55/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/ML Prefilled Syringe [Flucelvax 2015-2016]"
-* NDC#62577061411 "0.5 ML influenza A virus A/Brisbane/10/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/55/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/ML Prefilled Syringe [Flucelvax 2015-2016]"
-* NDC#49281041658 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#19515090852 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#33332031602 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#19515090841 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#33332031601 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281041688 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281041610 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281041650 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#33332001602 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2016-2017]"
-* NDC#33332001601 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2016-2017]"
-* NDC#70461000101 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2016-2017]"
-* NDC#70461000111 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2016-2017]"
-* NDC#33332001502 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/55/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2015-2016]"
-* NDC#33332001501 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/55/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2015-2016]"
-* NDC#19515090152 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 M"
-* NDC#49281041588 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 M"
-* NDC#49281041558 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 M"
-* NDC#49281041510 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 M"
-* NDC#49281041550 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 M"
-* NDC#42874001610 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML Injection [Flublok 2016-2017]"
-* NDC#42874001601 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML Injection [Flublok 2016-2017]"
-* NDC#42874001501 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML Injection [Flublok 2015-2016]"
-* NDC#42874001510 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML Injection [Flublok 2015-2016]"
-* NDC#49281039965 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2016-2017]"
-* NDC#49281039988 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2016-2017]"
-* NDC#49281039788 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2015-2016]"
-* NDC#49281039765 "0.5 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2015-2016]"
-* NDC#58160090541 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/"
-* NDC#58160090552 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/"
-* NDC#70461011902 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluvirin 2016-2017]"
-* NDC#70461011912 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluvirin 2016-2017]"
-* NDC#58160090352 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.0"
-* NDC#58160090341 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.0"
-* NDC#66521011802 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Prefilled Syringe [Fluvirin 2015-2016]"
-* NDC#66521011812 "0.5 ML influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Prefilled Syringe [Fluvirin 2015-2016]"
-* NDC#70461032003 "0.5 ML influenza A virus A/Delaware/39/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Nebraska/14/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Darwin/7/2019 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 antigen 0.0..."
-* NDC#19515081652 "0.5 ML influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 an..."
-* NDC#58160088552 "0.5 ML influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 an..."
-* NDC#49281042010 "0.5 ML influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 an..."
-* NDC#49281042050 "0.5 ML influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 an..."
-* NDC#49281072010 "0.5 ML influenza A virus A/Hawaii/70/2019 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Minnesota/41/2019 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML / influenza B virus B/Washington/02/2019 antigen 0.09 MG/ML..."
-* NDC#70461012003 "0.5 ML influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Victoria/2454/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Victoria/705/2018 antigen 0.03 M..."
-* NDC#33332032001 "0.5 ML influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Victoria/2454/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Victoria/705/2018 antigen 0.03 M..."
-* NDC#70461002003 "0.5 ML influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Victoria/2454/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Victoria/705/2018 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2020-2021]"
-* NDC#49281041710 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML I"
-* NDC#49281041758 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML I"
-* NDC#49281041750 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML P"
-* NDC#49281041788 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML P"
-* NDC#33332031701 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG"
-* NDC#33332031702 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG"
-* NDC#33332001702 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2017-2018]"
-* NDC#33332001701 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2017-2018]"
-* NDC#58160090752 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG"
-* NDC#19515091241 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG"
-* NDC#58160090741 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG"
-* NDC#19515091252 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG"
-* NDC#70461000201 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2017-2018]"
-* NDC#70461000211 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2017-2018]"
-* NDC#70461012012 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluvirin 2017-2018]"
-* NDC#70461012002 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Prefilled Syringe [Fluvirin 2017-2018]"
-* NDC#42874011710 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML P"
-* NDC#42874011701 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML P"
-* NDC#42874001710 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML Injection [Flublok 2017-2018]"
-* NDC#42874001701 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML Injection [Flublok 2017-2018]"
-* NDC#49281040165 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.12 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.12 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2017-2018]"
-* NDC#49281040188 "0.5 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.12 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.12 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2017-2018]"
-* NDC#70461031903 "0.5 ML influenza A virus A/Idaho/07/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Indiana/08/2018 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Iowa/06/2017 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 antigen 0.03 MG/..."
-* NDC#49281041850 "0.5 ML influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0."
-* NDC#49281041810 "0.5 ML influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0."
-* NDC#49281071810 "0.5 ML influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0."
-* NDC#49281040365 "0.5 ML influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2018-2019]"
-* NDC#49281040388 "0.5 ML influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.12 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.12 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.12 MG/ML Prefilled Syringe [Fluzone 2018-2019]"
-* NDC#70461031804 "0.5 ML influenza A virus A/North Carolina/04/2016 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Iowa/06/2017 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 anti"
-* NDC#70461031803 "0.5 ML influenza A virus A/North Carolina/04/2016 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Iowa/06/2017 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 anti"
-* NDC#70461020101 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP2050/2015 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Hong Kong/259/2010 antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/"
-* NDC#70461020111 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP2050/2015 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Hong Kong/259/2010 antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/"
-* NDC#58160089852 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antig"
-* NDC#19515090952 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antig"
-* NDC#33332031801 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antig"
-* NDC#33332001801 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML Prefilled Syringe [Afluria 2018-2019]"
-* NDC#70461001803 "0.5 ML influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2018-2019]"
-* NDC#58160090152 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine,"
-* NDC#66521011810 "influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable Suspension [Fluvirin 2015-2016]"
-* NDC#70461042010 "influenza A virus A/Delaware/39/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Nebraska/14/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Darwin/7/2019 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 antigen 0.03 MG/ML..."
-* NDC#49281063315 "influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 antigen 0..."
-* NDC#66019030710 "influenza A virus A/Hawaii/66/2019 (H1N1) antigen 158000000 UNT/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 158000000 UNT/ML / influenza B virus B/Phuket/3073/2013 antigen 158000000 UNT/ML / influenza B virus B/Washington/02/2019 antige..."
-* NDC#33332042010 "influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Victoria/2454/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Victoria/705/2018 antigen 0.03 MG/ML In..."
-* NDC#49281062778 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectab"
-* NDC#49281062715 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectab"
-* NDC#33332041711 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Inj"
-* NDC#33332041710 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Inj"
-* NDC#33332011710 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML Injectable Suspension [Afluria 2017-2018]"
-* NDC#33332011711 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/46/2015 antigen 0.03 MG/ML Injectable Suspension [Afluria 2017-2018]"
-* NDC#19515089601 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Inj"
-* NDC#19515089611 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Inj"
-* NDC#70461012011 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Injectable Suspension [Fluvirin 2017-2018]"
-* NDC#70461012010 "influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Injectable Suspension [Fluvirin 2017-2018]"
-* NDC#70461041910 "influenza A virus A/Idaho/07/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Indiana/08/2018 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Iowa/06/2017 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 antigen 0.03 MG/ML Inje..."
-* NDC#58160080401 "influenza A virus A/Indonesia/05/2005 (H5N1) antigen 0.0075 MG/ML Injectable Suspension"
-* NDC#58160080815 "influenza A virus A/Indonesia/05/2005 (H5N1) antigen 0.0075 MG/ML Injectable Suspension"
-* NDC#66019030610 "influenza A virus A/Kansas/14/2017 (H3N2) antigen 158000000 UNT/ML / influenza A virus A/Switzerland/3330/2017 (H1N1) antigen 158000000 UNT/ML / influenza B virus B/Colorado/06/2017 antigen 158000000 UNT/ML / influenza B virus B/Phuket/3073/2013 antige..."
-* NDC#49281062915 "influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/M"
-* NDC#66019030410 "influenza A virus A/New Caledonia/71/2014 (H3N2) antigen 158000000 UNT/ML / influenza A virus A/Slovenia/2903/2015 (H1N1) antigen 158000000 UNT/ML / influenza B virus B/Brisbane/60/2008 antigen 158000000 UNT/ML / influenza B virus B/Phuket/3073/2013 antig"
-* NDC#66019030401 "influenza A virus A/New Caledonia/71/2014 (H3N2) antigen 158000000 UNT/ML / influenza A virus A/Slovenia/2903/2015 (H1N1) antigen 158000000 UNT/ML / influenza B virus B/Brisbane/60/2008 antigen 158000000 UNT/ML / influenza B virus B/Phuket/3073/2013 antig"
-* NDC#70461041811 "influenza A virus A/North Carolina/04/2016 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Iowa/06/2017 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 antigen 0.0"
-* NDC#70461041810 "influenza A virus A/North Carolina/04/2016 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Iowa/06/2017 antigen 0.03 MG/ML / influenza B virus B/Singapore/INFTT-16-0610/2016 antigen 0.0"
-* NDC#70461030110 "influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP2050/2015 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Hong Kong/259/2010 antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/ML Inje"
-* NDC#70461030112 "influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/GP2050/2015 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Hong Kong/259/2010 antigen 0.03 MG/ML / influenza B virus B/Utah/9/2014 antigen 0.03 MG/ML Inje"
-* NDC#33332041810 "influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03"
-* NDC#19515090011 "influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03"
-* NDC#33332011810 "influenza A virus A/Singapore/GP1908/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML Injectable Suspension [Afluria 2018-2019]"
-* NDC#66019030510 "influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 158000000 UNT/ML / influenza A virus A/Slovenia/2903/2015 (H1N1) antigen 158000000 UNT/ML / influenza B virus B/Colorado/06/2017 antigen 158000000 UNT/ML / influenza B virus B/Phuket/3073/20"
-* NDC#19515089111 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 X-223A (H3N2), Inactivated 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccin"
-* NDC#19515089101 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 X-223A (H3N2), Inactivated 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccin"
-* NDC#19515089302 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 X-223A (H3N2), Inactivated 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension"
-* NDC#19515089307 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 X-223A (H3N2), Inactivated 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension"
-* NDC#49281041410 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine, B-"
-* NDC#49281062178 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine, B-"
-* NDC#76420048201 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine, B-"
-* NDC#49281041458 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine, B-"
-* NDC#49281062115 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine, B-"
-* NDC#33332011410 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension [Aflu"
-* NDC#33332011411 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension [Aflu"
-* NDC#66521011711 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension [Fluv"
-* NDC#66521011710 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension [Fluv"
-* NDC#49281039415 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension [Fluz"
-* NDC#49281039478 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Injectable Suspension [Fluz"
-* NDC#42874001401 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.09 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.09 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.09 MG/ML Injectable Solution [Flublo"
-* NDC#42874001410 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.09 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.09 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.09 MG/ML Injectable Solution [Flublo"
-* NDC#66019030110 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 50000000 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 50000000 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 50000000 MG/ML / Influenza Vir"
-* NDC#66019030101 "Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 50000000 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 50000000 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 50000000 MG/ML / Influenza Vir"
-* NDC#58160090141 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vaccine,"
-* NDC#19515089452 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 X-223A (H3N2), Inactivated 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus"
-* NDC#19515089441 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Texas-50-2012 X-223A (H3N2), Inactivated 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus"
-* NDC#76420048301 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vacc"
-* NDC#49281041488 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vacc"
-* NDC#49281041450 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Brisbane-60-2008-like virus 0.03 MG/ML / Influenza B virus vacc"
-* NDC#33332001401 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [A"
-* NDC#33332001402 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [A"
-* NDC#58160088152 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#58160088141 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#66521011712 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#62577061301 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#49281001450 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#49281001488 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#62577061311 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#66521011702 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe [F"
-* NDC#49281039588 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.12 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.12 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.12 MG/ML Prefilled Syringe [F"
-* NDC#49281039565 "0.5 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.12 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.12 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.12 MG/ML Prefilled Syringe [F"
-* NDC#49281012065 "0.7 ML influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.0857 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.0857 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.0857 MG/ML / influenza B virus B/Washington/02/2..."
-* NDC#66521000001 "FLUAD - influenza a virus a/california/7/2009 x-181 (h1n1) antigen (formaldehyde inactivated), influenza a virus a/switzerland/9715293/2013 nib-88 (h3n2) antigen (formaldehyde inactivated) and influenza b virus b/brisbane/9/2014 antigen (formaldehyde inac"
-* NDC#66521000011 "FLUAD - influenza a virus a/california/7/2009 x-181 (h1n1) antigen (formaldehyde inactivated), influenza a virus a/switzerland/9715293/2013 nib-88 (h3n2) antigen (formaldehyde inactivated) and influenza b virus b/brisbane/9/2014 antigen (formaldehyde inac"
-* NDC#63851061301 "Flucelvax Influenza vaccine, injectable, MDCK, preservative free"
-* NDC#49281064015 "influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Injectable Suspension"
-* NDC#66521020010 "influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Injectable Suspension"
-* NDC#49281065010 "influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Injectable Suspension"
-* NDC#66019020010 "Influenza A H1N1 2009 Monovalent Vaccine Live Intr INFLUENZA A H1N1 2009 MONOVALENT VACCINE LIVE intranasal NASAL"
-* NDC#33332051925 "Influenza A INFLUENZA A VIRUS A/CALIFORNIA/7/2009(H1N1)-LIKE ANTIGEN (PROPIOLACTONE INACTIVATED) intramuscular"
-* NDC#33332051901 "Influenza A INFLUENZA A VIRUS A/CALIFORNIA/7/2009(H1N1)-LIKE ANTIGEN (PROPIOLACTONE INACTIVATED) intramuscular"
-* NDC#33332062910 "Influenza A INFLUENZA A VIRUS A/CALIFORNIA/7/2009(H1N1)-LIKE ANTIGEN (PROPIOLACTONE INACTIVATED) intramuscular"
-* NDC#66019030301 "influenza A virus A/Bolivia/559/2013 (H1N1) antigen 50000000 MG/ML / influenza A virus A/New Caledonia/71/2014 (H3N2) antigen 50000000 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 50000000 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 50000"
-* NDC#66019030310 "influenza A virus A/Bolivia/559/2013 (H1N1) antigen 50000000 MG/ML / influenza A virus A/New Caledonia/71/2014 (H3N2) antigen 50000000 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 50000000 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 50000"
-* NDC#66019030201 "influenza A virus A/Bolivia/559/2013 (H1N1) antigen 50000000 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 50000000 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 50000000 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 50"
-* NDC#66019030210 "influenza A virus A/Bolivia/559/2013 (H1N1) antigen 50000000 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 50000000 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 50000000 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 50"
-* NDC#49281063115 "influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable..."
-* NDC#19515089711 "influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable..."
-* NDC#33332041910 "influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable..."
-* NDC#49281033615 "influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/34/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 antigen 0.03 MG/ML..."
-* NDC#33332041610 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injecta"
-* NDC#19515090301 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injecta"
-* NDC#49281062515 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injecta"
-* NDC#19515090311 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injecta"
-* NDC#49281062578 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injecta"
-* NDC#33332011610 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Injectable Suspension [Afluria 2016-2017]"
-* NDC#33332011611 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Injectable Suspension [Afluria 2016-2017]"
-* NDC#33332011511 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/55/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable Suspension [Afluria 2015-2016]"
-* NDC#33332011510 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/55/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable Suspension [Afluria 2015-2016]"
-* NDC#19515089801 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML In"
-* NDC#49281062378 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML In"
-* NDC#19515089811 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML In"
-* NDC#49281062315 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML In"
-* NDC#49281039678 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable Suspension [Fluzone 2015-2016]"
-* NDC#49281039615 "influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable Suspension [Fluzone 2015-2016]"
-* NDC#70461011911 "influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Injectable Suspension [Fluvirin 2016-2017]"
-* NDC#70461011910 "influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML Injectable Suspension [Fluvirin 2016-2017]"
-* NDC#66521011811 "influenza A virus A/Christchurch/16/2010 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Injectable Suspension [Fluvirin 2015-2016]"
-* NDC#49281071040 "0.1 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML"
-* NDC#49281071048 "0.1 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML"
-* NDC#49281070840 "0.1 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 M"
-* NDC#49281070848 "0.1 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.09 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 M"
-* NDC#49281071240 "0.1 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML P"
-* NDC#49281071248 "0.1 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.09 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.09 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.09 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.09 MG/ML P"
-* NDC#49281070955 "0.1 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.09 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.09 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.09 MG/ML Prefilled Syringe [F"
-* NDC#49281070948 "0.1 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.09 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.09 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.09 MG/ML Prefilled Syringe [F"
-* NDC#49281065070 "0.25 ML influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Prefilled Syringe"
-* NDC#49281065025 "0.25 ML influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Prefilled Syringe"
-* NDC#33332021920 "0.25 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Pr..."
-* NDC#49281051925 "0.25 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Pr..."
-* NDC#49281018125 "0.25 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/34/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 antigen 0...."
-* NDC#49281051625 "0.25 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281051600 "0.25 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281051500 "0.25 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03"
-* NDC#49281051525 "0.25 ML influenza A virus A/California/7/2009 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Switzerland/9715293/2013 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03"
-* NDC#49281052025 "0.25 ML influenza A virus A/Guangdong-Maonan/SWL1536/2019 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 a..."
-* NDC#33332022020 "0.25 ML influenza A virus A/Hong Kong/2671/2019 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Victoria/2454/2019 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Victoria/705/2018 antigen 0.03..."
-* NDC#49281051725 "0.25 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281051700 "0.25 ML influenza A virus A/Hong Kong/4801/2014 (H3N2) antigen 0.03 MG/ML / influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza B virus B/Brisbane/60/2008 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML"
-* NDC#49281051825 "0.25 ML influenza A virus A/Michigan/45/2015 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Singapore/INFIMH-16-0019/2016 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0"
-* NDC#49281051400 "0.25 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe ["
-* NDC#49281051425 "0.25 ML Influenza A virus vaccine, A-California-7-2009 (H1N1)-like virus 0.03 MG/ML / Influenza A virus vaccine, A-Victoria-361-2011 (H3N2)-like virus 0.03 MG/ML / Influenza B virus vaccine, B-Massachusetts-2-2012-like virus 0.03 MG/ML Prefilled Syringe ["
-* NDC#66019020001 "0.2 ML influenza A-California-7-2009-(H1N1)v-like virus vaccine 158000000 UNT/ML Nasal Spray"
-* NDC#49281065050 "0.5 ML influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Prefilled Syringe"
-* NDC#66521020002 "0.5 ML influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Prefilled Syringe"
-* NDC#49281065090 "0.5 ML influenza A-California-7-2009-(H1N1)v-like virus vaccine 0.03 MG/ML Prefilled Syringe"
-* NDC#49281041910 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Inj..."
-* NDC#49281041950 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Pre..."
-* NDC#33332031901 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Pre..."
-* NDC#19515090652 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Pre..."
-* NDC#58160089652 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML Pre..."
-* NDC#70461001903 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/Kansas/14/2017 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Maryland/15/2016 antigen 0.03 MG/ML Prefilled Syringe [Fluad 2019-2020]"
-* NDC#49281032050 "0.5 ML influenza A virus A/Brisbane/02/2018 (H1N1) antigen 0.03 MG/ML / influenza A virus A/South Australia/34/2019 (H3N2) antigen 0.03 MG/ML / influenza B virus B/Phuket/3073/2013 antigen 0.03 MG/ML / influenza B virus B/Washington/02/2019 antigen 0.0..."
+* NDC#49281071910
+* NDC#49281040565
+* NDC#70461020001
+* NDC#70461020011
+* NDC#62577061401
+* NDC#62577061411
+* NDC#49281041658
+* NDC#19515090852
+* NDC#33332031602
+* NDC#19515090841
+* NDC#33332031601
+* NDC#49281041688
+* NDC#49281041610
+* NDC#49281041650
+* NDC#33332001602
+* NDC#33332001601
+* NDC#70461000101
+* NDC#70461000111
+* NDC#33332001502
+* NDC#33332001501
+* NDC#19515090152
+* NDC#49281041588
+* NDC#49281041558
+* NDC#49281041510
+* NDC#49281041550
+* NDC#42874001610
+* NDC#42874001601
+* NDC#42874001501
+* NDC#42874001510
+* NDC#49281039965
+* NDC#49281039988
+* NDC#49281039788
+* NDC#49281039765
+* NDC#58160090541
+* NDC#58160090552
+* NDC#70461011902
+* NDC#70461011912
+* NDC#58160090352
+* NDC#58160090341
+* NDC#66521011802
+* NDC#66521011812
+* NDC#70461032003
+* NDC#19515081652
+* NDC#58160088552
+* NDC#49281042010
+* NDC#49281042050
+* NDC#49281072010
+* NDC#70461012003
+* NDC#33332032001
+* NDC#70461002003
+* NDC#49281041710
+* NDC#49281041758
+* NDC#49281041750
+* NDC#49281041788
+* NDC#33332031701
+* NDC#33332031702
+* NDC#33332001702
+* NDC#33332001701
+* NDC#58160090752
+* NDC#19515091241
+* NDC#58160090741
+* NDC#19515091252
+* NDC#70461000201
+* NDC#70461000211
+* NDC#70461012012
+* NDC#70461012002
+* NDC#42874011710
+* NDC#42874011701
+* NDC#42874001710
+* NDC#42874001701
+* NDC#49281040165
+* NDC#49281040188
+* NDC#70461031903
+* NDC#49281041850
+* NDC#49281041810
+* NDC#49281071810
+* NDC#49281040365
+* NDC#49281040388
+* NDC#70461031804
+* NDC#70461031803
+* NDC#70461020101
+* NDC#70461020111
+* NDC#58160089852
+* NDC#19515090952
+* NDC#33332031801
+* NDC#33332001801
+* NDC#70461001803
+* NDC#58160090152
+* NDC#66521011810
+* NDC#70461042010
+* NDC#49281063315
+* NDC#66019030710
+* NDC#33332042010
+* NDC#49281062778
+* NDC#49281062715
+* NDC#33332041711
+* NDC#33332041710
+* NDC#33332011710
+* NDC#33332011711
+* NDC#19515089601
+* NDC#19515089611
+* NDC#70461012011
+* NDC#70461012010
+* NDC#70461041910
+* NDC#58160080401
+* NDC#58160080815
+* NDC#66019030610
+* NDC#49281062915
+* NDC#66019030410
+* NDC#66019030401
+* NDC#70461041811
+* NDC#70461041810
+* NDC#70461030110
+* NDC#70461030112
+* NDC#33332041810
+* NDC#19515090011
+* NDC#33332011810
+* NDC#66019030510
+* NDC#19515089111
+* NDC#19515089101
+* NDC#19515089302
+* NDC#19515089307
+* NDC#49281041410
+* NDC#49281062178
+* NDC#76420048201
+* NDC#49281041458
+* NDC#49281062115
+* NDC#33332011410
+* NDC#33332011411
+* NDC#66521011711
+* NDC#66521011710
+* NDC#49281039415
+* NDC#49281039478
+* NDC#42874001401
+* NDC#42874001410
+* NDC#66019030110
+* NDC#66019030101
+* NDC#58160090141
+* NDC#19515089452
+* NDC#19515089441
+* NDC#76420048301
+* NDC#49281041488
+* NDC#49281041450
+* NDC#33332001401
+* NDC#33332001402
+* NDC#58160088152
+* NDC#58160088141
+* NDC#66521011712
+* NDC#62577061301
+* NDC#49281001450
+* NDC#49281001488
+* NDC#62577061311
+* NDC#66521011702
+* NDC#49281039588
+* NDC#49281039565
+* NDC#49281012065
+* NDC#66521000001
+* NDC#66521000011
+* NDC#63851061301
+* NDC#49281064015
+* NDC#66521020010
+* NDC#49281065010
+* NDC#66019020010
+* NDC#33332051925
+* NDC#33332051901
+* NDC#33332062910
+* NDC#66019030301
+* NDC#66019030310
+* NDC#66019030201
+* NDC#66019030210
+* NDC#49281063115
+* NDC#19515089711
+* NDC#33332041910
+* NDC#49281033615
+* NDC#33332041610
+* NDC#19515090301
+* NDC#49281062515
+* NDC#19515090311
+* NDC#49281062578
+* NDC#33332011610
+* NDC#33332011611
+* NDC#33332011511
+* NDC#33332011510
+* NDC#19515089801
+* NDC#49281062378
+* NDC#19515089811
+* NDC#49281062315
+* NDC#49281039678
+* NDC#49281039615
+* NDC#70461011911
+* NDC#70461011910
+* NDC#66521011811
+* NDC#49281071040
+* NDC#49281071048
+* NDC#49281070840
+* NDC#49281070848
+* NDC#49281071240
+* NDC#49281071248
+* NDC#49281070955
+* NDC#49281070948
+* NDC#49281065070
+* NDC#49281065025
+* NDC#33332021920
+* NDC#49281051925
+* NDC#49281018125
+* NDC#49281051625
+* NDC#49281051600
+* NDC#49281051500
+* NDC#49281051525
+* NDC#49281052025
+* NDC#33332022020
+* NDC#49281051725
+* NDC#49281051700
+* NDC#49281051825
+* NDC#49281051400
+* NDC#49281051425
+* NDC#66019020001
+* NDC#49281065050
+* NDC#66521020002
+* NDC#49281065090
+* NDC#49281041910
+* NDC#49281041950
+* NDC#33332031901
+* NDC#19515090652
+* NDC#58160089652
+* NDC#70461001903
+* NDC#49281032050
