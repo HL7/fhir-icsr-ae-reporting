@@ -39,7 +39,7 @@ A system can generate a FHIR-based ICSR document using the <a href="profile_list
 A system can further transform the ICSR document to the appropriate XML formal for submission to the FDA FAERS and VAERS systems. This IG provides sample <a href="icsr_mappings.html">ICSR Mapping</a> XSL transformations.
 
 ### FHIR Safety Requirements
-As with implementations of FHIR and FHIR Implementation Guides, implementers should consult the >a href="{{site.data.fhir}}/safety.html">FHIR Implementer's Safety Check List</a> in the core FHIR specification.
+As with implementations of FHIR and FHIR Implementation Guides, implementers should consult the <a href="{{site.data.fhir.path}}/safety.html">FHIR Implementer's Safety Check List</a> in the core FHIR specification.
 
 ### Authors
 
