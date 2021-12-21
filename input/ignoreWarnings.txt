@@ -12,9 +12,9 @@ Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the cod
 Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated
 Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
 Code System URI 'https://iccbba.org/standardterminology' is unknown so the code cannot be validated
+Code System URI 'http://meddra.org' is unknown so the code cannot be validated
 
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-Error from server: Unable to provide support for code system http://meddra.org
 Error from server: Unable to provide support for code system http://www.ama-assn.org/go/cpt
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.9
 Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl

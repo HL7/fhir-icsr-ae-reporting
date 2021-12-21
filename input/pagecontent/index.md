@@ -12,7 +12,7 @@ This IG depends on:
 * <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}/2021Jan/index.html">Making EHR Data More available for Research and Public Health (MedMorph)</a>
 
 ### Adverse Event Detection and Submission Workflow
-We consider the AE Detection and Submission workflow to be a type of <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}/2021Jan/usecases.html#data-submission-workflow">MedMorph's Data Submission Workflow</a>.
+We consider the AE Detection and Submission workflow to be a combination of MedMorph's <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}/2021Jan/usecases.html#report-creation-workflow">Report Creation</a> and <a href="{{site.data.fhir.hl7_fhir_us_medmorph}}/2021Jan/usecases.html#data-submission-workflow">Data Submission</a> workflows.
 
 NOTE: The diagram below is a UML activity diagram.  The <<use>> stereotypes indicate data that is used by the associated activity.  If the arrow is pointing to the activity, then the activity is reading that data.  If the arrow is pointing away from the activity, then the activity is generating that data.
 {::options parse_block_html="false" /}
@@ -22,6 +22,7 @@ NOTE: The diagram below is a UML activity diagram.  The <<use>> stereotypes indi
 </figure>
 {::options parse_block_html="true" /}
 
+The activities from Detect Adverse Event Case to Generate Adverse Event Resource are part of the Report Creation workflow while the remaining activities are part of the Data Submission workflow.
 
 #### Detect Adverse Event Case
 A system can detect AE cases automatically using the FHIR-based CQL <a href="algorithms.html">algorithms</a> referenced in this IG.
