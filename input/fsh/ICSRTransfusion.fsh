@@ -5,7 +5,7 @@ Title: "ICSR Transfusion"
 Description: "The common fields needed to represent a transfusion."
 * status MS
 * code 1..1 MS
-* code from TransfusionProcedureCodeVS (extensible)
+* code from https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.74/definition (extensible)
 * subject MS 
 * subject only Reference(ICSRPatient)
 * reasonCode MS
