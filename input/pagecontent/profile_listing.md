@@ -36,6 +36,12 @@ For transfusions, we have three value sets to represent the specific transfusion
   * [Adverse Event Count Observation](StructureDefinition-icsr-aecountobservation.html) - conveys the number of adverse events detected by the algorithm
   * [Exposure Count Observation](StructureDefinition-icsr-exposurecountobservation.html) - conveys the number of exposures detected by the algorithm
 
+#### Mapping Seriousness to FHIR Adverse Event
+In the ICSR submissions, seriousness is represented by a set of boolean flags for a number of seriousness concepts as well as a free text for indicating Other.  In the FHIR Adverse Event resource, there is a single coded field that represents the seriousness of the adverse event.  For purposes of mapping the ICSR Seriousness, an extension has been added to the AdverseEvent.seriousness field that allows for each of the concepts that would be set to True in the ICSR report to be sent in the extension.  The AdverseEvent.seriousness field is then restricted to simply stating whether the Adverse Event was serious or non-serious.  If we need to say that the Adverse Event was 'life threatening' and 'caused hospitalization', we would send 'Serious' in the AdverseEvent.seriousness field and send two repetitions of the extension with the appropriate codes.
+
+##### Hospitalization Codes
+In the FDA FAERS ICSR submission, there is one field that represents 'Caused or Prolonged Hospitalization'.  This is represented using the NCIT code of '33 - requires Inpatient Hospitalization'.  For FDA VAERS, the same code is used, but there are also two extra fields to differentiate between 'Hospitalization Required' (C50414) and 'Prolongation of Hospitalization' (C102450).  In VAERS, one would send the generic Hospitalization code as well as the more specific one.  Although this could be done in one instance of a CodeableConcept, this guide requires that two instances be sent - one with the generic code and one with the specific code.
+
 #### Additional Notes
 The FHIR profiles conform to the [HL7 FHIR US Core Implementation Guide]({{site.data.fhir.hl7_fhir_us_core}}) where applicable and is subject to change with subsequent releases.  See [Relationship to US-Core](relationship_to_us-core.html) for more information.
 

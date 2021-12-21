@@ -29,13 +29,14 @@ Description: "A sample Patient for an ICSR Report."
 * address.city = "Montague"
 * address.state = "MA"
 * address.country = "US"
-* extension[militaryStatus].valueCodeableConcept = NCIMeta#C114854
+* extension[militaryStatus].valueCodeableConcept = NCIT#C114854
 
 Extension: MilitaryStatus
 Id: icsr-ext-militarystatus
 Description: "Information on the military status of the ICSR Patient"
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
+* valueCodeableConcept from PatientMilitaryStatus
 
 /*
 	PATIENT OBSERVATION PROFILES
@@ -77,3 +78,11 @@ ValueSet: PatientAgeGroupVS
 Title: "Patient Age Group"
 Description: "Codes that represent a patient's age group"
 * codes from system AgeGroup
+
+ValueSet: PatientMilitaryStatus
+Title: "Patient Military Status"
+Description: "Codes that represent a patient's military status"
+* NCIT#C114854 "Active Duty"
+* NCIT#C114857 "Reserve"
+* NCIT#C114858 "National Guard"
+* NCIT#C114859 "TRICARE Beneficiary"

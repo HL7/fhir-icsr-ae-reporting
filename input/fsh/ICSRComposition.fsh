@@ -59,48 +59,62 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 	DrugInformation 1..1 MS and VAERSVaccines 0..1 MS and CaseNarrative 1..1 MS and
 	CaseReporterComments 0..1 MS and CaseSenderDiagnosis 0..1 MS and CaseSenderComments 0..1 MS and
 	DataSourceInformation 0..1 MS
+* section[PatientInformation] ^.definition = "Observations that give further information about the patient, eg. height, weight, age group, last menstrual period."
 * section[PatientInformation].code = ICSRSectionCodeCS#PatientInformation
 * section[PatientInformation].title = "Patient Information"
-* section[PatientInformation].entry only Reference(Observation)
+* section[PatientInformation].entry only Reference(PatientHeight or PatientWeight or PatientAgeGroup or PatientLastMenstrualPeriod)
+* section[RelevantMedicalHistory] ^.definition = "Current or historical Conditions that are relevant to the adverse event."
 * section[RelevantMedicalHistory].code = ICSRSectionCodeCS#RelevantMedicalHistory
 * section[RelevantMedicalHistory].title = "Relevant Medical History"
 * section[RelevantMedicalHistory].entry only Reference(Condition)
+* section[RelevantPastDrugHistory] ^.definition = "Current or historical Medication Statements that are relevant to the adverse event."
 * section[RelevantPastDrugHistory].code = ICSRSectionCodeCS#RelevantPastDrugHistory
 * section[RelevantPastDrugHistory].title = "Relevant Past Drug History"
 * section[RelevantPastDrugHistory].entry only Reference(MedicationStatement)
+* section[InCaseOfDeath] ^.definition = "Observations that give further information about the death of the adverse event subject."
 * section[InCaseOfDeath].code = ICSRSectionCodeCS#InCaseOfDeath
 * section[InCaseOfDeath].title = "In Case of Death"
 * section[InCaseOfDeath].entry only Reference(Observation)
+* section[PatientInformation] ^.definition = "Information about the adverse event subject's parent (demographics, relevant conditions, drug history)."
 * section[ParentInformation].code = ICSRSectionCodeCS#ParentInformation
 * section[ParentInformation].title = "Parent Information"
 * section[ParentInformation].entry only Reference(Patient or Condition or MedicationStatement)
+* section[ReactionEvent] ^.definition = "The actual Adverse Event details."
 * section[ReactionEvent].code = ICSRSectionCodeCS#ReactionEvent
 * section[ReactionEvent].title = "Reaction/Event"
 * section[ReactionEvent].entry only Reference(VAERSAdverseEvent or FAERSAdverseEvent)
+* section[RelevantLabTestResults] ^.definition = "Lab Test results that are relevant to the adverse event."
 * section[RelevantLabTestResults].code = ICSRSectionCodeCS#RelevantLabTestResults
 * section[RelevantLabTestResults].title = "Relevant Lab Test Results"
 * section[RelevantLabTestResults].entry only Reference(Observation)
+* section[DrugInformation] ^.definition = "The actual event that is presumed to have caused the adverse event (eg. drug administration, immunization, transfusion, etc.)."
 * section[DrugInformation].code = ICSRSectionCodeCS#DrugInformation
 * section[DrugInformation].title = "Drug Information"
 * section[DrugInformation].entry only Reference(ICSRMedicationAdministration or ICSRImmunization or DeviceUseStatement or ICSRTransfusion)
+* section[VAERSVaccines] ^.definition = "Any vaccines that were given with the past 4 weeks (required for VAERS submissions)."
 * section[VAERSVaccines].code = ICSRSectionCodeCS#VAERSVaccines
 * section[VAERSVaccines].title = "VAERS Vaccines given within 4 weeks"
 * section[VAERSVaccines].entry only Reference(ICSRImmunization)
+* section[CaseNarrative] ^.definition = "The full narrative about the adverse event."
 * section[CaseNarrative].code = ICSRSectionCodeCS#CaseSummaryNarrative
 * section[CaseNarrative].title = "Case Summary Narrative"
 * section[CaseNarrative].entry 0..0
 * section[CaseNarrative].text 1..1
+* section[CaseReporterComments] ^.definition = "Additional comments provided by the case reporter."
 * section[CaseReporterComments].code = ICSRSectionCodeCS#CaseReporterComments
 * section[CaseReporterComments].title = "Case Reporter's Comments"
 * section[CaseReporterComments].entry 0..0
 * section[CaseReporterComments].text 1..1
+* section[CaseSenderComments] ^.definition = "Additional comments provided by the case sender."
 * section[CaseSenderComments].code = ICSRSectionCodeCS#CaseSenderComments
 * section[CaseSenderComments].title = "Case Sender's Comments"
 * section[CaseSenderComments].entry 0..0
 * section[CaseSenderComments].text 1..1
+* section[CaseSenderDiagnosis] ^.definition = "Any diagnoses that are provided by the Case Sender that are deemed relevant to the adverse event."
 * section[CaseSenderDiagnosis].code = ICSRSectionCodeCS#CaseSenderDiagnosis
 * section[CaseSenderDiagnosis].title = "Case Sender's Diagnosis"
 * section[CaseSenderDiagnosis].entry only Reference(Condition)
+* section[DataSourceInformation] ^.definition = "IG-specific information about the algorithm that determined the Adverse Event information."
 * section[DataSourceInformation].code = ICSRSectionCodeCS#DataSourceInformation
 * section[DataSourceInformation].title = "Information about the Data Source of the AE information"
 * section[DataSourceInformation].entry only Reference(AECountObservation or ExposureCountObservation)

@@ -20,8 +20,9 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * date.extension contains EventEndDate named endDate 0..1 MS
 * recorder MS
 * recorder only Reference(AuthorPractitioner)
-* seriousness MS
-* seriousness from ICSRSeriousness (required)
+* seriousness 1..1 MS
+* seriousness from ICSRAESeriousness (required)
+* seriousness.extension contains EventSeriousness named seriousness 0..1 MS
 * outcome MS
 * location MS
 * location only Reference(USCoreLocation)
@@ -77,7 +78,19 @@ Description: "The age of the patient when the event occurred."
 * value[x] 1..1 MS
 * value[x] only Age
 
-// ValueSet: seriousness
+Extension: EventSeriousness
+Id: icsr-ext-eventseriousness
+Description: "Additional codes that give more detail around the adverse event seriousness."
+* value[x] 1..1 MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from ICSRSeriousness
+
+ValueSet: ICSRAESeriousness
+Title: "ICSR Top-Level Seriousness"
+Description: "Used to indicate whether the event is serious or not."
+* http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious
+* http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
+
 ValueSet: ICSRSeriousness
 Title: "ICSR Seriousness Codes"
 Description: "The set of codes that are used to describe seriousness in ICSR submissions."

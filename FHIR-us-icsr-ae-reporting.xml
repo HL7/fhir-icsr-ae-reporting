@@ -31,6 +31,7 @@
 <artifact deprecated="true" id="ValueSet/EncephalomyelitisDiagnosisCodes" key="ValueSet-EncephalomyelitisDiagnosisCodes" name="Encephalomyelitis Diagnosis Codes"/>
 <artifact id="StructureDefinition/icsr-ext-eventduration" key="StructureDefinition-ibm-fda-icsr-ext-eventduration" name="EventDuration"/>
 <artifact id="StructureDefinition/icsr-ext-eventenddate" key="StructureDefinition-ibm-fda-icsr-ext-eventenddate" name="EventEndDate"/>
+<artifact id="StructureDefinition/icsr-ext-eventseriousness" key="StructureDefinition-icsr-ext-eventseriousness" name="EventSeriousness"/>
 <artifact id="StructureDefinition/icsr-ext-expeditedreport" key="StructureDefinition-ibm-fda-icsr-ext-expeditedreport" name="ExpeditedReport"/>
 <artifact id="StructureDefinition/icsr-exposurecountobservation" key="StructureDefinition-ibm-fda-icsr-exposurecountobservation" name="ExposureCountObservation"/>
 <artifact id="StructureDefinition/faers-adverseevent" key="StructureDefinition-ibm-fda-faers-adverseevent" name="FAERS Adverse Event"/>
@@ -62,6 +63,7 @@
 <artifact id="CodeSystem/ICSRSectionCodeCS" key="CodeSystem-ICSRSectionCodeCS" name="ICSR Section Codes Code System"/>
 <artifact id="ValueSet/ICSRSectionCodeVS" key="ValueSet-ICSRSectionCodeVS" name="ICSR Section Codes Value Set"/>
 <artifact id="ValueSet/ICSRSeriousness" key="ValueSet-ICSRSeriousness" name="ICSR Seriousness Codes"/>
+<artifact id="ValueSet/ICSRAESeriousness" key="ValueSet-ICSRAESeriousness" name="ICSR Top-Level Seriousness"/>
 <artifact id="StructureDefinition/icsr-transfusion" key="StructureDefinition-ibm-fda-icsr-transfusion" name="ICSR Transfusion"/>
 <artifact id="ValueSet/ISBTBloodProductCodeVS" key="ValueSet-ISBTBloodProductCodeVS" name="ISBT Blood Product Codes"/>
 <artifact id="ValueSet/ISBTConvalescentPlasmaCodeVS" key="ValueSet-ISBTConvalescentPlasmaCodeVS" name="ISBT Convalescent Plasma Codes"/>
@@ -81,6 +83,7 @@
 <artifact id="ValueSet/PatientAgeGroupVS" key="ValueSet-PatientAgeGroupVS" name="Patient Age Group"/>
 <artifact id="StructureDefinition/icsr-patientheight" key="StructureDefinition-ibm-fda-icsr-patientheight" name="Patient Body Height in cm"/>
 <artifact id="StructureDefinition/icsr-patientweight" key="StructureDefinition-ibm-fda-icsr-patientweight" name="Patient Body Weight in kg"/>
+<artifact id="ValueSet/PatientMilitaryStatus" key="ValueSet-PatientMilitaryStatus" name="Patient Military Status"/>
 <artifact id="StructureDefinition/icsr-patientlastmenstrualperiod" key="StructureDefinition-ibm-fda-icsr-patientlastmenstrualperiod" name="Patient's Date of Last Menstrual Period"/>
 <artifact id="StructureDefinition/icsr-authorpractitioner" key="StructureDefinition-ibm-fda-icsr-authorpractitioner" name="Practitioner Author"/>
 <artifact id="StructureDefinition/icsr-authorpractitionerrole" key="StructureDefinition-ibm-fda-icsr-authorpractitionerrole" name="PractitionerRole Author"/>

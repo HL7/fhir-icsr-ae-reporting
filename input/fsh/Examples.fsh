@@ -192,6 +192,7 @@ Description: "Sample FAERS Event created for Connectathon."
 * date = 2000-01-01
 * date.extension[endDate].valueDateTime = 2019-01-20
 * date.extension[eventDuration].valueDuration = 19.05 'a'
+* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
 * suspectEntity[Transfusion].instance = Reference(FAERSExampleTransfusion)
 * suspectEntity[Transfusion].causality.productRelatedness = "Suspect"
 * suspectEntity[1].instance = Reference(FAERSEpinephrine)
@@ -383,7 +384,8 @@ Description: "Sample VAERS Event created for Connectathon."
 * event = MedDRA#10004223 "Bell's Palsy"
 * subject = Reference(VAERSPatient)
 * date = 2017-04-23
-* seriousness = Seriousness#26
+* seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
+* seriousness.extension[seriousness].valueCodeableConcept = Seriousness#26
 * outcome = http://terminology.hl7.org/CodeSystem/adverse-event-outcome#recovering
 * suspectEntity[Immunization].instance = Reference(VAERSExampleImmunization)
 * suspectEntity[Immunization].causality.productRelatedness = "Suspect"
