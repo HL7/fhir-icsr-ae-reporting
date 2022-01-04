@@ -21,7 +21,6 @@ Error from server: Unable to provide support for code system http://ncicb.nci.ni
 Unknown System specified, so Concepts and Filters can''t be checked
 
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/ICSRSeriousness because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated]
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/TransfusionProcedureCodeVS because the value set or a code system it depends on is not known to the validator, Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated]
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/PatientAgeGroupVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated]
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/PatientMilitaryStatus because the value set or a code system it depends on is not known to the validator, Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated]
 
@@ -39,4 +38,4 @@ This element does not match any known slice defined in the profile http://hl7.or
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
 # US Core 4.0 does not have a RelatedPerson profile
-US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile.
+US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile
