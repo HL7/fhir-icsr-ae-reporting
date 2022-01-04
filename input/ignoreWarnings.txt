@@ -38,3 +38,5 @@ This element does not match any known slice defined in the profile http://hl7.or
 # Variance request for AECountObservation, ExposureCountObservation, PatientAgeGroup observations (August 12, 2021 CGP meeting)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles
 
+# US Core 4.0 does not have a RelatedPerson profile
+US FHIR Usage rules require that all profiles on RelatedPerson derive from the core US profile.

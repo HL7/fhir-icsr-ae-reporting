@@ -12,6 +12,16 @@
       "current": true
     },
     {
+      "version": "1.0.0",
+      "date": "2022-01-04",
+      "desc": "First STU Release",
+      "path": "http://hl7.org/fhir/us/icsr-ae-reporting/STU1",
+      "status": "trial-use",
+      "sequence": "STU 1",
+      "fhirversion": "4.0.1",
+      "current": true
+    },
+    {
       "version": "0.1.0",
       "desc": "First public ballot",
       "path": "http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep",
