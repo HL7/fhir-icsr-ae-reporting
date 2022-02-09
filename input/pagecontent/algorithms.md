@@ -40,23 +40,23 @@ The following tables list the available phenotypes for each algorithm type. The 
 
 | Adverse Event        | Care Setting*|  Clean Window   | Risk Window| Vaccine Relevance| FHIR CQL File| Codelists |
 | ------------- |:-----:|:-----:|:-----:|:-----:|:-----:|:---------:|
-| Guillain-Barre Syndrome | IP | 365 days| 1-42 days| Influenza and Covid-19|[CQL](cql_files/gbs.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.60/definition) |
-| Immune Thrombocytopenic Purpura (ITP) | IP, OP/PB, OP-ED| 365 days| 1-42 days|Covid-19|[CQL](cql_files/thrombocytopenic_purpura.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.53/definition) |
-| Bell's Palsy |IP, OP/PB, OP-ED| 183 days| 1-42 days| Influenza and Covid-19|[CQL](cql_files/bells_palsy.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.65/definition) |
-| Anaphylaxis | IP,OP-ED| 30 days| 0-2 days| Influenza and Covid-19|[CQL](cql_files/anaphylaxis.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.67/definition) |
-| Appendicitis |IP, OP-ED| 365 days| 1-42 days| Covid-19|  [CQL](cql_files/appendicitis.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.66/definition) |
-| Encephalomyelitis |IP| 183 days| 1-42 days| Influenza and Covid-19|[CQL](cql_files/encephalomyelitis.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.62/definition) |
-| Narcolepsy | IP, OP/PB, OP-ED| 365 days| 1-42 days|Covid-19|[CQL](cql_files/narcolepsy.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.56/definition) |
-| Disseminated Intravascular Coagulation (DIC) | IP, OP-ED, OP/PB| 365 days| 1-28 days| Covid-19|[CQL](cql_files/disseminated_intravascular_coagulation.cql) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.63/definition) |
-| Transverse Myelitis| IP, OP-ED| 365 days| 1-90 days| Covid-19|[CQL](cql_files/transverse_myelitis.cql)|[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.52/definition) |
-| Multisystem Inflammatory Syndrome (MIS)|IP, OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/mis.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.70/definition) |
-| Febrile Seizures| IP, OP/PB, OP-ED| 42 days| 0-1 days| Influenza and Covid-19|[CQL](cql_files/febrile_seizure.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.61/definition) |
-| Kawasaki Disease|IP, OP/PB, OP-ED| 365 days| 1-28 days| Covid-19| [CQL](cql_files/kawasaki_disease.cql)| [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.58/definition) |
-| Non-hemorrhagic Stroke|IP| 365 days| 1-28 days| Covid-19| [CQL](cql_files/non_hemorrhagic_stroke.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.55/definition) |
-| Hemorrhagic Stroke|IP| 365 days| 1-28 days| Covid-19|[CQL](cql_files/hemorrhagic_stroke.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.59/definition) |
-| Acute Myocardial Infarction|IP| 365 days| 1-28 days| Covid-19| [CQL](cql_files/acute_myocardial_infarction.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.68/definition) |
-| Myocarditis/Pericarditis|IP, OP/PB, OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/myocarditis.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.57/definition) |
-| Deep Vein Thrombosis|IP, OP/PB, OP-ED| 365 days| 1-28 days| Covid-19| [CQL](cql_files/deep_vein_thrombosis.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.64/definition) |
-| Pulmonary Embolism|IP, OP/PB,OP-ED| 365 days| 1-28 days| Covid-19|[CQL](cql_files/pulmonary_embolism.cql) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.54/definition) |
+| Guillain-Barre Syndrome | IP | 365 days| 1-42 days| Influenza and Covid-19|[CQL](cql_files/gbs.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.60/definition) |
+| Immune Thrombocytopenic Purpura (ITP) | IP, OP/PB, OP-ED| 365 days| 1-42 days|Covid-19|[CQL](cql_files/thrombocytopenic_purpura.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.53/definition) |
+| Bell's Palsy |IP, OP/PB, OP-ED| 183 days| 1-42 days| Influenza and Covid-19|[CQL](cql_files/bells_palsy.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.65/definition) |
+| Anaphylaxis | IP,OP-ED| 30 days| 0-2 days| Influenza and Covid-19|[CQL](cql_files/anaphylaxis.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.67/definition) |
+| Appendicitis |IP, OP-ED| 365 days| 1-42 days| Covid-19|  [CQL](cql_files/appendicitis.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.66/definition) |
+| Encephalomyelitis |IP| 183 days| 1-42 days| Influenza and Covid-19|[CQL](cql_files/encephalomyelitis.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.62/definition) |
+| Narcolepsy | IP, OP/PB, OP-ED| 365 days| 1-42 days|Covid-19|[CQL](cql_files/narcolepsy.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.56/definition) |
+| Disseminated Intravascular Coagulation (DIC) | IP, OP-ED, OP/PB| 365 days| 1-28 days| Covid-19|[CQL](cql_files/disseminated_intravascular_coagulation.cql.txt) |[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.63/definition) |
+| Transverse Myelitis| IP, OP-ED| 365 days| 1-90 days| Covid-19|[CQL](cql_files/transverse_myelitis.cql.txt)|[Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.52/definition) |
+| Multisystem Inflammatory Syndrome (MIS)|IP, OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/mis.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.70/definition) |
+| Febrile Seizures| IP, OP/PB, OP-ED| 42 days| 0-1 days| Influenza and Covid-19|[CQL](cql_files/febrile_seizure.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.61/definition) |
+| Kawasaki Disease|IP, OP/PB, OP-ED| 365 days| 1-28 days| Covid-19| [CQL](cql_files/kawasaki_disease.cql.txt)| [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.58/definition) |
+| Non-hemorrhagic Stroke|IP| 365 days| 1-28 days| Covid-19| [CQL](cql_files/non_hemorrhagic_stroke.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.55/definition) |
+| Hemorrhagic Stroke|IP| 365 days| 1-28 days| Covid-19|[CQL](cql_files/hemorrhagic_stroke.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.59/definition) |
+| Acute Myocardial Infarction|IP| 365 days| 1-28 days| Covid-19| [CQL](cql_files/acute_myocardial_infarction.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.68/definition) |
+| Myocarditis/Pericarditis|IP, OP/PB, OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/myocarditis.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.57/definition) |
+| Deep Vein Thrombosis|IP, OP/PB, OP-ED| 365 days| 1-28 days| Covid-19| [CQL](cql_files/deep_vein_thrombosis.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.64/definition) |
+| Pulmonary Embolism|IP, OP/PB,OP-ED| 365 days| 1-28 days| Covid-19|[CQL](cql_files/pulmonary_embolism.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.54/definition) |
 
 *IP - inpatient stays, OP/PB - all outpatient visits and professional/provider services including clinics, OP-ED - subset of outpatient visits occurring in the emergency department
