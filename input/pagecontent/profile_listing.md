@@ -1,12 +1,12 @@
 ### FHIR ICSR Profiles
-This IG specifies two overlapping sets of profiles for formatting an ICSR submission using FHIR resources.  The first set is for a VAERS report that represents an ICSR R3 report as a Bundle of MessageHeaders pointing to a Composition.  The other set is for a FAERS report that represents an ICSR R2 report as just a MessageHeader pointing to a Composition.  Lastly, there is a set of common profiles applicable to both domains.
+This IG specifies two overlapping sets of profiles for formatting an ICSR submission using FHIR resources.  The first set is for a Vaccination Adverse Event case report that represents an ICSR R3 report as a Bundle of MessageHeaders pointing to a Composition.  The other set is for a Transfusion Adverse Event case report that represents an ICSR R2 report as just a MessageHeader pointing to a Composition.  Lastly, there is a set of common profiles applicable to both domains.
 
-#### VAERS Profiles
-* [VAERS Adverse Event](StructureDefinition-vaers-adverseevent.html) - the Adverse Event profile with a binding to Vaccination-related event codes
+#### Vaccination Adverse Event Profiles
+* [Vaccination Adverse Event](StructureDefinition-vaccination-adverseevent.html) - the Adverse Event profile with a binding to Vaccination-related event codes
 * [Immunization](StructureDefinition-icsr-immunization.html)
 
-#### FAERS Profiles
-* [FAERS Adverse Event](StructureDefinition-faers-adverseevent.html) - the Adverse Event profile with a binding to Transfusion-related event codes
+#### Transfusion Advse Event Profiles
+* [Transfusion Adverse Event](StructureDefinition-transfusion-adverseevent.html) - the Adverse Event profile with a binding to Transfusion-related event codes
 * [Transfusion](StructureDefinition-icsr-transfusion.html) - the specific fields needed to represent a transfusion procedure
 * [Blood Product](StructureDefinition-icsr-bloodproduct.html) - information about the blood product that was used in a transfusion
 
@@ -17,10 +17,10 @@ For transfusions, we have three value sets to represent the specific transfusion
 * [Convalescent Plasma ISBT Codes](ValueSet-ISBTConvalescentPlasmaCodeVS.html)
 
 #### Common Profiles
-* [VAERS Bundle](StructureDefinition-icsr-bundle.html) - representing a minimum set of constraints on a ICSR Report submission - a MessageHeader and a Composition
-* [ICSR MessageHeader](StructureDefinition-icsr-messageheader.html) - constraints on MessageHeader to allow for sending of ICSR sender and receiver information
-* [Composition](StructureDefinition-icsr-composition.html) - the header of an ICSR report
-* ICSR Report Author
+* [Case Report Bundle](StructureDefinition-icsr-bundle.html) - representing a minimum set of constraints on a case report submission - a MessageHeader and a Composition
+* [Case Report MessageHeader](StructureDefinition-icsr-messageheader.html) - constraints on MessageHeader to allow for sending of case report sender and receiver information
+* [Composition](StructureDefinition-icsr-composition.html) - the header of an case report
+* Case Report Author
   * [Practitioner](StructureDefinition-icsr-authorpractitioner.html)
   * [PractitionerRole](StructureDefinition-icsr-authorpractitionerrole.html)
   * [RelatedPerson](StructureDefinition-icsr-authorrelatedperson.html)
@@ -40,10 +40,26 @@ For transfusions, we have three value sets to represent the specific transfusion
 In the ICSR submissions, seriousness is represented by a set of boolean flags for a number of seriousness concepts as well as a free text for indicating Other.  In the FHIR Adverse Event resource, there is a single coded field that represents the seriousness of the adverse event.  For purposes of mapping the ICSR Seriousness, an extension has been added to the AdverseEvent.seriousness field that allows for each of the concepts that would be set to True in the ICSR report to be sent in the extension.  The AdverseEvent.seriousness field is then restricted to simply stating whether the Adverse Event was serious or non-serious.  If we need to say that the Adverse Event was 'life threatening' and 'caused hospitalization', we would send 'Serious' in the AdverseEvent.seriousness field and send two repetitions of the extension with the appropriate codes.
 
 ##### Hospitalization Codes
-In the FDA FAERS ICSR submission, there is one field that represents 'Caused or Prolonged Hospitalization'.  This is represented using the NCIT code of '33 - requires Inpatient Hospitalization'.  For FDA VAERS, the same code is used, but there are also two extra fields to differentiate between 'Hospitalization Required' (C50414) and 'Prolongation of Hospitalization' (C102450).  In VAERS, one would send the generic Hospitalization code as well as the more specific one.  Although this could be done in one instance of a CodeableConcept, this guide requires that two instances be sent - one with the generic code and one with the specific code.
+In the FDA Transfusion case report specification, there is one field that represents 'Caused or Prolonged Hospitalization'.  This is represented using the NCIT code of '33 - requires Inpatient Hospitalization'.  For FDA vaccination case report, the same code is used, but there are also two extra fields to differentiate between 'Hospitalization Required' (C50414) and 'Prolongation of Hospitalization' (C102450).  In the Vaccination case report, one would send the generic Hospitalization code as well as the more specific one.  Although this could be done in one instance of a CodeableConcept, this guide requires that two instances be sent - one with the generic code and one with the specific code.
 
 #### Additional Notes
 The FHIR profiles conform to the [HL7 FHIR US Core Implementation Guide]({{site.data.fhir.hl7_fhir_us_core}}) where applicable and is subject to change with subsequent releases.  See [Relationship to US-Core](relationship_to_us-core.html) for more information.
 
 #### Must Support Requirements
 All of the Profiles include elements that are marked as 'Must Support'.  For the purposes of this guide, Must Support is intended to represent those fields that will be present in the ICSR submission, if applicable to the specific submission instance.  When sending information to the PLR server, client applications SHOULD be able to send any fields marked as Must Support, with the additional expectation that they SHALL send any fields that they collect if they are applicable to the specific submission. 
+
+### Cross-Version Analysis
+{% include cross-version-analysis.xhtml %}
+
+### Intellectual Property Statements
+{% include ip-statements.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### IG Dependencies
+
+This IG Contains the following dependencies on other IGs.
+
+{% include dependency-table.xhtml %}

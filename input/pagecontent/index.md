@@ -1,7 +1,7 @@
 ### Scope
 
-This FHIR Implementation Guide details a process where adverse event (AE) individual case safety reports (ICSR) are generated from EHR data. The ICSR data elements are detailed in the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) ICSR specifications and are used by the FDA in two systems: the FDA Adverse Event Reporting System (FAERS) and the Vaccine Adverse Event Reporting System (VAERS).
-In this guide, there are two main components to the generation process: detection and reporting. To support AE detection, this IG includes a set of Clinical Quality Language (CQL) algorithms which can be run on FHIR data. To support AE reporting, this IG includes a set of profiles that enables the creation of a FHIR-based ICSR report and mappings to ICH ICSR specification (FAERS and VAERS implementation of those specifications). This work was developed as part of the FDA's Center for Biologic Evaluation and Research (CBER) Biologics Effectiveness and Safety (BEST) initiatve. This IG currently focuses on post-vaccination and post-tranfusion AE reporting.
+This FHIR Implementation Guide details a process where adverse event (AE) reports are generated from EHR data. The report data elements are taken from the Food and Drug Administration's Individual Case Safety Reports specifications.  These specifications can be found at [FDA's website](https://www.fda.gov/industry/fda-data-standards-advisory-board/individual-case-safety-reports).
+In this guide, there are two main components to the generation process: detection and reporting. To support AE detection, this IG includes a set of Clinical Quality Language (CQL) algorithms which can be run on FHIR data. To support AE reporting, this IG includes a set of profiles that enables the creation of a FHIR case report document along with mappings to the ICH ICSR specifications. This work was developed as part of the FDA's Center for Biologic Evaluation and Research (CBER) Biologics Effectiveness and Safety (BEST) initiatve. This IG currently focuses on post-vaccination and post-tranfusion AE reporting.
 
 ### Rationale
 Adverse events due to biological products are underreported to regulatory authorities and the data reported may not always contain adequate information for decision-making.  Use of EHR FHIR data could improve reporting of adverse events and minimize the burden of identification on practitioners.
@@ -37,7 +37,7 @@ Once an Adverse Event has been confirmed or if a practitioner manually determine
 A system can generate a FHIR-based ICSR document using the <a href="profile_listing.html">profiles</a> referenced in this IG.
 
 #### Transform to applicable ICSR XML format
-A system can further transform the ICSR document to the appropriate XML formal for submission to the FDA FAERS and VAERS systems. This IG provides sample <a href="icsr_mappings.html">ICSR Mapping</a> XSL transformations.
+A system can further transform the ICSR document to the appropriate XML format for submission to the FDA FAERS and VAERS systems, if desired. This IG provides sample <a href="icsr_mappings.html">ICSR Mapping</a> XSL transformations.
 
 ### FHIR Safety Requirements
 As with implementations of FHIR and FHIR Implementation Guides, implementers should consult the <a href="{{site.data.fhir.path}}safety.html">FHIR Implementer's Safety Check List</a> in the core FHIR specification.
@@ -47,6 +47,6 @@ As with implementations of FHIR and FHIR Implementation Guides, implementers sho
 The development of this Implementation Guide was funded by FDA CBER BEST initiative.
 
 * FDA CBER BEST IBM Project Team
-* Jean Duteau (mailto: jean@duteaudesign.com)
-* Shayan Hobbi (mailto: shayan.hobbi@ibm.com)
-* Will Rosenfeld (mailto: wtrosenf@us.ibm.com)
+* Jean Duteau
+* Shayan Hobbi
+* Will Rosenfeld

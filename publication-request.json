@@ -1,0 +1,9 @@
+{
+  "package-id" : "hl7.fhir.us.icsr-ae-reporting",
+  "version" : "1.1.0",
+  "path" : "http://hl7.org/fhir/us/icsr-ae-reporting",
+  "status" : "update",
+  "sequence" : "STU 1",
+  "milestone" : true,
+  "desc" : "This is a STU update of the first release in the STU1 sequence.",
+}

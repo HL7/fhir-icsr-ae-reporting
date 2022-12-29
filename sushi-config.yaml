@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.icsr-ae-reporting
 canonical: http://hl7.org/fhir/us/icsr-ae-reporting
-version: 1.0.0
+version: 1.1.0
 name: TransfusionVaccinationAdverseEventDetectionReporting
 title: "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and
   Reporting"
@@ -28,10 +28,9 @@ dependencies:
   hl7.fhir.us.medmorph: 0.1.0
   us.nlm.vsac:
     uri: http://fhir.org/packages/us.nlm.vsac/ImplementationGuide/us.nlm.vsac
-    version: 0.4.0
+    version: 0.9.0
 parameters:
   show-inherited-invariants: false
-  path-expansion-params: '../../exp-params.json'
 copyrightYear: 2020+
 releaseLabel: STU 1 Ballot
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"

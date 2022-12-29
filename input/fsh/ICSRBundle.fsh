@@ -14,22 +14,22 @@ Description: "The fields needed to create a Bundle for an ICSR Report."
 * entry[Message].resource only ICSRMessageHeader
 * entry[Document].resource only ICSRComposition
 
-Instance: MinimumVAERSBundle
+Instance: MinimumVaccinationReportBundle
 InstanceOf: ICSRBundle
-Title: "Minimum VAERS Bundle"
-Description: "The VAERS Bundle with the minimum set of values."
+Title: "Minimum Vaccination Case Report Bundle"
+Description: "The Vaccination Case Report Bundle with the minimum set of values."
 * identifier.value = "BATCH20200210171800-05006510d41d-281d-7610-cd0d-4b07dcc8f49d"
 * timestamp = 2020-02-10T17:18:00.000-05:00
-* entry[Message].fullUrl = "Bundle/SampleVAERSMessageHeader"
-* entry[Message].resource = SampleVAERSMessageHeader
-* entry[1].fullUrl = "Composition/SampleVAERSReport"
-* entry[1].resource = SampleVAERSReport
+* entry[Message].fullUrl = "Bundle/SampleVaccinationMessageHeader"
+* entry[Message].resource = SampleVaccinationMessageHeader
+* entry[1].fullUrl = "Composition/SampleVaccinationReport"
+* entry[1].resource = SampleVaccinationReport
 
-Instance: MinimumFAERSBundle
+Instance: MinimumTransfusionReportBundle
 InstanceOf: ICSRBundle
-Title: "Minimum FAERS Bundle"
-Description: "The FAERS Bundle with the minimum set of values."
-* entry[Message].fullUrl = "Bundle/SampleFAERSMessageHeader"
-* entry[Message].resource = SampleFAERSMessageHeader
-* entry[1].fullUrl = "Composition/SampleFAERSReport"
-* entry[1].resource = SampleFAERSReport
+Title: "Minimum Transfusion Case Report Bundle"
+Description: "The Transfusion Case Report Bundle with the minimum set of values."
+* entry[Message].fullUrl = "Bundle/SampleTransfusionMessageHeader"
+* entry[Message].resource = SampleTransfusionMessageHeader
+* entry[1].fullUrl = "Composition/SampleTransfusionReport"
+* entry[1].resource = SampleTransfusionReport

@@ -18,11 +18,16 @@ Error from server: Unable to provide support for code system urn:oid:2.16.840.1.
 Error from server: Unable to provide support for code system http://www.ama-assn.org/go/cpt
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.9
 Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-Unknown System specified, so Concepts and Filters can''t be checked
+Unknown System 'http://www.ama-assn.org/go/cpt' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://www.cms.gov/Medicare/Coding/ICD10' specified, so Concepts and Filters can't be checked%
+Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://ncimeta.nci.nih.gov' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked%
 
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/ICSRSeriousness because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated]
+[Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated]
+[Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated]
+
 [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/PatientAgeGroupVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated]
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/PatientMilitaryStatus because the value set or a code system it depends on is not known to the validator, Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated]
 
 The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.49/definition could not be found so cannot be checked
 The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.50/definition could not be found so cannot be checked
@@ -30,9 +35,9 @@ ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.74/definit
 The valueSet reference https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.74/definition on element Procedure.code could not be resolved
 
 # Bundle slicing that won't match due to only specific slices being specified
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/icsr-bundle
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/faers-adverseevent
-This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/vaers-adverseevent
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/icsr-bundle%
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/transfusion-adverseevent%
+This element does not match any known slice defined in the profile http://hl7.org/fhir/us/icsr-ae-reporting/StructureDefinition/vaccination-adverseevent%
 
 # Variance request for AECountObservation, ExposureCountObservation, PatientAgeGroup observations (August 12, 2021 CGP meeting)
 US FHIR Usage rules require that all profiles on Observation derive from one of the base US profiles

@@ -2,7 +2,7 @@ Profile: ICSRMedicationAdministration
 Parent: MedicationAdministration
 Id: icsr-medicationadministration
 Title: "ICSR MedicationAdministration"
-Description: "The common fields needed for either a FAERS or VAERS drug administration."
+Description: "The common fields needed for either a transfusion or vaccination drug administration."
 
 * status MS
 * subject MS

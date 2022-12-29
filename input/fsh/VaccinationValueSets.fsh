@@ -5,6 +5,7 @@ Description: "Product Codes for Vaccines, from CVX, NDC, and CPT code systems"
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div id='cld'><p>This value set has a large enumerated (extensional) definition.  See 'Definition' in the table above for the definition description.  The full definition is available in the resource instance (see links in 'Source Resource' in the table above).</p></div></div>"
 * ^description = "CVX, NDC, and CPT codes for Vaccines"
 * ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved."
+* ^experimental = false
 * codes from valueset COVID19VaccineCodeVS
 * codes from valueset InfluenzaVaccineCodeVS
 
@@ -15,6 +16,7 @@ Description: "Product Codes for COVID-19 Vaccines, from CPT, CVX, NDC, and RxNor
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div id='cld'><p>This value set has a large enumerated (extensional) definition.  See 'Definition' in the table above for the definition description.  The full definition is available in the resource instance (see links in 'Source Resource' in the table above).</p></div></div>"
 * ^description = "CPT, CVX, NDC, and RxNorm codes for COVID-19 Vaccines"
 * ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved."
+* ^experimental = false
 * codes from valueset https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.50/definition
 * NDC#59267100001
 * NDC#59267100002
@@ -42,6 +44,7 @@ Description: "Product Codes for Influenza Vaccines, from CVX, NDC, and RxNorm co
 * ^text.status = #additional
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div id='cld'><p>This value set has a large enumerated (extensional) definition.  See 'Definition' in the table above for the definition description.  The full definition is available in the resource instance (see links in 'Source Resource' in the table above).</p></div></div>"
 * ^description = "CVX, NDC, and RxNorm codes for Influenza Vaccines"
+* ^experimental = false
 * codes from valueset https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.49/definition
 * NDC#49281071910
 * NDC#49281040565

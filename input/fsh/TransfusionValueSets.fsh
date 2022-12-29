@@ -2,6 +2,7 @@ ValueSet: TransfusionProcedureCodeVS
 Title: "Codes that represent a transfusion procedure Value Set"
 Description: "Codes that represent a transfusion procedure Value Set"
 * ^copyright = "Current Procedural Terminology (CPT) is copyright 2020 American Medical Association. All rights reserved."
+* ^experimental = false
 * CPT4#86999 "Unlisted transfusion medicine procedure"
 * CPT4#36430 "Transfusion, blood or blood components"
 * CPT4#36440 "Push transfusion, blood"
@@ -166,8 +167,10 @@ ValueSet: ISBTConvalescentPlasmaCodeVS
 Title: "ISBT Convalescent Plasma Codes"
 Description: "All ISBT Convalescent Plasma Codes.  For access to these codes, please see http://www.iccbba.org/tech-library/iccbba-documents/databases-and-reference-tables/product-description-codes-database2."
 * ^copyright = "All ISBT codes are copyrighted by ICCBBA.  Any use of the ISBT codes must be compliant with ICCBBA Intellectual Property policies."
+* ^experimental = false
 
 ValueSet: ISBTBloodProductCodeVS
 Title: "ISBT Blood Product Codes"
 Description: "All ISBT codes for Plasma, Cryoprecipitate, Granulocytes, Immune Plasma, Leukocytes, T-Cells, Lymphocytes, Platelets, and Red Blood Cells.  For access to these codes, please see http://www.iccbba.org/tech-library/iccbba-documents/databases-and-reference-tables/product-description-codes-database2."
 * ^copyright = "All ISBT codes are copyrighted by ICCBBA.  Any use of the ISBT codes must be compliant with ICCBBA Intellectual Property policies."
+* ^experimental = false

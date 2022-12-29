@@ -34,7 +34,7 @@ Description: "An organization's department name"
 //Sender Organization example
 Instance: SenderOrganization
 InstanceOf: MessageOrganization
-Title: "Sender Organization for VAERS/FAERS"
+Title: "Sample Sender Organization"
 Description: "An organization that is sending ICSR submissions."
 * extension[departmentName].valueString = "sender department"
 * type = OrgType#1 "Pharmaceutical Company"

@@ -77,11 +77,13 @@ Description: "A descriptive Age Group for the Patient"
 ValueSet: PatientAgeGroupVS
 Title: "Patient Age Group"
 Description: "Codes that represent a patient's age group"
+* ^experimental = false
 * codes from system AgeGroup
 
 ValueSet: PatientMilitaryStatus
 Title: "Patient Military Status"
 Description: "Codes that represent a patient's military status"
+* ^experimental = false
 * NCIT#C114854 "Active Duty"
 * NCIT#C114857 "Reserve"
 * NCIT#C114858 "National Guard"

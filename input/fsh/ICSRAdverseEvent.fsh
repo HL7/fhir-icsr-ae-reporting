@@ -32,10 +32,10 @@ Description: "The fields needed to submit an AdverseEvent for a ICSR Report."
 * suspectEntity.causality 1..1 MS
 * suspectEntity.causality.productRelatedness 1..1 MS
 
-Profile: VAERSAdverseEvent
+Profile: VaccinationAdverseEvent
 Parent: ICSRAdverseEvent
-Id: vaers-adverseevent
-Title: "VAERS Adverse Event"
+Id: vaccination-adverseevent
+Title: "Vaccination Adverse Event"
 Description: "ICSR Adverse Event with a value set of vaccination-related events"
 * event from MedDRAVaccinationAdverseEventVS (extensible)
 * suspectEntity ^slicing.discriminator.type = #type
@@ -45,10 +45,10 @@ Description: "ICSR Adverse Event with a value set of vaccination-related events"
 * suspectEntity contains Immunization 1..1 MS
 * suspectEntity[Immunization].instance only Reference(ICSRImmunization)
 
-Profile: FAERSAdverseEvent
+Profile: TransfusionAdverseEvent
 Parent: ICSRAdverseEvent
-Id: faers-adverseevent
-Title: "FAERS Adverse Event"
+Id: transfusion-adverseevent
+Title: "Transfusion Adverse Event"
 Description: "ICSR Adverse Event with a value set of transfusion-related events"
 * event from MedDRATransfusionAdverseEventVS (extensible)
 * suspectEntity ^slicing.discriminator.type = #type
@@ -88,12 +88,14 @@ Description: "Additional codes that give more detail around the adverse event se
 ValueSet: ICSRAESeriousness
 Title: "ICSR Top-Level Seriousness"
 Description: "Used to indicate whether the event is serious or not."
+* ^experimental = false
 * http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious
 * http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#serious
 
 ValueSet: ICSRSeriousness
 Title: "ICSR Seriousness Codes"
 Description: "The set of codes that are used to describe seriousness in ICSR submissions."
+* ^experimental = false
 * Seriousness#34 "resultsInDeath"
 * Seriousness#21 "isLifeThreatening"
 * Seriousness#33 "requiresInpatientHospitalization"

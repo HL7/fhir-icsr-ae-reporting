@@ -56,7 +56,7 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * section ^slicing.description = "Slice based on the different sections that are needed in an ICSR document."
 * section contains PatientInformation 0..1 MS and RelevantMedicalHistory 0..1 MS and RelevantPastDrugHistory 0..1 MS and 
 	InCaseOfDeath 0..1 MS and ParentInformation 0..1 MS and ReactionEvent 1..1 MS and RelevantLabTestResults 0..1 MS and 
-	DrugInformation 1..1 MS and VAERSVaccines 0..1 MS and CaseNarrative 1..1 MS and
+	DrugInformation 1..1 MS and Vaccines 0..1 MS and CaseNarrative 1..1 MS and
 	CaseReporterComments 0..1 MS and CaseSenderDiagnosis 0..1 MS and CaseSenderComments 0..1 MS and
 	DataSourceInformation 0..1 MS
 * section[PatientInformation] ^.definition = "Observations that give further information about the patient, eg. height, weight, age group, last menstrual period."
@@ -82,7 +82,7 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * section[ReactionEvent] ^.definition = "The actual Adverse Event details."
 * section[ReactionEvent].code = ICSRSectionCodeCS#ReactionEvent
 * section[ReactionEvent].title = "Reaction/Event"
-* section[ReactionEvent].entry only Reference(VAERSAdverseEvent or FAERSAdverseEvent)
+* section[ReactionEvent].entry only Reference(VaccinationAdverseEvent or TransfusionAdverseEvent)
 * section[RelevantLabTestResults] ^.definition = "Lab Test results that are relevant to the adverse event."
 * section[RelevantLabTestResults].code = ICSRSectionCodeCS#RelevantLabTestResults
 * section[RelevantLabTestResults].title = "Relevant Lab Test Results"
@@ -91,10 +91,10 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 * section[DrugInformation].code = ICSRSectionCodeCS#DrugInformation
 * section[DrugInformation].title = "Drug Information"
 * section[DrugInformation].entry only Reference(ICSRMedicationAdministration or ICSRImmunization or DeviceUseStatement or ICSRTransfusion)
-* section[VAERSVaccines] ^.definition = "Any vaccines that were given with the past 4 weeks (required for VAERS submissions)."
-* section[VAERSVaccines].code = ICSRSectionCodeCS#VAERSVaccines
-* section[VAERSVaccines].title = "VAERS Vaccines given within 4 weeks"
-* section[VAERSVaccines].entry only Reference(ICSRImmunization)
+* section[Vaccines] ^.definition = "Any vaccines that were given with the past 4 weeks (required for vaccination case reports)."
+* section[Vaccines].code = ICSRSectionCodeCS#Vaccines
+* section[Vaccines].title = "Vaccines given within 4 weeks"
+* section[Vaccines].entry only Reference(ICSRImmunization)
 * section[CaseNarrative] ^.definition = "The full narrative about the adverse event."
 * section[CaseNarrative].code = ICSRSectionCodeCS#CaseSummaryNarrative
 * section[CaseNarrative].title = "Case Summary Narrative"
@@ -122,11 +122,11 @@ Description: "The fields needed to represent the document metadata of a ICSR Rep
 /* 
 	SAMPLES 
 */
-// Sample VAERS Report
-Instance: SampleVAERSReport
+// Sample Vaccination Report
+Instance: SampleVaccinationReport
 InstanceOf: ICSRComposition
-Title: "Sample ICSR VAERS Report"
-Description: "A sample Composition that represents VAERS ICSR header information."
+Title: "Sample ICSR Vaccination Report"
+Description: "A sample Composition that represents Vaccination ICSR header information."
 * date = 2020-02-10T17:18:00-05:00
 * author = Reference(SampleAuthorRole)
 * author.extension[primarySource].valueBoolean = true
@@ -154,11 +154,11 @@ Description: "A sample Composition that represents VAERS ICSR header information
 * section[CaseNarrative].text.status = #generated
 * section[CaseNarrative].text.div = "<div xmlns='http://www.w3.org/1999/xhtml'><div>No adverse event happened.  Not sure why I'm sending this report.</div><div lang='fr'>il n'y a eu aucun événement indésirable</div></div>"
 
-// Sample FAERS Report
-Instance: SampleFAERSReport
+// Sample Transfusion Report
+Instance: SampleTransfusionReport
 InstanceOf: ICSRComposition
-Title: "Sample ICSR FAERS Report"
-Description: "A sample Composition that represents FAERS ICSR header information."
+Title: "Sample ICSR Transfusion Report"
+Description: "A sample Composition that represents Transfusion ICSR header information."
 * date = 2020-02-10T17:18:00-05:00
 * author = Reference(SampleAuthorRole)
 * author.extension[primarySource].valueBoolean = true
@@ -338,6 +338,7 @@ CodeSystem: ICSRSectionCodeCS
 Title: "ICSR Section Codes Code System"
 Description: "Codes for each of the sections in an ICSR report"
 * ^caseSensitive = true
+* ^experimental = false
 * #PatientInformation
 * #RelevantMedicalHistory
 * #RelevantPastDrugHistory
@@ -346,7 +347,7 @@ Description: "Codes for each of the sections in an ICSR report"
 * #ReactionEvent
 * #RelevantLabTestResults
 * #DrugInformation
-* #VAERSVaccines
+* #Vaccines
 * #CaseSummaryNarrative
 * #CaseReporterComments
 * #CaseSenderDiagnosis
@@ -356,11 +357,13 @@ Description: "Codes for each of the sections in an ICSR report"
 ValueSet: ICSRSectionCodeVS
 Title: "ICSR Section Codes Value Set"
 Description: "Codes for each of the sections in an ICSR report"
+* ^experimental = false
 * codes from system ICSRSectionCodeCS
 
 CodeSystem: DataSourceObservationCodeCS
 Title: "ICSR Data Source Observation Codes Code System"
 Description: "Codes to describe information about the ICSR data source"
 * ^caseSensitive = true
+* ^experimental = false
 * #AdverseEventCount "Adverse Event Count (Algorithm Numerator)"
 * #ExposureCount "Exposure Count (Algorithm Denominator)"
