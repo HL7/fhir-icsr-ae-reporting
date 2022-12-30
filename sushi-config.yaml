@@ -39,6 +39,7 @@ menu:
   Table of Contents: toc.html
   Overview: index.html
   AE Algorithms: algorithms.html
+  Pull Use Case: pull_use_case.html
   Profile Descriptions: profile_listing.html
   Relationship to US-Core: relationship_to_us-core.html
   ICSR Mappings: icsr_mappings.html
@@ -55,5 +56,7 @@ pages:
     title: Relationship to US-Core
   icsr_mappings.md:
     title: ICSR Mappings
+  pull_use_case.md:
+    title: Pull Use Case
 
 groups: 
