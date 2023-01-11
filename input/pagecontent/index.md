@@ -50,3 +50,7 @@ The development of this Implementation Guide was funded by FDA CBER BEST initiat
 * Jean Duteau
 * Shayan Hobbi
 * Will Rosenfeld
+
+### Contact Information
+
+For more information about this guide or if you have any questions or comments about it, either use the "Propose a change" link found at the bottom of every page or visit the [BEST Initiative website](https://bestinitiative.org/best/data-and-surveillance-activities/best-innovative-methods-exchange-platform).

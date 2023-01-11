@@ -5,7 +5,7 @@ This IG specifies two overlapping sets of profiles for formatting an ICSR submis
 * [Vaccination Adverse Event](StructureDefinition-vaccination-adverseevent.html) - the Adverse Event profile with a binding to Vaccination-related event codes
 * [Immunization](StructureDefinition-icsr-immunization.html)
 
-#### Transfusion Advse Event Profiles
+#### Transfusion Adverse Event Profiles
 * [Transfusion Adverse Event](StructureDefinition-transfusion-adverseevent.html) - the Adverse Event profile with a binding to Transfusion-related event codes
 * [Transfusion](StructureDefinition-icsr-transfusion.html) - the specific fields needed to represent a transfusion procedure
 * [Blood Product](StructureDefinition-icsr-bloodproduct.html) - information about the blood product that was used in a transfusion
