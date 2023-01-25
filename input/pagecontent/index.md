@@ -33,11 +33,8 @@ Once an Adverse Event has been detected, a practitioner can review the relevant 
 #### Generate AdverseEvent Resource
 Once an Adverse Event has been confirmed or if a practitioner manually determines there is an Adverse Event to report, a system can generate an instance of the FHIR AdverseEvent resource.
 
-#### Generate FHIR-based ICSR Document
-A system can generate a FHIR-based ICSR document using the <a href="profile_listing.html">profiles</a> referenced in this IG.
-
-#### Transform to applicable ICSR XML format
-A system can further transform the ICSR document to the appropriate XML format for submission to the FDA FAERS and VAERS systems, if desired. This IG provides sample <a href="icsr_mappings.html">ICSR Mapping</a> XSL transformations.
+#### Generate FHIR-based Adverse Event Document
+A system can generate a FHIR-based Adverse Event document using the <a href="profile_listing.html">profiles</a> referenced in this IG.
 
 ### FHIR Safety Requirements
 As with implementations of FHIR and FHIR Implementation Guides, implementers should consult the <a href="{{site.data.fhir.path}}safety.html">FHIR Implementer's Safety Check List</a> in the core FHIR specification.
