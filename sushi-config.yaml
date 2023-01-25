@@ -7,7 +7,7 @@ id: hl7.fhir.us.icsr-ae-reporting
 canonical: http://hl7.org/fhir/us/icsr-ae-reporting
 version: 1.1.0
 name: TransfusionVaccinationAdverseEventDetectionReporting
-title: "HL7 FHIR Implementation Guide: Profiles for ICSR Transfusion and Vaccination Adverse Event Detection and
+title: "HL7 FHIR Implementation Guide: Profiles for Transfusion and Vaccination Adverse Event Detection and
   Reporting"
 status: draft
 publisher: 
