@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep" ciUrl="https://build.fhir.org/ig/HL7/icsr-ae-reporting" defaultVersion="1.1.0" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/fhir-icsr-ae-reporting" url="http://hl7.org/fhir/us/icsr-ae-reporting">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep" ciUrl="https://build.fhir.org/ig/HL7/icsr-ae-reporting" defaultVersion="1.0.1" defaultWorkgroup="brr" gitUrl="https://github.com/HL7/fhir-icsr-ae-reporting" url="http://hl7.org/fhir/us/icsr-ae-reporting">
 <version code="current" url="https://build.fhir.org/ig/HL7/icsr-ae-reporting"/>
-<version code="1.1.0" url="http://hl7.org/fhir/us/icsr-ae-reporting"/>
+<version code="1.0.1" url="http://hl7.org/fhir/us/icsr-ae-reporting"/>
 <version code="1.0.0" url="http://hl7.org/fhir/us/icsr-ae-reporting/STU1"/>
 <version code="0.1.0" url="http://hl7.org/fhir/us/icsr-ae-reporting/2021Sep"/>
 <artifactPageExtension value="-definitions"/>
