@@ -34,6 +34,8 @@ Description: "A sample Patient for an ICSR Report."
 Extension: MilitaryStatus
 Id: icsr-ext-militarystatus
 Description: "Information on the military status of the ICSR Patient"
+* ^context.type = #element
+* ^context.expression = "Patient"
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from PatientMilitaryStatus

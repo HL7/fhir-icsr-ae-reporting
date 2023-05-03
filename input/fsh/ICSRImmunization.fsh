@@ -24,5 +24,7 @@ Description: "The fields needed to submit an Immunization for a ICSR Report."
 Extension: AgeAtVaccination
 Id: icsr-ext-ageatvaccination
 Description: "The patient's age when the vaccination was given."
+* ^context.type = #element
+* ^context.expression = "Immunization"
 * value[x] 1..1 MS
 * value[x] only Age

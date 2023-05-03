@@ -43,17 +43,23 @@ Description: "The common fields needed to represent convalescent plasma used in 
 Extension: UsedProduct
 Id: icsr-ext-usedproduct
 Description: "Include Biologically Derived Product as something that is used in the procedure"
+* ^context.type = #element
+* ^context.expression = "Procedure.usedReference"
 * value[x] 1..1 MS
 * value[x] only Reference(ICSRBloodProduct or ICSRConvalescentPlasma)
 
 Extension: UsedProductAmount
 Id: icsr-ext-usedproductamount
 Description: "Indicates the amount of product (listed in usedReference or usedCode) that was used in the procedure"
+* ^context.type = #element
+* ^context.expression = "Procedure"
 * value[x] 1..1 MS
 * value[x] only Quantity
 
 Extension: DonationIdentificationNumber
 Id: icsr-ext-donationIdentificationNumber
 Description: "Indicates the identifier for a donation"
+* ^context.type = #element
+* ^context.expression = "BiologicallyDerivedProduct"
 * value[x] 1..1 MS
 * value[x] only Identifier

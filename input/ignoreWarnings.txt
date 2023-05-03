@@ -18,16 +18,17 @@ Error from server: Unable to provide support for code system urn:oid:2.16.840.1.
 Error from server: Unable to provide support for code system http://www.ama-assn.org/go/cpt
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.9
 Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
-Unknown System 'http://www.ama-assn.org/go/cpt' specified, so Concepts and Filters can't be checked%
-Unknown System 'http://www.cms.gov/Medicare/Coding/ICD10' specified, so Concepts and Filters can't be checked%
-Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked%
-Unknown System 'http://ncimeta.nci.nih.gov' specified, so Concepts and Filters can't be checked%
-Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked%
 
-[Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated]
-[Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated]
-
-[Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/us/icsr-ae-reporting/ValueSet/PatientAgeGroupVS because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated]
+% is not valid in the system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+% is not valid in the system http://www.ama-assn.org/go/cpt
+% is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
+% is not valid in the system http://ncimeta.nci.nih.gov
+% is not valid in the system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
+The CodeSystem http://ncimeta.nci.nih.gov is unknown%
+The CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl is unknown%
+The CodeSystem http://www.ama-assn.org/go/cpt is unknown%
+The CodeSystem http://www.cms.gov/Medicare/Coding/ICD10 is unknown%
+The CodeSystem urn:oid:2.16.840.1.113883.3.989.2.1.1.19 is unknown%
 
 The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.49/definition could not be found so cannot be checked
 The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.50/definition could not be found so cannot be checked

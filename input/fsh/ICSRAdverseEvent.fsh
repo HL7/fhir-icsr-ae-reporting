@@ -62,6 +62,8 @@ Description: "ICSR Adverse Event with a value set of transfusion-related events"
 Extension: EventDuration
 Id: icsr-ext-eventduration
 Description: "The duration of the adverse event."
+* ^context.type = #element
+* ^context.expression = "AdverseEvent.date"
 * value[x] 1..1 MS
 * value[x] only Duration
 
@@ -69,18 +71,24 @@ Description: "The duration of the adverse event."
 Extension: EventEndDate
 Id: icsr-ext-eventenddate
 Description: "When the event ended."
+* ^context.type = #element
+* ^context.expression = "AdverseEvent.date"
 * value[x] 1..1 MS
 * value[x] only dateTime
 
 Extension: AgeAtTimeOfOnset
 Id: icsr-ext-ageattimeofonset
 Description: "The age of the patient when the event occurred."
+* ^context.type = #element
+* ^context.expression = "AdverseEvent"
 * value[x] 1..1 MS
 * value[x] only Age
 
 Extension: EventSeriousness
 Id: icsr-ext-eventseriousness
 Description: "Additional codes that give more detail around the adverse event seriousness."
+* ^context.type = #element
+* ^context.expression = "AdverseEvent.seriousness"
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 * valueCodeableConcept from ICSRSeriousness

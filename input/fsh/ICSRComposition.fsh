@@ -233,36 +233,48 @@ Description: "An example of a Patient's Last Menstrual Period Date"
 Extension: AuthorPrimarySource
 Id: icsr-ext-authorprimarysource
 Description: "Whether an author is the primary source of a composition"
+* ^context.type = #element
+* ^context.expression = "Composition.author"
 * value[x] 1..1 MS
 * value[x] only boolean
 
 Extension: FirstReceiveDate
 Id: icsr-ext-firstreceivedate
 Description: "The date when the report was first received from the source"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * value[x] 1..1 MS
 * value[x] only dateTime
 
 Extension: MostRecentDate
 Id: icsr-ext-mostrecentdate
 Description: "The date of the most recent information for this report"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * value[x] 1..1 MS
 * value[x] only dateTime
 
 Extension: CaseIdentifier
 Id: icsr-ext-caseidentifier
 Description: "Other identifiers used to identify the ICSR report"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * value[x] 1..1 MS
 * value[x] only Identifier
 
 Extension: CombinationProductReport
 Id: icsr-ext-combinationproductreport
 Description: "A flag to indicate whether the ICSR report is for a combination product"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * value[x] 1..1 MS
 * value[x] only boolean
 
 Extension: AdditionalDocumentInformation
 Id: icsr-ext-additionaldocumentinformation
 Description: "A set of information to indicate what additional documentation exists."
+* ^context.type = #element
+* ^context.expression = "Composition"
 * extension contains availableFlag 1..1 MS and document 0..* MS
 * extension[availableFlag].value[x] 1..1 MS
 * extension[availableFlag].value[x] only boolean
@@ -275,6 +287,8 @@ Description: "A set of information to indicate what additional documentation exi
 Extension: ExpeditedReport
 Id: icsr-ext-expeditedreport
 Description: "Information on whether the ICSR report meets criteria of an expedited report"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * extension contains localCriteriaFlag 1..1 MS and localCriteriaReportType 1..1 MS
 * extension[localCriteriaFlag].value[x] 1..1 MS
 * extension[localCriteriaFlag].value[x] only boolean
@@ -284,12 +298,16 @@ Description: "Information on whether the ICSR report meets criteria of an expedi
 Extension: FirstSenderType
 Id: icsr-ext-firstsendertype
 Description: "Identifies the type of the first sender of the ICSR report"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * value[x] 1..1 MS
 * value[x] only CodeableConcept
 
 Extension: PreviousCaseIdentifier
 Id: icsr-ext-previouscaseidentifier
 Description: "Previous identifiers used to reference this case"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * value[x] 1..1 MS
 * value[x] only Identifier
 * valueIdentifier.system 1..1
@@ -300,6 +318,8 @@ Description: "Previous identifiers used to reference this case"
 Extension: ReportAmendment
 Id: icsr-ext-reportamendment
 Description: "Information about report amendments that have been made"
+* ^context.type = #element
+* ^context.expression = "Composition"
 * extension contains amendmentType 1..1 MS and amendmentReason 1..1 MS
 * extension[amendmentType].value[x] 1..1 MS
 * extension[amendmentType].value[x] only CodeableConcept

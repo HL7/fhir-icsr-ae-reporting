@@ -29,6 +29,8 @@ Description: "The fields needed to specify the sender or receiver of an ICSR Rep
 Extension: DepartmentName
 Id: icsr-ext-departmentname
 Description: "An organization's department name"
+* ^context.type = #element
+* ^context.expression = "Organization"
 * value[x] only string
 
 //Sender Organization example
