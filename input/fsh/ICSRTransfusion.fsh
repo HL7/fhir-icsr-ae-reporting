@@ -60,6 +60,6 @@ Extension: DonationIdentificationNumber
 Id: icsr-ext-donationIdentificationNumber
 Description: "Indicates the identifier for a donation"
 * ^context.type = #element
-* ^context.expression = "BiologicallyDerivedProduct"
+* ^context.expression = "BiologicallyDerivedProduct.collection"
 * value[x] 1..1 MS
 * value[x] only Identifier

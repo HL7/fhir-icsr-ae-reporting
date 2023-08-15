@@ -9,8 +9,7 @@ Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.7' is unknown so the code
 Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.6' is unknown so the code cannot be validated
 Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' is unknown so the code cannot be validated
-Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated
-Code System URI 'http://www.ama-assn.org/go/cpt' is unknown so the code cannot be validated
+Code System URI 'urn:oid:2.16.840.1.113883.3.989.2.1.1.9' is unknown so the code cannot be validated%
 Code System URI 'https://iccbba.org/standardterminology' is unknown so the code cannot be validated
 Code System URI 'http://meddra.org' is unknown so the code cannot be validated
 
@@ -19,20 +18,21 @@ Error from server: Unable to provide support for code system http://www.ama-assn
 Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.3.989.2.1.1.9
 Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
-% is not valid in the system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 % is not valid in the system http://www.ama-assn.org/go/cpt
-% is not valid in the system http://www.cms.gov/Medicare/Coding/ICD10
-% is not valid in the system http://ncimeta.nci.nih.gov
-% is not valid in the system urn:oid:2.16.840.1.113883.3.989.2.1.1.19
-The CodeSystem http://ncimeta.nci.nih.gov is unknown%
-The CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl is unknown%
-The CodeSystem http://www.ama-assn.org/go/cpt is unknown%
-The CodeSystem http://www.cms.gov/Medicare/Coding/ICD10 is unknown%
-The CodeSystem urn:oid:2.16.840.1.113883.3.989.2.1.1.19 is unknown%
+
+The definition for the Code System with URI 'http://www.ama-assn.org/go/cpt' doesnt provide any codes so the code cannot be validated
+The definition for the Code System with URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' doesnt provide any codes so the code cannot be validated
+
+Unknown System 'urn:oid:2.16.840.1.113883.3.989.2.1.1.19' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://ncimeta.nci.nih.gov' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://www.cms.gov/Medicare/Coding/ICD10' specified, so Concepts and Filters can't be checked%
+Unknown System 'http://www.cms.gov/Medicare/Coding/ICD10' specified, so Concepts and Filters can't be checked%
+Code '86999' not found in CPT; Unknown Code '86999' in the system 'http://www.ama-assn.org/go/cpt'%
 
 The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.49/definition could not be found so cannot be checked
 The value set import https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.50/definition could not be found so cannot be checked
-ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.74/definition not found by validator
+ValueSet https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.74/definition not found
 The valueSet reference https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.74/definition on element Procedure.code could not be resolved
 
 # Bundle slicing that won't match due to only specific slices being specified
