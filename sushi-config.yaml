@@ -32,7 +32,7 @@ dependencies:
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
-releaseLabel: STU 1 Ballot
+releaseLabel: STU 1 Technical Correction
 jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 
 menu:
