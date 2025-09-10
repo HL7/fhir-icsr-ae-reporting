@@ -55,8 +55,12 @@ The following tables list the available phenotypes for each algorithm type. The 
 | Non-hemorrhagic Stroke|IP| 365 days| 1-28 days| Covid-19| [CQL](cql_files/non_hemorrhagic_stroke.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.55/definition) |
 | Hemorrhagic Stroke|IP| 365 days| 1-28 days| Covid-19|[CQL](cql_files/hemorrhagic_stroke.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.59/definition) |
 | Acute Myocardial Infarction|IP| 365 days| 1-28 days| Covid-19| [CQL](cql_files/acute_myocardial_infarction.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.68/definition) |
-| Myocarditis/Pericarditis|IP, OP/PB, OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/myocarditis.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.57/definition) |
 | Deep Vein Thrombosis|IP, OP/PB, OP-ED| 365 days| 1-28 days| Covid-19| [CQL](cql_files/deep_vein_thrombosis.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.64/definition) |
 | Pulmonary Embolism|IP, OP/PB,OP-ED| 365 days| 1-28 days| Covid-19|[CQL](cql_files/pulmonary_embolism.cql.txt) | [Diagnosis Codes](https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1234.54/definition) |
+| Myocarditis |IP, OP/PB,OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/mrna_myo.cql.txt) | [Diagnosis Codes](cql_files/mrna_myo_value_sets-1.0.0.cql.txt) |
+| Pericarditis |IP, OP/PB,OP-ED| 365 days| 1-42 days| Covid-19|[CQL](cql_files/mrna_peri.cql.txt) | [Diagnosis Codes](cql_files/mrna_peri_value_sets-1.0.0.cql.txt) |
+| Hypogammaglobulinemia |IP, OP/PB,OP-ED| 365 days| 1-42 days| CAR-T |[CQL](cql_files/cart_hgg.cql.txt) | [Diagnosis Codes](cql_files/cart_hgg_value_sets-1.0.0.cql.txt) |
+
+
 
 *IP - inpatient stays, OP/PB - all outpatient visits and professional/provider services including clinics, OP-ED - subset of outpatient visits occurring in the emergency department
